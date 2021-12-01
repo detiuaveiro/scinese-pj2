@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pause_Menu : MonoBehaviour
 {
     public static bool isGamePaused = false; //public static para poder aceder através de outros scripts
-    [SerializeField] GameObject pauseMenu; //mesma forma de ter uma variavel que possa ser vista no inspector, porém mais privada, pois só pode ser acedida através deste script
+    public GameObject pauseMenu; //mesma forma de ter uma variavel que possa ser vista no inspector, porém mais privada, pois só pode ser acedida através deste script
 
     // Update is called once per frame
     void Update()

@@ -7,7 +7,7 @@ public class playermovement : MonoBehaviour
     public float speed = 5f;
     public Rigidbody2D rig;
 
-    public Animator animator;
+    //public Animator animator;
 
     Vector2 movement; //como é vetor 2 vai usar o x e o y 
 
@@ -23,10 +23,11 @@ public class playermovement : MonoBehaviour
         //input no update
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
+        /*
         animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+        */
     }
 
     private void FixedUpdate()
