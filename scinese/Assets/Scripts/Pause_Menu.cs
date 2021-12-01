@@ -5,8 +5,13 @@ using UnityEngine;
 public class Pause_Menu : MonoBehaviour
 {
     public static bool isGamePaused = false; //public static para poder aceder através de outros scripts
-    public GameObject pauseMenu; //mesma forma de ter uma variavel que possa ser vista no inspector, porém mais privada, pois só pode ser acedida através deste script
+    private CanvasGroup cvPauseMenu;
 
+    private void Awake()
+    {
+        cvPauseMenu = GetComponent<CanvasGroup>();
+        ResumeGame();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,14 +30,18 @@ public class Pause_Menu : MonoBehaviour
 
     public void ResumeGame()
     {
-        pauseMenu.SetActive(false);
+        cvPauseMenu.alpha = 0;
+        cvPauseMenu.blocksRaycasts = false;
+        // pauseMenu.SetActive(false);
         Time.timeScale = 1f; //Continuar tempo no jogo
         isGamePaused = false;
     }
 
     private void PauseGame()
     {
-        pauseMenu.SetActive(true);
+        cvPauseMenu.alpha = 1;
+        cvPauseMenu.blocksRaycasts = true;
+        // pauseMenu.SetActive(true);
         Time.timeScale = 0f; //Parar o tempo no jogo.
         isGamePaused = true;
     }
