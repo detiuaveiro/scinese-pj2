@@ -2,27 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playermovement : MonoBehaviour
+public class PlayerMovement
 {
-    public float speed = 5f;
+    public float speed;
     public Rigidbody2D rig;
 
     //public Animator animator;
 
     Vector2 movement; //como é vetor 2 vai usar o x e o y 
 
-    // Start is called before the first frame update
-    void Start()
+    public PlayerMovement(Rigidbody2D rig, float speed)
     {
-        
+        this.rig = rig;
+        this.speed = speed;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GetMovementInput()
     {
-        //input no update
+        // input on update funct
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
         /*
         animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos
         animator.SetFloat("Vertical", movement.y);
@@ -30,9 +30,13 @@ public class playermovement : MonoBehaviour
         */
     }
 
-    private void FixedUpdate()
+    public void Move()
     {
-        //movimento
-        rig.MovePosition(rig.position + movement * speed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
+        //movement
+        // physics on fixed-update funct
+        if (movement.x != 0 || movement.y != 0)
+        {
+            rig.MovePosition(rig.position + movement * speed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
+        }
     }
 }
