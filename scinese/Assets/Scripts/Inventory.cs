@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Inventory
 {
     public List<Item_Data> items;
@@ -34,5 +35,10 @@ public class Inventory
             return true;
         }
         return false;
+    }
+
+    public List<Item_Data> GetAllItems()
+    {
+        return items;
     }
 }
