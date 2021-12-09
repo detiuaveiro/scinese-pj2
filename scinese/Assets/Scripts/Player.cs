@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public PlayerMovement pMove;
     public Inventory inventory;
 
-    private float speed = 5f;
+    private float speed = 2f;
     [SerializeField] private int invSpace = 4;
 
     private void Awake()
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     public void Update()
     {
         pMove.GetMovementInput();
-        Debug.Log(this.inventory.items.Count);
+        //Debug.Log(this.inventory.items.Count);
     }
 
     public void FixedUpdate()
