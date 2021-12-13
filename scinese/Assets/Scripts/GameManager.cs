@@ -14,7 +14,10 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        this.LoadState();
+        if (saveSystem.ExistsData())
+        {
+            this.LoadState();
+        } 
     }
 
     // references

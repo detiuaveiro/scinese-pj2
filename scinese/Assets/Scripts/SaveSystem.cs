@@ -7,9 +7,8 @@ public class SaveSystem : MonoBehaviour
     public void Save()
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.scinese"; // persistentDataPath is a built-in funct from unity, it gives a path to a specific folder in the OS that you're sure that is not going to change unexpectedly
-        Debug.Log(path);
-        FileStream stream = new FileStream(path, FileMode.Create); // stream of data contained in a file
+        Debug.Log(this.getPath());
+        FileStream stream = new FileStream(this.getPath(), FileMode.Create); // stream of data contained in a file
         PlayerData playerData = new PlayerData(); // instantiating the object that will contain the data that will be stored
 
         formatter.Serialize(stream, playerData); // write info
@@ -18,11 +17,10 @@ public class SaveSystem : MonoBehaviour
 
     public PlayerData Load()
     {
-        string path = Application.persistentDataPath + "/player.scinese"; // persistentDataPath is a built-in funct from unity, it gives a path to a specific folder in the OS that you're sure that is not going to change unexpectedly
-        if (File.Exists(path)) // check if file exists
+        if (ExistsData()) // check if file exists
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open); // changed to .Open because we want to open an existing file
+            FileStream stream = new FileStream(this.getPath(), FileMode.Open); // changed to .Open because we want to open an existing file
 
             PlayerData data = (PlayerData)formatter.Deserialize(stream);
             stream.Close();
@@ -30,11 +28,21 @@ public class SaveSystem : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Save file not found in " + path);
+            Debug.LogError("Save file not found in " + this.getPath());
             return null;
         }
-    
-    
-    
+    }
+
+    public string getPath()
+    {
+        string path = Application.persistentDataPath + "/player.scinese"; // persistentDataPath is a built-in funct from unity, it gives a path to a specific folder in the OS that you're sure that is not going to change unexpectedly 
+        return path;
+}
+public bool ExistsData()
+    {
+        if (File.Exists(this.getPath())) {
+            return true;
+        }
+        return false;
     }
 }
