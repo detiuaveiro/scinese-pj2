@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public static Player instance;
-
     public PlayerMovement pMove;
     public Inventory inventory;
 
@@ -12,16 +10,6 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        #region Singleton
-        if (instance != null)
-        {
-            Debug.LogWarning("Player already exists!");
-            return;
-        }
-        instance = this;
-        #endregion
-
-
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
         pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed);
         inventory = new Inventory(invSpace);
@@ -36,6 +24,18 @@ public class Player : MonoBehaviour
     public void FixedUpdate()
     {
         pMove.Move();
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("entering oncollisionenter2d function");
+        Debug.Log(other.gameObject.name);
+
+        // will only save the state of the game if you press "E"
+        if (other.gameObject.name.Contains("Checkpoint")) 
+        {
+            GameManager.instance.SaveState();
+        }
     }
 
 }

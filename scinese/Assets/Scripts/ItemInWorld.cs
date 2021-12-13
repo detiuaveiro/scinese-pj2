@@ -11,7 +11,7 @@ public class ItemInWorld : MonoBehaviour
 
     private void Start()
     {
-        player = Player.instance; // remember we're using the Singleton pattern!!
+        player = GameManager.instance.player; // remember we're using the Singleton pattern!!
     }
 
     // Update is called once per frame
