@@ -24,7 +24,7 @@ public class PlayerMovement
         movement.y = Input.GetAxisRaw("Vertical");
 
         movement = movement.normalized;
-        Debug.Log(movement);
+        //Debug.Log(movement);
 
         /*
         animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos

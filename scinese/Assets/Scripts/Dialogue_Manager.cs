@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialogue_Manager : MonoBehaviour
+public class Dialogue_Manager
 {
     public Text nameText; //variavel da UI para aceder e alterar o texto
     public Text DialogueText;
@@ -16,15 +16,23 @@ public class Dialogue_Manager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue) //
+    //public Dialogue_Manager(Text nameText, Text DialogueText, Animator animator)
+    //{
+    //    this.nameText = nameText;
+    //    this.DialogueText = DialogueText;
+    //    this.animator = animator;
+    //}
+
+    public void StartDialogue(string[] dialogues, string name_man) //
     {
         animator.SetBool("IsShow", true);
         //Debug.Log("Starting conversation with " + dialogue.name);
-        nameText.text = dialogue.name;
-
+        nameText.text = name_man;
+        Debug.Log(name_man);
+        
         sentences.Clear(); //apagar frases de conversas antigas
 
-        foreach(string sentence in dialogue.sentences) //Aceder as strings da classe dialogue
+        foreach(string sentence in dialogues) //Aceder as strings da classe dialogue
         {
             sentences.Enqueue(sentence); //pôr as frases em queue
         }
@@ -41,20 +49,20 @@ public class Dialogue_Manager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue(); //Se houver ainda frases, buscar a próxima
-        //DialogueText.text = sentence;
-        StopAllCoroutines();//garantir que animamos o que o user quer
-        StartCoroutine(TypeSentence(sentence));
+        DialogueText.text = sentence;
+        //StopAllCoroutines();//garantir que animamos o que o user quer
+        //StartCoroutine(TypeSentence(sentence));
     }
 
-    IEnumerator TypeSentence (string sentence)//Co-rotina para escrever cada um dos carateres
-    {
-        DialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
-        {
-            DialogueText.text += letter;
-            yield return null;
-        }
-    }
+    //IEnumerator TypeSentence (string sentence)//Co-rotina para escrever cada um dos carateres
+    //{
+    //    DialogueText.text = "";
+    //    foreach(char letter in sentence.ToCharArray())
+    //    {
+    //        DialogueText.text += letter;
+    //        yield return null;
+    //    }
+    //}
 
     void EndDialogue()
     {

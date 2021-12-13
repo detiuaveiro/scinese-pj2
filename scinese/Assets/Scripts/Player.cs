@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public PlayerMovement pMove;
     public Inventory inventory;
 
-    private float speed = 2f;
+    private float speed = 5f;
     [SerializeField] private int invSpace = 4;
 
     private void Awake()
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
         #endregion
 
 
-        Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
+        //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
         pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed);
         inventory = new Inventory(invSpace);
     }
