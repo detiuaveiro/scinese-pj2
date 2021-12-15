@@ -20,6 +20,7 @@ public class InteractScene0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("InteractScene0 is being called on " + this.gameObject);
         if (isInRange) //se o player estiver no range
         {
                 interactAction.Invoke(); //Dispara o evento

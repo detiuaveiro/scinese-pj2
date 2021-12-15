@@ -26,7 +26,7 @@ public class Level_Loader : MonoBehaviour
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f); //ir de 0 para 1 no loading
-            Debug.Log(progress);
+            // Debug.Log(progress);
 
             slider.gameObject.SetActive(true);//Ativar slider
             slider.value = progress;

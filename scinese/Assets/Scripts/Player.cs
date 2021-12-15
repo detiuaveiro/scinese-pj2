@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
     public PlayerMovement pMove;
     public Inventory inventory;
 
-    private float speed = 5f;
+    private float speed = 3f;
     [SerializeField] private int invSpace = 4;
 
     private void Awake()
@@ -28,8 +28,8 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("entering oncollisionenter2d function");
-        Debug.Log(other.gameObject.name);
+        // Debug.Log("entering oncollisionenter2d function");
+        // Debug.Log(other.gameObject.name);
 
         // will only save the state of the game if you press "E"
         if (other.gameObject.name.Contains("Checkpoint")) 
