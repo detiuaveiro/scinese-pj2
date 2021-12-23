@@ -178,7 +178,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -276,7 +276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -489,7 +489,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3765130221342350992, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3765130221342350992, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalScale.x
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Follow: {fileID: 951507364}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 4
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -623,7 +623,7 @@ Transform:
   m_Children:
   - {fileID: 480260049}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &884459286
 MonoBehaviour:
