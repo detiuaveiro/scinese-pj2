@@ -98,8 +98,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3449
-      y: 439
+      x: 3986
+      y: 2135
       width: 28
       height: 65
     spriteID: c32fb18d1ec07da4b99d5fd3af399b6a
@@ -111,61 +111,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1578, y: -504}
-  - name: coluna
+    uvTransform: {x: 2115, y: 1192}
+  - name: baixo_wall_temple
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3310
-      y: 4
-      width: 216
-      height: 427
-    spriteID: e837f29ec20b9d443be35a5d093232e3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1850, y: -701}
-  - name: parede
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2351
-      y: 4
-      width: 951
-      height: 501
-    spriteID: 03bde9c127d48844082837d20a63981b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1122, y: -859}
-  - name: Layer 19
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3310
-      y: 439
+      x: 2750
+      y: 2269
       width: 131
-      height: 91
-    spriteID: 2e2b685136774b8429ac13536ecda396
+      height: 253
+    spriteID: c77b5052b03ae7041a18dfb9f3f6d6e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -174,7 +132,91 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1691, y: -491}
+    uvTransform: {x: 871, y: 1333}
+  - name: baixo_wall_temple
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2889
+      y: 2269
+      width: 131
+      height: 253
+    spriteID: cc4b98d77c775f640a6a1db8071ad9fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1140, y: 1333}
+  - name: baixo_wall_temple
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3028
+      y: 2269
+      width: 131
+      height: 253
+    spriteID: 2bec9730b56fb37448bc5d2d770ff074
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1409, y: 1333}
+  - name: parece baixo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2135
+      y: 2012
+      width: 940
+      height: 249
+    spriteID: bf04fd01cc3d4a14092420b7820ee0ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 895, y: 1316}
+  - name: Layer 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2135
+      y: 2269
+      width: 607
+      height: 116
+    spriteID: f2cb31a07c762784a8362110b50d875d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 900, y: 1246}
   - name: tocha
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -182,8 +224,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3707
-      y: 4
+      x: 3986
+      y: 2012
       width: 66
       height: 115
     spriteID: c4d820b91c387194182a1b17c70d9925
@@ -195,7 +237,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2185, y: -910}
+    uvTransform: {x: 2464, y: 1098}
   - name: Layer 9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -203,8 +245,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3534
-      y: 4
+      x: 3813
+      y: 2012
       width: 165
       height: 141
     spriteID: 5c2897570aa409a4280c154286ccb0e8
@@ -216,7 +258,28 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1499, y: -904}
+    uvTransform: {x: 1778, y: 1104}
+  - name: Layer 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3083
+      y: 2012
+      width: 722
+      height: 145
+    spriteID: 0e8cdf60fcefda74aaaa76e6fcb4492a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1605, y: 1109}
   - name: chao
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -338,7 +401,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: c32fb18d1ec07da4b99d5fd3af399b6a
     layerID: 2
-    mosaicPosition: {x: 3449, y: 439}
+    mosaicPosition: {x: 3986, y: 2135}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -372,66 +435,96 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: coluna
-    spriteName: coluna
-    isGroup: 0
+  - name: tile_baixo
+    spriteName: 
+    isGroup: 1
     parentIndex: 3
-    spriteID: e837f29ec20b9d443be35a5d093232e3
-    layerID: 70
-    mosaicPosition: {x: 3310, y: 4}
+    spriteID: 00000000000000000000000000000000
+    layerID: 83
+    mosaicPosition: {x: 0, y: 0}
     flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: parede
-    spriteName: parede
-    isGroup: 0
-    parentIndex: 3
-    spriteID: 03bde9c127d48844082837d20a63981b
-    layerID: 50
-    mosaicPosition: {x: 2351, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Layer 19
+    isImported: 0
+    isVisible: 0
+  - name: chao xadres
     spriteName: Layer 19
     isGroup: 0
-    parentIndex: 3
+    parentIndex: 5
     spriteID: 2e2b685136774b8429ac13536ecda396
     layerID: 82
     mosaicPosition: {x: 3310, y: 439}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
-  - name: Layer 11
-    spriteName: Layer 11
+  - name: parede
+    spriteName: parede
     isGroup: 0
-    parentIndex: 3
-    spriteID: 32189b3ec9a6a614088c9f12f2f1fc26
-    layerID: 68
-    mosaicPosition: {x: 3707, y: 4}
+    parentIndex: 5
+    spriteID: 03bde9c127d48844082837d20a63981b
+    layerID: 50
+    mosaicPosition: {x: 2351, y: 4}
     flatten: 0
     isImported: 0
-    isVisible: 0
+    isVisible: 1
+  - name: coluna
+    spriteName: coluna
+    isGroup: 0
+    parentIndex: 5
+    spriteID: e837f29ec20b9d443be35a5d093232e3
+    layerID: 70
+    mosaicPosition: {x: 3310, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: baixo_wall_temple
+    spriteName: baixo_wall_temple
+    isGroup: 0
+    parentIndex: 3
+    spriteID: c77b5052b03ae7041a18dfb9f3f6d6e6
+    layerID: 88
+    mosaicPosition: {x: 2750, y: 2269}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: baixo_wall_temple
+    spriteName: baixo_wall_temple
+    isGroup: 0
+    parentIndex: 3
+    spriteID: cc4b98d77c775f640a6a1db8071ad9fa
+    layerID: 86
+    mosaicPosition: {x: 2889, y: 2269}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: baixo_wall_temple
+    spriteName: baixo_wall_temple
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 2bec9730b56fb37448bc5d2d770ff074
+    layerID: 85
+    mosaicPosition: {x: 3028, y: 2269}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: parece baixo
     spriteName: parece baixo
     isGroup: 0
     parentIndex: 3
     spriteID: bf04fd01cc3d4a14092420b7820ee0ab
     layerID: 65
-    mosaicPosition: {x: 2351, y: 4}
+    mosaicPosition: {x: 2135, y: 2012}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Layer 5
     spriteName: Layer 5
     isGroup: 0
     parentIndex: 3
     spriteID: f2cb31a07c762784a8362110b50d875d
     layerID: 39
-    mosaicPosition: {x: 2885, y: 2403}
+    mosaicPosition: {x: 2135, y: 2269}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: tocha branca
     spriteName: 
     isGroup: 0
@@ -448,7 +541,7 @@ ScriptedImporter:
     parentIndex: 3
     spriteID: c4d820b91c387194182a1b17c70d9925
     layerID: 45
-    mosaicPosition: {x: 3707, y: 4}
+    mosaicPosition: {x: 3986, y: 2012}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -458,7 +551,7 @@ ScriptedImporter:
     parentIndex: 3
     spriteID: 5c2897570aa409a4280c154286ccb0e8
     layerID: 52
-    mosaicPosition: {x: 3534, y: 4}
+    mosaicPosition: {x: 3813, y: 2012}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -468,10 +561,10 @@ ScriptedImporter:
     parentIndex: 3
     spriteID: 0e8cdf60fcefda74aaaa76e6fcb4492a
     layerID: 42
-    mosaicPosition: {x: 3299, y: 4}
+    mosaicPosition: {x: 3083, y: 2012}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Layer 8
     spriteName: Layer 8
     isGroup: 0
@@ -515,7 +608,7 @@ ScriptedImporter:
   - name: Shape 1
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 48bfd29ba198bf44c9b94e00604de711
     layerID: 19
     mosaicPosition: {x: 0, y: 0}
@@ -525,7 +618,7 @@ ScriptedImporter:
   - name: Rectangle 7
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: fb6c205a22778b748bd96f9d7cdabe5d
     layerID: 29
     mosaicPosition: {x: 0, y: 0}
@@ -535,7 +628,7 @@ ScriptedImporter:
   - name: Ellipse 1
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 64c95ed1b42f5924ab542362e12512df
     layerID: 14
     mosaicPosition: {x: 0, y: 0}
@@ -545,7 +638,7 @@ ScriptedImporter:
   - name: Rectangle 4
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 707defb2f74dec9488c63456b12ce716
     layerID: 17
     mosaicPosition: {x: 0, y: 0}
@@ -555,7 +648,7 @@ ScriptedImporter:
   - name: Rectangle 4
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 6b52cf07fdcdd264aadd4c26ed1faa8d
     layerID: 12
     mosaicPosition: {x: 0, y: 0}
@@ -565,7 +658,7 @@ ScriptedImporter:
   - name: Rectangle 6
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 0c6e5df3f4adb7c4989ce5c13950e65f
     layerID: 28
     mosaicPosition: {x: 0, y: 0}
@@ -575,7 +668,7 @@ ScriptedImporter:
   - name: Rectangle 5
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 5a98d392068609b48ab5f99d54e2db6c
     layerID: 27
     mosaicPosition: {x: 0, y: 0}
@@ -585,7 +678,7 @@ ScriptedImporter:
   - name: Rectangle 5
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: fd5278400f239034cadf1404f5ab3ec1
     layerID: 26
     mosaicPosition: {x: 0, y: 0}
@@ -595,7 +688,7 @@ ScriptedImporter:
   - name: Rectangle 8
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 6aee9914dd9e55e46b76030bbd05ad8f
     layerID: 30
     mosaicPosition: {x: 0, y: 0}
@@ -605,7 +698,7 @@ ScriptedImporter:
   - name: Rectangle 6
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 8359db38544f371488490a3df9647d1e
     layerID: 25
     mosaicPosition: {x: 0, y: 0}
@@ -615,7 +708,7 @@ ScriptedImporter:
   - name: Rectangle 5
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 4e315fbd55350704c97ac6322af309fe
     layerID: 24
     mosaicPosition: {x: 0, y: 0}
@@ -625,7 +718,7 @@ ScriptedImporter:
   - name: Rectangle 5
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 115135b964113594f89fcaf52b7ec718
     layerID: 22
     mosaicPosition: {x: 0, y: 0}
@@ -635,7 +728,7 @@ ScriptedImporter:
   - name: Rectangle 3
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 15cb225a596a06b4a9ad03a95691673f
     layerID: 21
     mosaicPosition: {x: 0, y: 0}
@@ -645,7 +738,7 @@ ScriptedImporter:
   - name: Rectangle 3
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 91bb9ad1731813b49aded91c7f3d1877
     layerID: 11
     mosaicPosition: {x: 0, y: 0}
@@ -655,7 +748,7 @@ ScriptedImporter:
   - name: Rectangle 2
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 841bda945f4981245b1fe653cd914f77
     layerID: 10
     mosaicPosition: {x: 0, y: 0}
@@ -665,7 +758,7 @@ ScriptedImporter:
   - name: Rectangle 1
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: 453cb79a6df56104db7bc63cae67374a
     layerID: 9
     mosaicPosition: {x: 0, y: 0}
@@ -675,7 +768,7 @@ ScriptedImporter:
   - name: Layer 1
     spriteName: 
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 21
     spriteID: aeea14a948822874daf88a45b7841799
     layerID: 8
     mosaicPosition: {x: 0, y: 0}
