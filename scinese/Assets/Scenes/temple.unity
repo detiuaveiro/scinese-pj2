@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Intensity: 0.76
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 7576cfd23180238500000000
+  m_ApplyToSortingLayers: 7576cfd231802385
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 0.249
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -313,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158180386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.858, y: 10.213, z: -10}
+  m_LocalPosition: {x: 4.81, y: 24.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Intensity: 0.76
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 7576cfd23180238500000000
+  m_ApplyToSortingLayers: 7576cfd231802385
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 0.249
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_Intensity: 0.76
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 7576cfd23180238500000000
+  m_ApplyToSortingLayers: 7576cfd231802385
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 0.249
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4c361ab8b33ad5c4db8e2046aef53684, type: 2}
+    - target: {fileID: -2191251296579223534, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1517107937923968328, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
       value: -4
@@ -1068,7 +1072,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884459283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.858, y: 10.213, z: -10}
+  m_LocalPosition: {x: 4.81, y: 24.93, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1113,11 +1117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3765130221342350992, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.858
+      value: 4.81
       objectReference: {fileID: 0}
     - target: {fileID: 3765130221342350992, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.213
+      value: 24.93
       objectReference: {fileID: 0}
     - target: {fileID: 3765130221342350992, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1174,7 +1178,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013827237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
@@ -1182,9 +1186,9 @@ MonoBehaviour:
   m_ShadowGroup: 0
   m_ComponentVersion: 1
   m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 1
+  m_UseRendererSilhouette: 0
+  m_CastsShadows: 0
+  m_SelfShadows: 0
   m_ApplyToSortingLayers: fbb99c667576cfd21d8a60dc3180238500000000
   m_ShapePath:
   - {x: -0.12379635, y: 0.33227623, z: 0}
@@ -1196,9 +1200,9 @@ MonoBehaviour:
   - {x: -0.10929346, y: -0.5016031, z: 0}
   - {x: -0.06708283, y: 0.06619907, z: 0}
   m_ShapePathHash: -1893603810
-  m_Mesh: {fileID: 1375294307}
-  m_InstanceId: 41748
---- !u!43 &1375294307
+  m_Mesh: {fileID: 2094570587}
+  m_InstanceId: 31138
+--- !u!43 &2094570587
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1373,7 +1377,7 @@ GameObject:
   - component: {fileID: 2112385558}
   - component: {fileID: 2112385557}
   m_Layer: 0
-  m_Name: Light 2D (1)
+  m_Name: light global
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
