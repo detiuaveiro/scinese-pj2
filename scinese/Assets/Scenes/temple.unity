@@ -1913,6 +1913,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1472294540395589093, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 158180388}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
 --- !u!114 &574800270 stripped
@@ -2083,7 +2087,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777403, y: 1}
+    m_SensorSize: {x: 1.7783505, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2404,6 +2408,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3765130221342350996, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1854290416}
+    - target: {fileID: 3765130221342350996, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 574800270}
@@ -2719,6 +2727,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!114 &1854290416 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1547049707423868998, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+  m_PrefabInstance: {fileID: 574800269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a817fdc7ea274b4db5966bb35249792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1860664407
 GameObject:
   m_ObjectHideFlags: 0
