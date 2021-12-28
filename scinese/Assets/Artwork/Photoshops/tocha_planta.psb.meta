@@ -98,8 +98,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 98
-      y: 50
+      x: 4
+      y: 96
       width: 11
       height: 16
     spriteID: 049f43d8057bf7a499f0b1951e7814db
@@ -111,7 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 77, y: -2}
+    uvTransform: {x: -17, y: 44}
   - name: Brightness/Contrast 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -120,7 +120,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 50
-      y: 50
+      y: 4
       width: 40
       height: 32
     spriteID: fffbf9dbeae3ad2469d244a81f40742c
@@ -132,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 45, y: 14}
+    uvTransform: {x: 45, y: -32}
   - name: Layer 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -161,8 +161,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 50
-      y: 4
+      x: 4
+      y: 69
       width: 31
       height: 20
     spriteID: 02724485d590fe447bd2b1f14a933beb
@@ -174,7 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 41, y: 3}
+    uvTransform: {x: -5, y: 68}
   characterData:
     bones: []
     parts: []
@@ -211,7 +211,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 049f43d8057bf7a499f0b1951e7814db
     layerID: 11
-    mosaicPosition: {x: 98, y: 50}
+    mosaicPosition: {x: 4, y: 96}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -221,7 +221,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: fffbf9dbeae3ad2469d244a81f40742c
     layerID: 10
-    mosaicPosition: {x: 50, y: 50}
+    mosaicPosition: {x: 50, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -261,7 +261,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 02724485d590fe447bd2b1f14a933beb
     layerID: 8
-    mosaicPosition: {x: 50, y: 4}
+    mosaicPosition: {x: 4, y: 69}
     flatten: 0
     isImported: 1
     isVisible: 1
