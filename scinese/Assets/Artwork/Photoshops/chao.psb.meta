@@ -102,7 +102,7 @@ ScriptedImporter:
       y: 4
       width: 131
       height: 85
-    spriteID: 6259902f8f36a094ea49709f7739cf4a
+    spriteID: 75450681396a6924e8cc445f959980c2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -156,12 +156,22 @@ ScriptedImporter:
     spriteName: Brightness/Contrast 1
     isGroup: 0
     parentIndex: -1
-    spriteID: 6259902f8f36a094ea49709f7739cf4a
-    layerID: 6
+    spriteID: 75450681396a6924e8cc445f959980c2
+    layerID: 9
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Brightness/Contrast 1
+    spriteName: Brightness/Contrast 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6259902f8f36a094ea49709f7739cf4a
+    layerID: 6
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Layer 1
     spriteName: Layer 1
     isGroup: 0
