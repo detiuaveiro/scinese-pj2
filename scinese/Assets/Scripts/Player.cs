@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
-        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed);
+        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed, this.gameObject.GetComponent<Animator>());
         inventory = new Inventory(invSpace);
     }
 

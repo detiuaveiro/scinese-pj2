@@ -7,14 +7,15 @@ public class PlayerMovement
     public float speed;
     public Rigidbody2D rig;
 
-    //public Animator animator;
+    public Animator animator;
 
     Vector2 movement; //como é vetor 2 vai usar o x e o y 
 
-    public PlayerMovement(Rigidbody2D rig, float speed)
+    public PlayerMovement(Rigidbody2D rig, float speed, Animator animator)
     {
         this.rig = rig;
         this.speed = speed;
+        this.animator = animator;
     }
 
     public void GetMovementInput()
@@ -26,11 +27,11 @@ public class PlayerMovement
         movement = movement.normalized;
         //Debug.Log(movement);
 
-        /*
+        
         animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        */
+        
     }
 
     public void Move()
