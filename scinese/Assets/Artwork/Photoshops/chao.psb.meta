@@ -91,7 +91,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Brightness/Contrast 1
+  - name: Layer 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
       y: 4
       width: 131
       height: 85
-    spriteID: 75450681396a6924e8cc445f959980c2
+    spriteID: f35bcd27e3a446d42b36c8452047eba7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,12 +152,22 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: Brightness/Contrast 1
-    spriteName: Brightness/Contrast 1
+  - name: Layer 7
+    spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: 75450681396a6924e8cc445f959980c2
-    layerID: 9
+    spriteID: 00000000000000000000000000000000
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 6
+    spriteName: Layer 6
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f35bcd27e3a446d42b36c8452047eba7
+    layerID: 13
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
