@@ -157,7 +157,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.696
   m_Color: {r: 0.9056604, g: 0.8477623, b: 0.6279815, a: 1}
-  m_Intensity: 0.76
+  m_Intensity: 1
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 7576cfd231802385
@@ -890,6 +890,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -4382524405288951752, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4047302697585373090, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -907,6 +911,10 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -3351868363131983666, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3269121478034376087, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1066,6 +1074,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 1066641341545843392, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1092641441002539719, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
       value: -3
@@ -1192,7 +1204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4560562862427440165, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4621147644854835439, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
@@ -1362,6 +1374,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6862328314160747645, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6920242305026785599, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -1421,6 +1437,10 @@ PrefabInstance:
     - target: {fileID: 7822817708768265508, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887403255944118714, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7891357409145410086, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
@@ -1525,8 +1545,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.696
-  m_Color: {r: 0.9056604, g: 0.8477623, b: 0.6279815, a: 1}
-  m_Intensity: 0.76
+  m_Color: {r: 0.90588236, g: 0.88758206, b: 0.627451, a: 1}
+  m_Intensity: 1
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 7576cfd231802385
@@ -1576,7 +1596,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360.00003
   m_PointLightOuterAngle: 360.00003
   m_PointLightInnerRadius: 1.26
-  m_PointLightOuterRadius: 4
+  m_PointLightOuterRadius: 3
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -2402,7 +2422,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.696
-  m_Color: {r: 0.9056604, g: 0.8477623, b: 0.6279815, a: 1}
+  m_Color: {r: 0.90588236, g: 0.8891792, b: 0.627451, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
@@ -2472,7 +2492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761966944}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 4.52, y: 16.73, z: 0}
+  m_LocalPosition: {x: 4.52, y: 16.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2692,7 +2712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067765469}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.97, y: 16.73, z: 0}
+  m_LocalPosition: {x: 0.97, y: 16.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2843,7 +2863,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.696
   m_Color: {r: 0.9056604, g: 0.8477623, b: 0.6279815, a: 1}
-  m_Intensity: 0.76
+  m_Intensity: 1
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 7576cfd231802385
@@ -2893,7 +2913,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360.00003
   m_PointLightOuterAngle: 360.00003
   m_PointLightInnerRadius: 1.26
-  m_PointLightOuterRadius: 4
+  m_PointLightOuterRadius: 3
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
