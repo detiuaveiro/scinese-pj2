@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00a6095959a3ab249936789af7bd4442
+guid: 0651f8c3e91203246966a9fb90808142
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -91,7 +91,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 3
+  - name: overlay
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -100,9 +100,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 60
-      height: 64
-    spriteID: 4eea28b44bc40ab4ab5a49ff7070aa26
+      width: 99
+      height: 78
+    spriteID: e400f9bddac4ee4458952d81e1323e5a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -111,7 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -103, y: -141}
+    uvTransform: {x: -2, y: -4}
   characterData:
     bones: []
     parts: []
@@ -142,12 +142,12 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 3
-    spriteName: Layer 3
+  - name: overlay
+    spriteName: overlay
     isGroup: 0
     parentIndex: -1
-    spriteID: 4eea28b44bc40ab4ab5a49ff7070aa26
-    layerID: 6
+    spriteID: e400f9bddac4ee4458952d81e1323e5a
+    layerID: 10
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
@@ -156,28 +156,18 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: c8f8276cf25cdd44c9944548faac7e3a
-    layerID: 10
+    spriteID: 00000000000000000000000000000000
+    layerID: 15
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: overlay
-    spriteName: 
-    isGroup: 0
-    parentIndex: 1
-    spriteID: 3ef06ff848e556b48b3469618da31a34
-    layerID: 5
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 1
   - name: ritual_circle
     spriteName: 
     isGroup: 0
     parentIndex: 1
-    spriteID: 71bd57e4c6a4eb347b2c0a624785994f
-    layerID: 4
+    spriteID: 00000000000000000000000000000000
+    layerID: 9
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
@@ -186,8 +176,8 @@ ScriptedImporter:
     spriteName: 
     isGroup: 0
     parentIndex: 1
-    spriteID: a8e80e413899b3c4f814c136b7f557fd
-    layerID: 3
+    spriteID: 00000000000000000000000000000000
+    layerID: 8
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
