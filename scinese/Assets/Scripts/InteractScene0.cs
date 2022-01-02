@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Playables;
 
 /// <summary>
 /// tu es tao rei mano
@@ -10,6 +11,8 @@ public class InteractScene0 : MonoBehaviour
 {
     public bool isInRange; //Variável para verificar se está no range
     public UnityEvent interactAction; //variável para disparar a ação dentro do unity
+    int count;
+    public PlayableDirector pd;
 
     // Start is called before the first frame update
     void Start()
@@ -17,14 +20,21 @@ public class InteractScene0 : MonoBehaviour
 
     }
 
+
     // Update is called once per frame
     void Update()
     {
+
         Debug.Log("InteractScene0 is being called on " + this.gameObject);
-        if (isInRange) //se o player estiver no range
+        if(count == 0)
         {
+            if (isInRange) //se o player estiver no range
+            {
                 interactAction.Invoke(); //Dispara o evento
+                count++;
+            }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
