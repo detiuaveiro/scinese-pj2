@@ -5,18 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/temple.unity
-    guid: aa6392d58d808d343a2bb2993fadded6
-  - enabled: 1
-    path: Assets/Scenes/level0.unity
-    guid: c5973250961d3444bb8e9ccafe382da7
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: b7b8e0ba721664a47bcf135eed100676
+  - enabled: 1
+    path: Assets/Scenes/OpeningCutscene.unity
+    guid: 038c7e4fbfc6bdc4b979751776b19b86
+  - enabled: 1
+    path: Assets/Scenes/temple.unity
+    guid: aa6392d58d808d343a2bb2993fadded6
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: c4f9d78cd5e9d4945b0001927e23f78b

@@ -9,6 +9,7 @@ public class Level_Loader : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
+    public Button btplay;
     public Button btSet;
     public Button btqt;
 
@@ -30,7 +31,8 @@ public class Level_Loader : MonoBehaviour
 
             slider.gameObject.SetActive(true);//Ativar slider
             slider.value = progress;
-            progressText.text = progress * 100f + "%"; 
+            progressText.text = progress * 100f + "%";
+            btplay.gameObject.SetActive(false);
             btSet.gameObject.SetActive(false);//Desativar button
             btqt.gameObject.SetActive(false);//Desativar button
 
