@@ -112,27 +112,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1292, y: -979}
-  - name: luz
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3066
-      y: 1723
-      width: 25
-      height: 317
-    spriteID: 456a9555794e7e7439a048827dd3c073
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1165, y: 590}
   - name: Layer 25
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1043,7 +1022,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 3099
+      x: 3066
       y: 1723
       width: 40
       height: 67
@@ -1056,7 +1035,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1771, y: 1068}
+    uvTransform: {x: 1738, y: 1068}
   - name: corredor_overlay
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2002,8 +1981,8 @@ ScriptedImporter:
     layerID: 457
     mosaicPosition: {x: 3066, y: 1723}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Layer 17
     spriteName: Layer 17
     isGroup: 0
@@ -2530,7 +2509,7 @@ ScriptedImporter:
     parentIndex: 64
     spriteID: 8dcc5e65f3d063d4d82b53a577253c7d
     layerID: 127
-    mosaicPosition: {x: 3099, y: 1723}
+    mosaicPosition: {x: 3066, y: 1723}
     flatten: 0
     isImported: 1
     isVisible: 1
