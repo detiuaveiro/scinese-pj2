@@ -152,6 +152,16 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 25fa0f66a29e39b4faa8e13cbc27292e
+    layerID: 14
+    mosaicPosition: {x: 4, y: 77}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Group 1
     spriteName: 
     isGroup: 1
@@ -165,7 +175,7 @@ ScriptedImporter:
   - name: overlay
     spriteName: 
     isGroup: 0
-    parentIndex: 1
+    parentIndex: 2
     spriteID: 3ef06ff848e556b48b3469618da31a34
     layerID: 5
     mosaicPosition: {x: 0, y: 0}
@@ -175,7 +185,7 @@ ScriptedImporter:
   - name: ritual_circle
     spriteName: 
     isGroup: 0
-    parentIndex: 1
+    parentIndex: 2
     spriteID: 71bd57e4c6a4eb347b2c0a624785994f
     layerID: 4
     mosaicPosition: {x: 0, y: 0}
@@ -185,7 +195,7 @@ ScriptedImporter:
   - name: Layer 2
     spriteName: 
     isGroup: 0
-    parentIndex: 1
+    parentIndex: 2
     spriteID: a8e80e413899b3c4f814c136b7f557fd
     layerID: 3
     mosaicPosition: {x: 0, y: 0}
