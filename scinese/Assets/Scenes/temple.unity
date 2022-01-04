@@ -367,7 +367,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -719,6 +719,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 28
       objectReference: {fileID: 0}
+    - target: {fileID: -9137180890072425948, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -9137180890072425948, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
     - target: {fileID: -9100738403331554711, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
       value: -3
@@ -1027,6 +1035,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -758155659
       objectReference: {fileID: 0}
+    - target: {fileID: -6154627909067898874, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6154627909067898874, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
     - target: {fileID: -6140301191612946133, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1207,6 +1223,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -758155659
       objectReference: {fileID: 0}
+    - target: {fileID: -3606847078703983024, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3606847078703983024, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
     - target: {fileID: -3601147129428955498, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1360,6 +1384,14 @@ PrefabInstance:
       value: -3
       objectReference: {fileID: 0}
     - target: {fileID: -1163344828570989342, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
+    - target: {fileID: -1145138096260544067, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1145138096260544067, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayerID
       value: -758155659
       objectReference: {fileID: 0}
@@ -1687,6 +1719,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -758155659
       objectReference: {fileID: 0}
+    - target: {fileID: 2979670037165604257, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3047285532408271885, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
       value: -3
@@ -1888,6 +1924,14 @@ PrefabInstance:
       value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5331834540349870243, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380363584366379468, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380363584366379468, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayerID
       value: -758155659
       objectReference: {fileID: 0}
@@ -2503,9 +2547,9 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.696
-  m_Color: {r: 1, g: 0.97707945, b: 0.8915094, a: 1}
-  m_Intensity: 1
+  m_FalloffIntensity: 0.643
+  m_Color: {r: 1, g: 0.9197392, b: 0.7311321, a: 1}
+  m_Intensity: 1.11
   m_LightVolumeIntensity: 1.56
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 7576cfd231802385
@@ -2516,7 +2560,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensityEnabled: 0
   m_ShadowIntensity: 0.249
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
@@ -2552,10 +2596,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360.00003
-  m_PointLightOuterAngle: 360.00003
-  m_PointLightInnerRadius: 1.85
-  m_PointLightOuterRadius: 4
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 1.22
+  m_PointLightOuterRadius: 3.15
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -2574,7 +2618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471087686}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 4.169998, y: 30.680004, z: 0}
+  m_LocalPosition: {x: 4.72, y: 30.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7654,7 +7698,7 @@ MonoBehaviour:
   m_Follow: {fileID: 725969130}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 4
+    OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
