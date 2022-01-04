@@ -367,7 +367,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.72
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -775,6 +775,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: templeLayout
       objectReference: {fileID: 0}
+    - target: {fileID: -8612229442142036112, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8612229442142036112, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
     - target: {fileID: -8582846174714979956, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayer
       value: -3
@@ -1084,6 +1092,14 @@ PrefabInstance:
       value: -3
       objectReference: {fileID: 0}
     - target: {fileID: -5334220799952162491, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -758155659
+      objectReference: {fileID: 0}
+    - target: {fileID: -5293022197737151677, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5293022197737151677, guid: b4dfbda6f7bb52d42a16543aca4571d1, type: 3}
       propertyPath: m_SortingLayerID
       value: -758155659
       objectReference: {fileID: 0}
@@ -7638,7 +7654,7 @@ MonoBehaviour:
   m_Follow: {fileID: 725969130}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6.72
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
