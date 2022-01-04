@@ -20,6 +20,8 @@ public class LowerEnemy : Collidable
 
     Vector2 directionIdle = new Vector2(0.1f, 0);
 
+    public Animator animator;
+
 
     private void Start()
     {
@@ -52,7 +54,7 @@ public class LowerEnemy : Collidable
         direction.Normalize(); //manter entre -1 e 1
         movement = direction;
 
-        if(range <= 5)
+        if(range <= 2)
         {
             rb.rotation = angle; //rodar o inimigo para o player
             FollowPlayer(movement);
@@ -96,19 +98,35 @@ public class LowerEnemy : Collidable
         //direction.Normalize(); //manter entre -1 e 1
         //movement = direction;
 
-        if (transform.position.x >= 50)
+        if (transform.position.x >= 10)
         {
-            Flip();
+            FlipLeft();
         }
+
+        if (transform.position.x <= -10)
+        {
+            FlipRight();
+        }
+        
+        animator.SetBool("isRight", true); //começar animaçao para a direita
     }
 
-    void Flip()
+    void FlipLeft()
     {
-        directionIdle = new Vector2(-0.01f, 0);
+        animator.SetBool("isLeft", true);//ativar anim esq
+        directionIdle = new Vector2(-0.1f, 0);
         mustPatrol = false;
 
-        speed *= -1; //dar valor negativo para mudar de direção
+        //speed *= -1; //dar valor negativo para mudar de direção
         mustPatrol = true;
+        
+    }
+
+    void FlipRight()
+    {
+        animator.SetBool("isRight", true);//ativar anim dir
+        directionIdle = new Vector2(0.1f, 0);
+        mustPatrol = false;
     }
 
     public void ReceiveDamage(Damage damage)
