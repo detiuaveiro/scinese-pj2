@@ -24,6 +24,7 @@ public class doorController : MonoBehaviour
             Debug.Log("Door is Unlocked");//Destrancar porta
             animator.SetBool("isOpen", true); //ativar animação abrir porta
             boxcollider.enabled = false; //Desabilitar o collider para o player passar
+            player.inventory.items.Remove(key);
         }
     }
 }
