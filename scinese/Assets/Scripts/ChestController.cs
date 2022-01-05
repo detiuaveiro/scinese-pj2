@@ -27,7 +27,7 @@ public class ChestController : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     key++;
-                    keyObject.gameObject.SetActive(false);
+                    //keyObject.gameObject.SetActive(false);
                     ballon.gameObject.SetActive(false);
                 }
             }

@@ -30,16 +30,7 @@ public class LowerEnemy : Collidable
 
     private void Update()
     {
-        //Vector3 direction = player.position - transform.position;//posição do inimgo em relação à do player
-        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;//Calcular angulo onde se econtra o player
-        //rb.rotation = angle; //rodar o inimigo para o player
 
-        //direction.Normalize(); //manter entre -1 e 1
-        //movement = direction;
-        //if (mustPatrol)
-        //{
-        //    Patrol();
-        //}
     }
 
     protected override void FixedUpdate()
@@ -54,7 +45,7 @@ public class LowerEnemy : Collidable
         direction.Normalize(); //manter entre -1 e 1
         movement = direction;
 
-        if(range <= 2)
+        if(range <= 4)
         {
             rb.rotation = angle; //rodar o inimigo para o player
             FollowPlayer(movement);
@@ -93,7 +84,7 @@ public class LowerEnemy : Collidable
 
         rb.MovePosition((Vector2)transform.position + (direction *speed * Time.fixedDeltaTime));
 
-        Debug.Log(rb.transform.position);
+        //Debug.Log(rb.transform.position);
 
         //direction.Normalize(); //manter entre -1 e 1
         //movement = direction;
