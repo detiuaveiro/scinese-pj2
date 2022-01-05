@@ -108,25 +108,21 @@ public class LowerEnemy : Collidable
             FlipRight();
         }
         
-        animator.SetBool("isRight", true); //começar animaçao para a direita
+        //animator.SetBool("isRight", true); //começar animaçao para a direita
     }
 
     void FlipLeft()
     {
+        animator.SetBool("isRight", false);
         animator.SetBool("isLeft", true);//ativar anim esq
-        directionIdle = new Vector2(-0.1f, 0);
-        mustPatrol = false;
-
-        //speed *= -1; //dar valor negativo para mudar de direção
-        mustPatrol = true;
-        
+        directionIdle = new Vector2(-0.1f, 0);   
     }
 
     void FlipRight()
     {
+        animator.SetBool("isLeft", false);
         animator.SetBool("isRight", true);//ativar anim dir
         directionIdle = new Vector2(0.1f, 0);
-        mustPatrol = false;
     }
 
     public void ReceiveDamage(Damage damage)
