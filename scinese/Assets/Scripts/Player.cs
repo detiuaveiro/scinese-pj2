@@ -77,9 +77,6 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        // Debug.Log("entering oncollisionenter2d function");
-        // Debug.Log(other.gameObject.name);
-
         // will only save the state of the game if you press "E"
         if (other.gameObject.name.Contains("Checkpoint")) 
         {
