@@ -9,6 +9,7 @@ public class CatckKey : MonoBehaviour
 
     public Item_Data item;
     public float amount;
+    public GameObject infballon;
 
     public bool isInRange; //Variável para verificar se está no range
     public KeyCode InteractKey; //Variável para passar a tecla de interação
@@ -36,6 +37,7 @@ public class CatckKey : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))//se o player estiver no range
         {
             isInRange = true;
+            infballon.gameObject.SetActive(true);
             Debug.Log("Player is in Range");
         }
     }
@@ -45,6 +47,7 @@ public class CatckKey : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))//se o player não estiver no range
         {
             isInRange = false;
+            infballon.gameObject.SetActive(false);
             Debug.Log("Player is not Range");
         }
     }

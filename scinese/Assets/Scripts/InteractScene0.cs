@@ -25,7 +25,7 @@ public class InteractScene0 : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("InteractScene0 is being called on " + this.gameObject);
+        //Debug.Log("InteractScene0 is being called on " + this.gameObject);
         if(count == 0)
         {
             if (isInRange) //se o player estiver no range

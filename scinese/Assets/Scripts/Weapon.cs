@@ -9,14 +9,16 @@ public class Weapon : Collidable
     public float pushForce = 2.0f;
 
     // swing weapon
-    private Animator animator; // animator controller is the name in the inspector, just "animator" is the name in the code
-    private float cooldown = 0.5f; // time you need to spend before swinging again 
+    public Animator animator; // animator controller is the name in the inspector, just "animator" is the name in the code
+    private float cooldown = 0f; // time you need to spend before swinging again 
     private float lastSwing; // time where the last swing took place
+    public BoxCollider2D bc2d;
 
     protected override void Awake()
     {
         base.Awake();
         animator = GetComponent<Animator>();
+        bc2d = GetComponent<BoxCollider2D>();
     }
 
     protected override void FixedUpdate()
@@ -38,6 +40,7 @@ public class Weapon : Collidable
        // Debug.Log(coll);
         if (coll.tag == "LowerEnemy")
         {
+            bc2d.gameObject.SetActive(true);
             // create a new damage object, then we'll send it to the lower enemy
             Damage dmg = new Damage(transform.position, damage, pushForce);
 
@@ -48,7 +51,8 @@ public class Weapon : Collidable
 
     private void Swing()
     {
+        //bc2d.gameObject.SetActive(true);//tentei ativar a colisão, apenas quando o player clica no rato
         Debug.Log("Swing!");
-        // animator.SetTrigger("Swing");
+        animator.SetTrigger("Attack");
     }
 }

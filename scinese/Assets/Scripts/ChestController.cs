@@ -18,7 +18,7 @@ public class ChestController : MonoBehaviour
             Debug.Log("Chest is Unlocked");//Destrancar porta
             animator.SetBool("isOpen", true); //ativar animação abrir bau
             keyObject.gameObject.SetActive(true);//mostrar chave
-            ballon.gameObject.SetActive(true);//mostrar balao com interrogacao
+            //ballon.gameObject.SetActive(true);//mostrar balao com interrogacao
         } 
         else {
 
