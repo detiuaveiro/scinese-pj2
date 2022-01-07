@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LowerEnemy : Collidable
 {
-    public Transform player;//para saber a posição do player
+    public Transform playerpos;//para saber a posição do player
     private Vector2 movement;//dar movimento em x e em y
     public int numberOfLives = 2;
     public float pushRecoverySpeed = 0.2f;
@@ -37,7 +37,7 @@ public class LowerEnemy : Collidable
     {
         base.FixedUpdate();
 
-        Vector3 direction = player.position - transform.position;//posição do inimgo em relação à do player
+        Vector3 direction = playerpos.position - transform.position;//posição do inimgo em relação à do player
         float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;//Calcular angulo onde se econtra o player
         
@@ -47,7 +47,7 @@ public class LowerEnemy : Collidable
 
         if(range <= 4)
         {
-            rb.rotation = angle; //rodar o inimigo para o player
+            //rb.rotation = angle; //rodar o inimigo para o player
             FollowPlayer(movement);
         }
         else

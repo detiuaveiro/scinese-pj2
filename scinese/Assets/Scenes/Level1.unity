@@ -359,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70899727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.99, y: -0.24, z: -10}
+  m_LocalPosition: {x: 3.1699998, y: -2.77, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1592,12 +1592,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51768558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17eec4ba8a23ed64e96a42d753f04a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 646940232}
+  attackPoint: {fileID: 551209441}
+  attackRange: 0.51
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &655890392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1115360964}
   - component: {fileID: 1115360965}
+  - component: {fileID: 1115360967}
   m_Layer: 0
   m_Name: infballoon
   m_TagString: Untagged
@@ -2279,6 +2285,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1115360967
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115360963}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.9789083}
+  serializedVersion: 2
+  m_Radius: 1.4334538
 --- !u!61 &1286425740 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 6747376744403704865, guid: f6d870ca888193349acf5f598e194ced, type: 3}
@@ -23436,7 +23458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864638758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.99, y: -0.24, z: -10}
+  m_LocalPosition: {x: 3.1699998, y: -2.77, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24720,11 +24742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.99
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24
+      value: -2.77
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.z
