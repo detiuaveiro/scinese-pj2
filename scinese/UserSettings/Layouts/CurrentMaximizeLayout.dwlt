@@ -24,7 +24,6 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 2078
   controlID: 101
 --- !u!114 &2
 MonoBehaviour:
@@ -227,6 +226,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+      m_ExpandedIDs: 12f9ffffd6faffffe6faffffeafaffffecfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.4029171, y: 5.545638, z: -10.711083}
     m_Target: {x: -6.196215, y: 27.776701, z: -0.095696084}
     speed: 2
+    m_Value: {x: -6.196215, y: 27.776701, z: -0.095696084}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -578,9 +578,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.320108
     m_Target: 6.443561
     speed: 2
+    m_Value: 6.443561
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -702,9 +702,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-  m_MaxSize: {x: 10000, y: 10000}
     y: 561
     width: 1466
+    height: 386
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 10}
@@ -753,17 +753,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+    - Assets/Artwork/Photoshops
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+  - Assets/Artwork/Photoshops
   m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\Carlos Lopes\Desktop\Mestrado\projeto\unity_repository\scinese-pj2\scinese
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    m_SelectedIDs: 7ca30000
     scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f6830000
     m_LastClickedID: 33782
     m_ExpandedIDs: 00000000428200004482000046820000488200004a82000000ca9a3b
     m_RenameOverlay:
