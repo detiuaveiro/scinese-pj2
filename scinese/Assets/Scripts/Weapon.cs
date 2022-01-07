@@ -36,6 +36,7 @@ public class Weapon : Collidable
         {
             GetComponent<BoxCollider2D>().enabled = false; //Desativar Collider enquanto não está a bater
         }
+        
     }
 
     protected override void OnCollide(Collider2D coll)
