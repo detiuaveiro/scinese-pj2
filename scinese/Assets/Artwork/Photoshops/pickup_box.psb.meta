@@ -91,27 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: pickup
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 73
-      y: 4
-      width: 16
-      height: 24
-    spriteID: 80db8b6a200dd8d419a35312aef641a8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 42, y: -37}
   - name: box pickup
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -171,8 +150,8 @@ ScriptedImporter:
     layerID: 4
     mosaicPosition: {x: 73, y: 4}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: box pickup
     spriteName: box pickup
     isGroup: 0
