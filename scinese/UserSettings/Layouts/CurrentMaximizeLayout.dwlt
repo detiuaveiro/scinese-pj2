@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 101
+  controlID: 5551
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 102
+  controlID: 5552
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 103
+  controlID: 5553
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 12f9ffffd6faffffe6faffffeafaffffecfaffff
+      m_ExpandedIDs: 8ce9feff7c2dffffd640ffffae47ffff5a4affff6453ffffa4d8ffff3cf3ffff56f6ffffc4ab0000acac000084c90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.196215, y: 27.776701, z: -0.095696084}
+    m_Target: {x: 8.804968, y: 11.677358, z: -9.400268}
     speed: 2
-    m_Value: {x: -6.196215, y: 27.776701, z: -0.095696084}
+    m_Value: {x: 8.804968, y: 11.677358, z: -9.400268}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -578,9 +578,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.443561
+    m_Target: 8.136268
     speed: 2
-    m_Value: 6.443561
+    m_Value: 8.136268
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -637,15 +637,16 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: -4576352825536141840, guid: c57f68ba17dbdf244a47714ee71a8766, type: 2}
     - {fileID: -5439319075340575777, guid: c57f68ba17dbdf244a47714ee71a8766, type: 2}
+    - {fileID: -7098388133200687887, guid: 95bd4928ffac82b47bd64af5d11b6eb2, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.7684164
+    - e00: 1.0127381
       e01: 0
       e02: 0
-      e03: -93.227356
+      e03: -62.231598
       e10: 0
-      e11: 0.7684164
+      e11: 1.0127381
       e12: 0
-      e13: 186.5792
+      e13: 156.45526
       e20: 0
       e21: 0
       e22: 1
@@ -670,10 +671,28 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1.0612726
+      e01: 0
+      e02: 0
+      e03: 142.08597
+      e10: 0
+      e11: 1.0612726
+      e12: 0
+      e13: 490.58856
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: c57f68ba17dbdf244a47714ee71a8766, type: 2}
   m_BreadCrumbs:
   - m_Target: {fileID: -4576352825536141840, guid: c57f68ba17dbdf244a47714ee71a8766, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: -5439319075340575777, guid: c57f68ba17dbdf244a47714ee71a8766, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -702,17 +721,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 561
-    width: 1466
-    height: 386
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 10}
+    y: 633
+    width: 1455
+    height: 314
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
+  - {fileID: 12}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &10
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -753,22 +773,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Artwork/Photoshops
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Artwork/Photoshops
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Carlos Lopes\Desktop\Mestrado\projeto\unity_repository\scinese-pj2\scinese
+  m_LastProjectPath: C:\Users\Utilizador\Documents\GitHub\scinese-pj2\scinese
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f6830000
-    m_LastClickedID: 33782
-    m_ExpandedIDs: 00000000428200004482000046820000488200004a82000000ca9a3b
+    scrollPos: {x: 0, y: 51}
+    m_SelectedIDs: 6a800000
+    m_LastClickedID: 32874
+    m_ExpandedIDs: 000000005c800000cea9000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -796,7 +816,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000428200004482000046820000488200004a820000
+    m_ExpandedIDs: 000000005c800000cea9000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -821,10 +841,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 06cbffff0ccbffff12cbffff18cbffff1ecbffff24cbffff2acbffff72f8ffff78f8ffff7ef8ffff84f8ffff8af8ffff90f8ffff96f8ffff9cf8ffffccf8ffffd2f8ffffd8f8ffffdef8ffffe4f8ffffeaf8fffff0f8fffff6f8fffffcf8ffff02f9ffff08f9ffff0ef9ffff
-    m_LastClickedInstanceID: -13562
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_SelectedInstanceIDs: 9cc80000
+    m_LastClickedInstanceID: 51356
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000f6170100fa1701002eb20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -940,7 +960,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -13562
+  m_LastInspectedObjectInstanceID: 51356
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
