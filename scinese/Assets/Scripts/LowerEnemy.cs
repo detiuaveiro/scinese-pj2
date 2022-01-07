@@ -30,7 +30,16 @@ public class LowerEnemy : Collidable
 
     private void Update()
     {
+        // input on update funct
+        //movement.x = AxisRaw("Horizontal");
+        //movement.y = Input.GetAxisRaw("Vertical");
 
+        movement = movement.normalized;
+        //Debug.Log(movement);
+
+        animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     protected override void FixedUpdate()
@@ -104,15 +113,15 @@ public class LowerEnemy : Collidable
 
     void FlipLeft()
     {
-        animator.SetBool("isRight", false);
-        animator.SetBool("isLeft", true);//ativar anim esq
+        //animator.SetBool("isRight", false);
+        //animator.SetBool("isLeft", true);//ativar anim esq
         directionIdle = new Vector2(-0.1f, 0);   
     }
 
     void FlipRight()
     {
-        animator.SetBool("isLeft", false);
-        animator.SetBool("isRight", true);//ativar anim dir
+        //animator.SetBool("isLeft", false);
+        //animator.SetBool("isRight", true);//ativar anim dir
         directionIdle = new Vector2(0.1f, 0);
     }
 
