@@ -2275,6 +2275,27 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 2058, y: -271}
+  - name: pickup
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3493
+      y: 979
+      width: 16
+      height: 24
+    spriteID: 5f09adfe81f1a45449b42784ae6c0395
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1434, y: -256}
   - name: pickup_box
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4166,6 +4187,16 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 0
+  - name: pickup
+    spriteName: pickup
+    isGroup: 0
+    parentIndex: 122
+    spriteID: 5f09adfe81f1a45449b42784ae6c0395
+    layerID: 2516
+    mosaicPosition: {x: 3493, y: 979}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: pickup_box
     spriteName: pickup_box
     isGroup: 0
