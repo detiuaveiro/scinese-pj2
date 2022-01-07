@@ -91,6 +91,27 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: Layer 28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 4
+      width: 59
+      height: 143
+    spriteID: 38e04abc8f3deb340a89e213037246f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 118, y: -57}
   - name: Layer 25
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -143,12 +164,12 @@ ScriptedImporter:
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: Pattern Fill 1
-    spriteName: 
+    spriteName: Pattern Fill 1
     isGroup: 0
     parentIndex: -1
     spriteID: 51092a0bdbc6426468b8f31a154781a3
     layerID: 11
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 0
     isVisible: 0
@@ -161,6 +182,26 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
+    isVisible: 1
+  - name: Layer 27
+    spriteName: Layer 27
+    isGroup: 0
+    parentIndex: 1
+    spriteID: a8337bfcaec1ac34cb693cd0bc9bbe3a
+    layerID: 52
+    mosaicPosition: {x: 127, y: 267}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 28
+    spriteName: Layer 28
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 38e04abc8f3deb340a89e213037246f7
+    layerID: 53
+    mosaicPosition: {x: 127, y: 4}
+    flatten: 0
+    isImported: 1
     isVisible: 1
   - name: Layer 25
     spriteName: Layer 25
