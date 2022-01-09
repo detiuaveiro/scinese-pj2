@@ -63,33 +63,30 @@ public class LowerEnemy : Collidable
         {
             Patrol(directionIdle);
         }
+
+        //if(range <= 1)
+        //{
+        //    animator.SetTrigger("Attack");
+        //}
+        //else
+        //{
+        //    animator.ResetTrigger("Attack");
+        //}
         
     }
 
     public void FollowPlayer(Vector2 direction2)//mover o inimgo
     {
 
-        //Vector3 direction = player.position - transform.position;//posição do inimgo em relação à do player
-
-        //float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2)); 
-
-        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;//Calcular angulo onde se econtra o player
-        //rb.rotation = angle; //rodar o inimigo para o player
-
-        //direction.Normalize(); //manter entre -1 e 1
-        //movement = direction;
-        //if(range <= 2)
-        //{
-        //    rb.MovePosition((Vector2)transform.position + (direction2 * speed * Time.deltaTime));
-        //}
-
         mustPatrol = false;
+        direction2 = direction2.normalized;
         rb.MovePosition((Vector2)transform.position + (direction2 * speed * Time.deltaTime));
 
     }
 
     void Patrol(Vector2 direction)//Enemy em idle
     {
+        direction = direction.normalized;
 
         rb.MovePosition((Vector2)transform.position + (direction *speed * Time.fixedDeltaTime));
 
@@ -154,6 +151,8 @@ public class LowerEnemy : Collidable
         // Debug.Log(coll);
         if (coll.tag == "Player")
         {
+            animator.SetTrigger("Attack");//ativar animação de ataque
+
             // create a new damage object, then we'll send it to the lower enemy
             Damage dmg = new Damage(transform.position, 1, 0.2f);
 

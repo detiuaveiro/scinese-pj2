@@ -29,7 +29,7 @@ public class Weapon : Collidable
             {
                 lastSwing = Time.time;
                 Swing();
-                GetComponent<Collider2D>().enabled = true;//ATIVAR COllider para dar damage
+                StartCoroutine(BoxActivation());
             }
         }
         else
@@ -37,6 +37,12 @@ public class Weapon : Collidable
             GetComponent<BoxCollider2D>().enabled = false; //Desativar Collider enquanto não está a bater
         }
         
+    }
+
+    IEnumerator BoxActivation()//ativar collider no final da animação
+    {
+        yield return new WaitForSeconds(0.5f);
+        GetComponent<Collider2D>().enabled = true; //ATIVAR COllider para dar damage
     }
 
     protected override void OnCollide(Collider2D coll)
