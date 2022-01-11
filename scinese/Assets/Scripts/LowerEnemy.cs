@@ -63,16 +63,6 @@ public class LowerEnemy : Collidable
         {
             Patrol(directionIdle);
         }
-
-        //if(range <= 1)
-        //{
-        //    animator.SetTrigger("Attack");
-        //}
-        //else
-        //{
-        //    animator.ResetTrigger("Attack");
-        //}
-        
     }
 
     public void FollowPlayer(Vector2 direction2)//mover o inimgo
@@ -86,7 +76,8 @@ public class LowerEnemy : Collidable
 
     void Patrol(Vector2 direction)//Enemy em idle
     {
-        direction = direction.normalized;
+       direction = direction.normalized;
+       // direction = Random.insideUnitCircle.normalized;
 
         rb.MovePosition((Vector2)transform.position + (direction *speed * Time.fixedDeltaTime));
 
@@ -97,29 +88,14 @@ public class LowerEnemy : Collidable
 
         if (transform.position.x >= 10)
         {
-            FlipLeft();
+            directionIdle = new Vector2(-0.1f, 0);
         }
 
         if (transform.position.x <= -10)
         {
-            FlipRight();
+            directionIdle = new Vector2(0.1f, 0);
         }
-        
-        //animator.SetBool("isRight", true); //começar animaçao para a direita
-    }
 
-    void FlipLeft()
-    {
-        //animator.SetBool("isRight", false);
-        //animator.SetBool("isLeft", true);//ativar anim esq
-        directionIdle = new Vector2(-0.1f, 0);   
-    }
-
-    void FlipRight()
-    {
-        //animator.SetBool("isLeft", false);
-        //animator.SetBool("isRight", true);//ativar anim dir
-        directionIdle = new Vector2(0.1f, 0);
     }
 
     public void ReceiveDamage(Damage damage)

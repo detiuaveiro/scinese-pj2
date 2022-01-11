@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1a3892c6a05bcbb4badfaebb03e203aa
+guid: 38746ab85c965a7459d0611d657e38f5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: downmovementchar_0
+      name: downmovecharacter_0
       rect:
         serializedVersion: 2
         x: 16
         y: 4
-        width: 22
-        height: 62
+        width: 23
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb055ac4824586d4d8a0d85fc4732011
-      internalID: 1346555874
+      spriteID: 11455576a7756c64e9b3f786beab8d2e
+      internalID: -903323702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: downmovementchar_1
+      name: downmovecharacter_1
       rect:
         serializedVersion: 2
         x: 116
@@ -139,18 +139,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9bd273324af4a047b5bfdc4a6631e09
-      internalID: 37205660
+      spriteID: 9c2d1264379358c418cf59f3ca51b1a8
+      internalID: -1753850513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: downmovementchar_2
+      name: downmovecharacter_2
       rect:
         serializedVersion: 2
         x: 216
-        y: 3
+        y: 4
         width: 22
         height: 62
       alignment: 0
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88afdc3ab40b5a24fbf52e738cfe88df
-      internalID: -1755069744
+      spriteID: a1cf8f5b8bdc89c48ab0c023639da7ce
+      internalID: -324681740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: downmovementchar_3
+      name: downmovecharacter_3
       rect:
         serializedVersion: 2
         x: 316
@@ -181,8 +181,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2875db1cc3017d04683054138aac874d
-      internalID: -537850016
+      spriteID: 31338d638956a5444a4b4653d863eb3f
+      internalID: -466600106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: downmovecharacter_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 4
+        width: 22
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f54383702aa9743b88d46331bf757c
+      internalID: 1169726105
       vertices: []
       indices: 
       edges: []
@@ -198,10 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      downmovementchar_0: 1346555874
-      downmovementchar_2: -1755069744
-      downmovementchar_1: 37205660
-      downmovementchar_3: -537850016
+      downmovecharacter_0: -903323702
+      downmovecharacter_1: -1753850513
+      downmovecharacter_4: 1169726105
+      downmovecharacter_3: -466600106
+      downmovecharacter_2: -324681740
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
