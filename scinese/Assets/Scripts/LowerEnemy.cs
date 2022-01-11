@@ -21,11 +21,15 @@ public class LowerEnemy : Collidable
     Vector2 directionIdle = new Vector2(0.1f, 0);
 
     public Animator animator;
+    private BoxCollider2D boxcol;
+
+    private EnemyDamage enemyDamage;
 
 
     private void Start()
     {
         mustPatrol = true;//Inicia em idle
+        boxcol = GetComponentInChildren<BoxCollider2D>();
     }
 
     private void Update()
@@ -127,12 +131,13 @@ public class LowerEnemy : Collidable
         // Debug.Log(coll);
         if (coll.tag == "Player")
         {
+            
             animator.SetTrigger("Attack");//ativar animação de ataque
 
-            // create a new damage object, then we'll send it to the lower enemy
+            //// create a new damage object, then we'll send it to the lower enemy
             Damage dmg = new Damage(transform.position, 1, 0.2f);
 
-            // send message to the enemy
+            //// send message to the enemy
             coll.SendMessage("TakeDamage", dmg);
         }
     }
