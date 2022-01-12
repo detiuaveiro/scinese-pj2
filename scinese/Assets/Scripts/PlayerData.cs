@@ -6,8 +6,9 @@ using UnityEngine;
 public class PlayerData
 {
     public string level;
-    public int numberOfLives;
+    public int health;
     public float[] position;
+    public Inventory inventory;
 
     public PlayerData()
     {
@@ -15,5 +16,7 @@ public class PlayerData
         this.position = new float[3];
         position[0] = GameManager.instance.lastPosition.x;
         position[1] = GameManager.instance.lastPosition.y;
+        this.health = GameManager.instance.health;
+       // this.inventory.items = GameManager.instance.inventory.items;
     }
 }
