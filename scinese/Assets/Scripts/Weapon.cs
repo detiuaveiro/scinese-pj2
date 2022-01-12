@@ -19,31 +19,43 @@ public class Weapon : Collidable
         animator = GetComponentInParent<Animator>();
     }
 
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
+    //protected override void FixedUpdate()
+    //{
+    //    base.FixedUpdate();
 
+    //    if (Input.GetKeyDown(KeyCode.Mouse0)) // right click to attack/swing
+    //    {
+    //        if (Time.time - lastSwing > cooldown) // check if swing is available
+    //        {
+    //            lastSwing = Time.time;
+    //            Swing();
+    //            StartCoroutine(BoxActivation());
+    //        }
+    //    }
+    //    else
+    //    {
+    //        GetComponent<BoxCollider2D>().enabled = false; //Desativar Collider enquanto não está a bater
+    //    }
+
+    //}
+
+    public void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Mouse0)) // right click to attack/swing
         {
             if (Time.time - lastSwing > cooldown) // check if swing is available
             {
                 lastSwing = Time.time;
                 Swing();
-                StartCoroutine(BoxActivation());
             }
         }
-        else
-        {
-            GetComponent<BoxCollider2D>().enabled = false; //Desativar Collider enquanto não está a bater
-        }
-        
     }
 
-    IEnumerator BoxActivation()//ativar collider no final da animação
-    {
-        yield return new WaitForSeconds(0.5f);
-        GetComponent<Collider2D>().enabled = true; //ATIVAR COllider para dar damage
-    }
+    //IEnumerator BoxActivation()//ativar collider no final da animação
+    //{
+    //    yield return new WaitForSeconds(0.5f);
+    //    GetComponent<Collider2D>().enabled = true; //ATIVAR COllider para dar damage
+    //}
 
     protected override void OnCollide(Collider2D coll)
     {
