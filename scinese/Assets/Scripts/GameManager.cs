@@ -28,9 +28,9 @@ public class GameManager : MonoBehaviour
     // logic
     public string actualLevel;
     public int leaves;
-    public int numberOfLives;
+    public int health;
     public Vector2 lastPosition;
-
+    
     // methods to save the state of the game and to load the game
 
     public void SaveState()
@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
         actualLevel = SceneManager.GetActiveScene().name;
         lastPosition.x = player.transform.position.x; 
         lastPosition.y = player.transform.position.y;
+        health = player.currentHealth;
+       // inventory.items = player.inventory.items;
         
         // saving the actual state of the game
         saveSystem.Save();
@@ -55,5 +57,7 @@ public class GameManager : MonoBehaviour
         // SceneManager.LoadScene("Level1", LoadSceneMode.Additive);
         
         player.gameObject.transform.position = new Vector2(data.position[0], data.position[1]);
+        player.currentHealth = data.health;
+       // player.inventory.items = data.inventory.items;
     }
 }
