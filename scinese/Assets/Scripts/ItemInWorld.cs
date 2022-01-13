@@ -8,6 +8,8 @@ public class ItemInWorld : MonoBehaviour
 
     public Item_Data item;
     public float amount;
+    public GameObject itemButton;
+
 
     private void Start()
     {
@@ -22,8 +24,21 @@ public class ItemInWorld : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D otherObject)
     {
-        Debug.Log("Collided with an object!! KEKW");
-        player.inventory.AddItem(item);
-        Destroy(gameObject);
+        
+            for (int i =0; i < player.slots.Length; i++)
+            {
+                if(player.inventory.isSlotFull[i] == false)
+                {
+                    player.inventory.isSlotFull[i] = true;
+                    Instantiate(itemButton, player.inventory.slots[i].transform, false); //instanciado como filho do slot
+                   
+                    Debug.Log("Collided with an object!! KEKW");
+                    player.inventory.AddItem(item);
+                    Destroy(gameObject);
+                break;
+                }
+            }
+
+
     }
 }

@@ -10,6 +10,7 @@ public class CatckKey : MonoBehaviour
     public Item_Data item;
     public float amount;
     public GameObject infballon;
+    public GameObject itemButton;
 
     public bool isInRange; //Variável para verificar se está no range
     public KeyCode InteractKey; //Variável para passar a tecla de interação
@@ -26,7 +27,17 @@ public class CatckKey : MonoBehaviour
         {
             if (Input.GetKeyDown(InteractKey)) //e pressionar a tecla "e"
             {
-                player.inventory.AddItem(item);
+                for (int i = 0; i < player.slots.Length; i++)
+                {
+                    if (player.inventory.isSlotFull[i] == false)
+                    {
+                        player.inventory.AddItem(item);
+                        player.inventory.isSlotFull[i] = true;
+                        Instantiate(itemButton, player.inventory.slots[i].transform, false);
+                        Destroy(gameObject);
+                        break;
+                    }
+                }
                 Destroy(gameObject);
             }
         }

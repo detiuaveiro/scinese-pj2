@@ -8,10 +8,15 @@ public class Inventory
     public List<Item_Data> items;
     private int maxSpace;
 
-    public Inventory(int maxSpace)
+    public GameObject[] slots;
+    public bool[] isSlotFull;
+
+    public Inventory(int maxSpace, GameObject[] slots, bool[] isSlotFull)
     {
         items = new List<Item_Data>();
         this.maxSpace = maxSpace;
+        this.slots = slots;
+        this.isSlotFull = isSlotFull;
     }
 
     public void AddItem(Item_Data newItem)

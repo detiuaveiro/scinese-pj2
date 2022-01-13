@@ -10,6 +10,7 @@ public class doorController : MonoBehaviour
     private Player player;
     public Item_Data key;
 
+
     private void Start()
     {
         player = GameManager.instance.player; // remember we're using the Singleton pattern!!

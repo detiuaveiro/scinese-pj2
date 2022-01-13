@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     public PlayerMovement pMove;
     public Inventory inventory;
+    
     public int maxHealth = 10;
     public int currentHealth;
 
@@ -14,16 +15,19 @@ public class Player : MonoBehaviour
     protected float lastImmune;
     protected Vector2 pushDirection;
 
+
     public GameOver_Menu gameOver;
 
     private float speed = 3f;
     [SerializeField] private int invSpace = 4;
+    [SerializeField] public GameObject[] slots = new GameObject[4];
+    [SerializeField] private readonly bool[] isSlotFull = new bool[4];
 
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
         pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed, this.gameObject.GetComponent<Animator>());
-        inventory = new Inventory(invSpace);
+        inventory = new Inventory(invSpace, slots, isSlotFull);
     }
 
     void Start()
@@ -36,6 +40,8 @@ public class Player : MonoBehaviour
     {
         pMove.GetMovementInput();
         //Debug.Log(this.inventory.items.Count);
+
+
 
         //if (Input.GetKeyDown(KeyCode.Space))
         //{
