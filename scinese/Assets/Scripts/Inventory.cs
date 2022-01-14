@@ -6,7 +6,7 @@ using UnityEngine;
 public class Inventory
 {
     public List<Item_Data> items;
-    private int maxSpace;
+    private int maxSpace = 4;
 
     public GameObject[] slots;
     public bool[] isSlotFull;
