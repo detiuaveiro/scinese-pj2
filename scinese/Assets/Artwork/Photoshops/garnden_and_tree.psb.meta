@@ -99,7 +99,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 508
-      y: 359
+      y: 520
       width: 172
       height: 169
     spriteID: 16809a8daf733904591e218548420efd
@@ -111,28 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 476, y: 114}
-  - name: Layer 7
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 688
-      y: 520
-      width: 283
-      height: 250
-    spriteID: 12a075ef15bebff42a7b3a4cdb3cb4b6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 475, y: 292}
+    uvTransform: {x: 476, y: 275}
   - name: fruits
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -140,8 +119,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 872
-      y: 359
+      x: 508
+      y: 697
       width: 131
       height: 93
     spriteID: 70f4ce9b202758d469b8250d36816534
@@ -153,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 651, y: 76}
+    uvTransform: {x: 287, y: 414}
   - name: Layer 9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -161,7 +140,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 688
+      x: 508
       y: 359
       width: 167
       height: 150
@@ -174,7 +153,28 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 480, y: 66}
+    uvTransform: {x: 300, y: 66}
+  - name: Layer 17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 744
+      y: 359
+      width: 265
+      height: 142
+    spriteID: 45158494fccd4904e8e4dda330dee142
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 531, y: 121}
   - name: fontes
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -287,8 +287,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1011
-      y: 359
+      x: 688
+      y: 520
       width: 0
       height: 0
     spriteID: b08a60dd66fcf5047b2790c12e22ef4b
@@ -300,7 +300,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 421, y: -189}
+    uvTransform: {x: 98, y: -28}
   - name: Layer 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -379,7 +379,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 16809a8daf733904591e218548420efd
     layerID: 19
-    mosaicPosition: {x: 508, y: 359}
+    mosaicPosition: {x: 508, y: 520}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -433,23 +433,13 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: Layer 7
-    spriteName: Layer 7
-    isGroup: 0
-    parentIndex: 5
-    spriteID: 12a075ef15bebff42a7b3a4cdb3cb4b6
-    layerID: 8
-    mosaicPosition: {x: 688, y: 520}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: fruits
     spriteName: fruits
     isGroup: 0
     parentIndex: 5
     spriteID: 70f4ce9b202758d469b8250d36816534
     layerID: 12
-    mosaicPosition: {x: 872, y: 359}
+    mosaicPosition: {x: 508, y: 697}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -457,7 +447,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 0
     parentIndex: 5
-    spriteID: 89d658714bdf4fe4da106b0fe7596950
+    spriteID: 5e1853985ff8f754cb25be0137ee10fc
     layerID: 33
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -469,7 +459,17 @@ ScriptedImporter:
     parentIndex: 5
     spriteID: 3468f2f12dc08ea4ca08bf7f5857bc39
     layerID: 10
-    mosaicPosition: {x: 688, y: 359}
+    mosaicPosition: {x: 508, y: 359}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Layer 17
+    spriteName: Layer 17
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 45158494fccd4904e8e4dda330dee142
+    layerID: 39
+    mosaicPosition: {x: 744, y: 359}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -529,7 +529,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b08a60dd66fcf5047b2790c12e22ef4b
     layerID: 31
-    mosaicPosition: {x: 1011, y: 359}
+    mosaicPosition: {x: 688, y: 520}
     flatten: 0
     isImported: 1
     isVisible: 1
