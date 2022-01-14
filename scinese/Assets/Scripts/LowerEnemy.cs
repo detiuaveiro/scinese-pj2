@@ -36,8 +36,9 @@ public class LowerEnemy : Collidable
 
         movement = movement.normalized;
         //Debug.Log(movement);
+        directionIdle = directionIdle.normalized;
 
-        animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos
+        animator.SetFloat("Horizontal", movement.x); 
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
     }
@@ -53,6 +54,8 @@ public class LowerEnemy : Collidable
 
         direction.Normalize(); //manter entre -1 e 1
         movement = direction;
+
+        directionIdle.Normalize();
 
         if(range <= 4)
         {
@@ -76,10 +79,10 @@ public class LowerEnemy : Collidable
 
     void Patrol(Vector2 direction)//Enemy em idle
     {
-       direction = direction.normalized;
+        direction = direction.normalized;
        // direction = Random.insideUnitCircle.normalized;
 
-        rb.MovePosition((Vector2)transform.position + (direction *speed * Time.fixedDeltaTime));
+        rb.MovePosition((Vector2)transform.position + (direction *speed * Time.deltaTime));
 
         //Debug.Log(rb.transform.position);
 
