@@ -26022,7 +26022,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1319451349363085636, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707598569922659010, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
+      propertyPath: m_Name
+      value: keyinChest
       objectReference: {fileID: 0}
     - target: {fileID: 7707598569922659038, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
       propertyPath: itemButton
@@ -26076,5 +26080,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1319451349363085636, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
