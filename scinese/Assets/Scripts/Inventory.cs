@@ -14,7 +14,6 @@ public class Inventory
     public GameObject[] slots;
     public bool[] isSlotFull;
     public bool[] itemIn;
-    private SlotController slotController;
 
 
     public Inventory(int maxSpace, GameObject[] slots, bool[] isSlotFull)
