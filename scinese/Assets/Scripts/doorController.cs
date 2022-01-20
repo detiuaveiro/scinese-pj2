@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class doorController : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class doorController : MonoBehaviour
             Debug.Log("Door is Unlocked");//Destrancar porta
             animator.SetBool("isOpen", true); //ativar animação abrir porta
             boxcollider.enabled = false; //Desabilitar o collider para o player passar
-            player.inventory.items.Remove(key);
+            player.inventory.RemoveItem(key);
         }
     }
 }

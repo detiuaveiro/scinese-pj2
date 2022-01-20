@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public GameOver_Menu gameOver;
 
     private float speed = 3f;
+   //[SerializeField] private Item_Data[] items = new Item_Data[4];
     [SerializeField] private int invSpace = 4;
     [SerializeField] public GameObject[] slots = new GameObject[4];
     [SerializeField] private readonly bool[] isSlotFull = new bool[4];

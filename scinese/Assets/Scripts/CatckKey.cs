@@ -27,18 +27,19 @@ public class CatckKey : MonoBehaviour
         {
             if (Input.GetKeyDown(InteractKey)) //e pressionar a tecla "e"
             {
-                for (int i = 0; i < player.slots.Length; i++)
+                for (int i = 0; i < player.inventory.items.Length; i++)
                 {
                     if (player.inventory.isSlotFull[i] == false)
                     {
                         player.inventory.AddItem(item);
                         player.inventory.isSlotFull[i] = true;
+                        player.inventory.itemIn[i] = true;
                         Instantiate(itemButton, player.inventory.slots[i].transform, false);
                         Destroy(gameObject);
                         break;
                     }
                 }
-                Destroy(gameObject);
+              //  Destroy(gameObject);
             }
         }
     }

@@ -2417,6 +2417,7 @@ MonoBehaviour:
     items: []
     slots: []
     isSlotFull: 
+    itemIn: 
   saveSystem: {fileID: 1720953075}
   actualLevel: 
   leaves: 0
@@ -25707,6 +25708,22 @@ PrefabInstance:
       propertyPath: m_Value
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9164275323580673914, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: slots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1658134784}
+    - target: {fileID: 9164275323580673914, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: slots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1552945252}
+    - target: {fileID: 9164275323580673914, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: slots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1002896630}
+    - target: {fileID: 9164275323580673914, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: slots.Array.data[3]
+      value: 
+      objectReference: {fileID: 85870395}
     m_RemovedComponents:
     - {fileID: 1472294539904145891, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
@@ -25717,6 +25734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2303439965384179552, guid: 4f0ca56368c052c479587c3ea7462f7f, type: 3}
+      propertyPath: itemButton
+      value: 
+      objectReference: {fileID: 8152219473061297245, guid: 2e0e16f976c95ca42826a2d8248f1b19, type: 3}
     - target: {fileID: 2303439965384179553, guid: 4f0ca56368c052c479587c3ea7462f7f, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -25999,6 +26020,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1319451349363085636, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7707598569922659038, guid: 12a266659339f114b88c6dc8d2ff80e9, type: 3}
       propertyPath: itemButton
       value: 
