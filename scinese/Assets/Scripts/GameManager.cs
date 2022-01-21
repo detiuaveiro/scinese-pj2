@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
         if (saveSystem.ExistsData())
         {
             this.LoadState();
-        } 
+        }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // references

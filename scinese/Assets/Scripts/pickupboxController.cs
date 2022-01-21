@@ -6,6 +6,7 @@ public class pickupboxController : MonoBehaviour
 {
     public bool isOpen;
     public Animator animator;
+    public GameObject pickaxe;
 
     public void OpenBox()
     {
@@ -14,6 +15,7 @@ public class pickupboxController : MonoBehaviour
             isOpen = true;
             Debug.Log("Box is Unlocked");//Destrancar porta
             animator.SetBool("isPick", true); //ativar animação abrir bau
+            pickaxe.gameObject.SetActive(false);//desativar pickaxe
         }
     }
 }
