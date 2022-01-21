@@ -111,28 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2, y: 2}
-  - name: Layer 2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 67
-      y: 78
-      width: 56
-      height: 30
-    spriteID: d9f437dbfdc73e247b88d0cdcbeb2449
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 62, y: 74}
+    uvTransform: {x: 3, y: -1}
   - name: garden_room_fonte
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -141,7 +120,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 78
+      y: 81
       width: 55
       height: 70
     spriteID: 5bacb75829880f24f9348c221ecf22aa
@@ -153,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1, y: 72}
+    uvTransform: {x: -2, y: 69}
   characterData:
     bones: []
     parts: []
@@ -194,23 +173,13 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: Layer 2
-    spriteName: Layer 2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: d9f437dbfdc73e247b88d0cdcbeb2449
-    layerID: 8
-    mosaicPosition: {x: 67, y: 78}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: garden_room_fonte
     spriteName: garden_room_fonte
     isGroup: 0
     parentIndex: -1
     spriteID: 5bacb75829880f24f9348c221ecf22aa
     layerID: 6
-    mosaicPosition: {x: 4, y: 78}
+    mosaicPosition: {x: 4, y: 81}
     flatten: 0
     isImported: 1
     isVisible: 1
