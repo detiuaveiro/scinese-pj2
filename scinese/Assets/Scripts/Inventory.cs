@@ -9,20 +9,20 @@ public class Inventory
     //public List<Item_Data> items;
     public Item_Data[] items;
 
-    private int maxSpace = 4;
+    //private int maxSpace = 4;
 
     public GameObject[] slots;
     public bool[] isSlotFull;
     public bool[] itemIn;
 
 
-    public Inventory(int maxSpace, GameObject[] slots, bool[] isSlotFull)
+    public Inventory(GameObject[] slots, bool[] isSlotFull)
     {
         //items = new List<Item_Data>();
         // this.items = new Item_Data[4];
         items = new Item_Data[4];
         itemIn = new bool[4];
-        this.maxSpace = maxSpace;
+        //this.maxSpace = maxSpace;
         this.slots = slots;
         this.isSlotFull = isSlotFull;
     }

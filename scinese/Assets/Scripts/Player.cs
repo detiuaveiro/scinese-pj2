@@ -20,15 +20,16 @@ public class Player : MonoBehaviour
 
     private float speed = 3f;
    //[SerializeField] private Item_Data[] items = new Item_Data[4];
-    [SerializeField] private int invSpace = 4;
-    [SerializeField] public GameObject[] slots = new GameObject[4];
+   // [SerializeField] private int invSpace = 4;
+    public GameObject[] slots = new GameObject[4];
     [SerializeField] private readonly bool[] isSlotFull = new bool[4];
+    [SerializeField] private readonly bool[] itemIn = new bool[4];
 
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
         pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed, this.gameObject.GetComponent<Animator>());
-        inventory = new Inventory(invSpace, slots, isSlotFull);
+        inventory = new Inventory(slots, isSlotFull);
     }
 
     void Start()

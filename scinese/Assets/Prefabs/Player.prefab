@@ -153,11 +153,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory:
     items: []
-  maxHealth: 10
+    slots:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    isSlotFull: 00000000
+    itemIn: 
+  maxHealth: 5
   currentHealth: 0
   healthBar: {fileID: 0}
   gameOver: {fileID: 0}
-  invSpace: 4
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &6747376743275529109
 MonoBehaviour:
   m_ObjectHideFlags: 0
