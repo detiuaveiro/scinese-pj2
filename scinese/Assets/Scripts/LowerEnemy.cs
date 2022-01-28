@@ -17,73 +17,149 @@ public class LowerEnemy : Collidable
     protected float lastImmune;
 
     protected Vector2 pushDirection;
+    private Vector3 directionVector;
 
     Vector2 directionIdle = new Vector2(0.1f, 0);
+    private Transform myTransform;
+    public Collider2D bounds;
 
-    public Animator animator;
+    //public Animator animator;
+    private Animator anim;
+    public GameObject dad;
 
 
     private void Start()
     {
         mustPatrol = true;//Inicia em idle
+        myTransform = GetComponent<Transform>();
+        anim = GetComponent<Animator>();
+       // parentTransform = GetComponentInParent<Transform>();
+
+        ChangeDirection();
     }
 
-    private void Update()
+    //private void Update()
+    //{
+    //    // input on update funct
+    //    //movement.x = AxisRaw("Horizontal");
+    //    //movement.y = Input.GetAxisRaw("Vertical");
+
+    //    movement = movement.normalized;
+    //    //Debug.Log(movement);
+    //    directionIdle = directionIdle.normalized;
+
+    //    animator.SetFloat("Horizontal", movement.x); 
+    //    animator.SetFloat("Vertical", movement.y);
+    //    animator.SetFloat("Speed", movement.sqrMagnitude);
+    //}
+
+    public void Move()
     {
-        // input on update funct
-        //movement.x = AxisRaw("Horizontal");
-        //movement.y = Input.GetAxisRaw("Vertical");
-
-        movement = movement.normalized;
-        //Debug.Log(movement);
-        directionIdle = directionIdle.normalized;
-
-        animator.SetFloat("Horizontal", movement.x); 
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        Vector3 temp = myTransform.position + directionVector * speed * Time.deltaTime;
+        if (bounds.bounds.Contains(temp))
+        {
+            rb.MovePosition(temp);
+        }
+        else
+        {
+            ChangeDirection();
+        }
     }
+
+    //protected override void FixedUpdate()
+    //{
+    //    base.FixedUpdate();
+
+    //    Vector3 direction = playerpos.position - transform.position;//posição do inimgo em relação à do player
+    //    float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
+    //    //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;//Calcular angulo onde se econtra o player
+
+
+    //    direction.Normalize(); //manter entre -1 e 1
+    //    movement = direction;
+
+    //    directionIdle.Normalize();
+
+    //    if(range <= 4)
+    //    {
+    //        //rb.rotation = angle; //rodar o inimigo para o player
+    //        FollowPlayer(movement);
+    //    }
+    //    else
+    //    {
+    //        Patrol(directionIdle);
+    //    }
+    //}
 
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-
         Vector3 direction = playerpos.position - transform.position;//posição do inimgo em relação à do player
         float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;//Calcular angulo onde se econtra o player
-        
 
-        direction.Normalize(); //manter entre -1 e 1
-        movement = direction;
-
-        directionIdle.Normalize();
-
-        if(range <= 4)
+        if (range <= 4)
         {
+            direction.Normalize(); //manter entre -1 e 1
+            directionVector = direction;
             //rb.rotation = angle; //rodar o inimigo para o player
-            FollowPlayer(movement);
+            FollowPlayer(directionVector);
         }
         else
         {
-            Patrol(directionIdle);
+            Move();
         }
+
+        UpdateAnimation();
     }
 
-    public void FollowPlayer(Vector2 direction2)//mover o inimgo
+    public void FollowPlayer(Vector3 direction2)//mover o inimgo
     {
 
         mustPatrol = false;
-        direction2 = direction2.normalized;
-        rb.MovePosition((Vector2)transform.position + (direction2 * speed * Time.deltaTime));
+        //direction2 = direction2.normalized;
+        rb.MovePosition(myTransform.position + (direction2 * speed * Time.deltaTime));
+        dad.transform.position = this.gameObject.transform.position;
+    }
 
+    void ChangeDirection()
+    {
+        int direction = Random.Range(0, 4);
+        switch (direction)
+        {
+            case 0:
+                //walking right
+                directionVector = Vector3.right;
+                break;
+            case 1:
+                //walking up
+                directionVector = Vector3.up;
+                break;
+            case 2:
+                //walking left
+                directionVector = Vector3.left;
+                break;
+            case 3:
+                //walking down
+                directionVector = Vector3.down;
+                break;
+            default:
+                break;
+        }
+    }
+
+    void UpdateAnimation()
+    {
+        anim.SetFloat("Horizontal", directionVector.x);
+        anim.SetFloat("Vertical", directionVector.y);
+        anim.SetFloat("Speed", directionVector.sqrMagnitude);
     }
 
     void Patrol(Vector2 direction)//Enemy em idle
     {
         direction = direction.normalized;
-       // direction = Random.insideUnitCircle.normalized;
+        // direction = Random.insideUnitCircle.normalized;
 
         rb.MovePosition((Vector2)transform.position + (direction *speed * Time.deltaTime));
-
         //Debug.Log(rb.transform.position);
 
         //direction.Normalize(); //manter entre -1 e 1
@@ -127,10 +203,20 @@ public class LowerEnemy : Collidable
 
     protected override void OnCollide(Collider2D coll)
     {
+        Vector3 temp = directionVector;
+        ChangeDirection();
+        int loops = 0;
+        while(temp == directionVector && loops < 100)
+        {
+            loops++;
+            ChangeDirection();
+        }
+
         // Debug.Log(coll);
         if (coll.tag == "Player")
         {
-            animator.SetTrigger("Attack");//ativar animação de ataque
+            //animator.SetTrigger("Attack");//ativar animação de ataque
+            anim.SetTrigger("Attack");
 
             //// create a new damage object, then we'll send it to the lower enemy
             //Damage dmg = new Damage(transform.position, 1, 0.2f);
