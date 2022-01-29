@@ -1,0 +1,797 @@
+fileFormatVersion: 2
+guid: 2d647ed63c3880d45b1c25b3f16337c6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 44
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Jaula1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 708
+      y: 513
+      width: 113
+      height: 154
+    spriteID: e47ef7182ae49b345aa2cb4df63afd20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -212, y: -587}
+  - name: Jaula
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 829
+      y: 513
+      width: 113
+      height: 154
+    spriteID: 9c391b22a5ac08b4cb39e4958890fa7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 260, y: -586}
+  - name: tochas1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 999
+      y: 4
+      width: 14
+      height: 33
+    spriteID: d0350d03fb471d54ba619c70ffd21408
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 203, y: -1176}
+  - name: tochas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 999
+      y: 75
+      width: 14
+      height: 33
+    spriteID: 3c199dabdd3f2fc4c8288fbb9be1e41a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 67, y: -481}
+  - name: cimamurodeitado1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 690
+      y: 764
+      width: 313
+      height: 14
+    spriteID: b0a74ea63d91ee342baf573ec160ae3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -165, y: 171}
+  - name: cimamurodeitado
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 690
+      y: 786
+      width: 313
+      height: 14
+    spriteID: 1bca925472302bd4e85a6949712c43e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 228, y: 193}
+  - name: CimaMuropsb
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1559
+      width: 18
+      height: 335
+    spriteID: 99735d1382f12ea47ad26cd0a8032477
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -764, y: 1287}
+  - name: CimaMuropsb1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 1559
+      width: 18
+      height: 335
+    spriteID: 06eae7356bf0a9741b2732c0d074add4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -799, y: 1287}
+  - name: MuroCaverna1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 4
+      width: 316
+      height: 63
+    spriteID: 3e56d294ab44d9b45812105cfec81750
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -178, y: -528}
+  - name: CimaMuropsb - maior1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 812
+      width: 28
+      height: 739
+    spriteID: 7c31fa89b50b8a74da45e3908b2c6045
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -458, y: 220}
+  - name: CimaMuropsb - maior
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 812
+      width: 28
+      height: 739
+    spriteID: ef74b8d2161c75a42a88cd2c629a8a0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1100, y: 221}
+  - name: cimamurodeitadoJaulachao
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 812
+      width: 668
+      height: 7
+    spriteID: b43bf254a749c894d8f7b5514e71126a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -395, y: -279}
+  - name: cimamurodeitadoJaula
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 764
+      width: 678
+      height: 40
+    spriteID: c5905e4ec41d85543a779e7d97b8e271
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -476, y: -529}
+  - name: MuroCavernajaulas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 513
+      width: 696
+      height: 243
+    spriteID: 28cd6fc738384204d87229e4fbfc3865
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -462, y: -576}
+  - name: MuroCaverna
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 75
+      width: 316
+      height: 63
+    spriteID: a6e484ce49b74f242bfd3fb7f7e3f19f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 213, y: -457}
+  - name: arina_test_normal_map
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1902
+      width: 28
+      height: 65
+    spriteID: bb74cf05c43c28f49a69f84d8a3db66a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -796, y: 1418}
+  - name: chaoGruta
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 663
+      height: 501
+    spriteID: 10b3a393fe2239d469ea8301c1782b5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -480, y: -594}
+  - name: entradaGruta1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 146
+      width: 78
+      height: 174
+    spriteID: b36eea9e05d2bb841890ed2be8ce8d33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -100, y: -126}
+  - name: entradaGruta
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 761
+      y: 146
+      width: 78
+      height: 174
+    spriteID: aa7b3b1a92622674f8c0189f9a3b2598
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -15, y: -296}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Jaula1
+    spriteName: Jaula1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e47ef7182ae49b345aa2cb4df63afd20
+    layerID: 84
+    mosaicPosition: {x: 708, y: 513}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Jaula
+    spriteName: Jaula
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9c391b22a5ac08b4cb39e4958890fa7d
+    layerID: 83
+    mosaicPosition: {x: 829, y: 513}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tochas1
+    spriteName: tochas1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d0350d03fb471d54ba619c70ffd21408
+    layerID: 85
+    mosaicPosition: {x: 999, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: tochas
+    spriteName: tochas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3c199dabdd3f2fc4c8288fbb9be1e41a
+    layerID: 74
+    mosaicPosition: {x: 999, y: 75}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cimamurodeitado1
+    spriteName: cimamurodeitado1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b0a74ea63d91ee342baf573ec160ae3d
+    layerID: 34
+    mosaicPosition: {x: 690, y: 764}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cimamurodeitado
+    spriteName: cimamurodeitado
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1bca925472302bd4e85a6949712c43e2
+    layerID: 33
+    mosaicPosition: {x: 690, y: 786}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CimaMuropsb
+    spriteName: CimaMuropsb
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 99735d1382f12ea47ad26cd0a8032477
+    layerID: 32
+    mosaicPosition: {x: 4, y: 1559}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CimaMuropsb1
+    spriteName: CimaMuropsb1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 06eae7356bf0a9741b2732c0d074add4
+    layerID: 18
+    mosaicPosition: {x: 40, y: 1559}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MuroCaverna1
+    spriteName: MuroCaverna1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3e56d294ab44d9b45812105cfec81750
+    layerID: 19
+    mosaicPosition: {x: 675, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CimaMuropsb - maior1
+    spriteName: CimaMuropsb - maior1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7c31fa89b50b8a74da45e3908b2c6045
+    layerID: 27
+    mosaicPosition: {x: 4, y: 812}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CimaMuropsb - maior
+    spriteName: CimaMuropsb - maior
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ef74b8d2161c75a42a88cd2c629a8a0d
+    layerID: 26
+    mosaicPosition: {x: 40, y: 812}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cimamurodeitadoJaulachao
+    spriteName: cimamurodeitadoJaulachao
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b43bf254a749c894d8f7b5514e71126a
+    layerID: 57
+    mosaicPosition: {x: 76, y: 812}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cimamurodeitadoJaula
+    spriteName: cimamurodeitadoJaula
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5905e4ec41d85543a779e7d97b8e271
+    layerID: 40
+    mosaicPosition: {x: 4, y: 764}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MuroCavernajaulas
+    spriteName: MuroCavernajaulas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28cd6fc738384204d87229e4fbfc3865
+    layerID: 37
+    mosaicPosition: {x: 4, y: 513}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MuroCaverna
+    spriteName: MuroCaverna
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a6e484ce49b74f242bfd3fb7f7e3f19f
+    layerID: 10
+    mosaicPosition: {x: 675, y: 75}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: arina_test_normal_map
+    spriteName: arina_test_normal_map
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bb74cf05c43c28f49a69f84d8a3db66a
+    layerID: 4
+    mosaicPosition: {x: 4, y: 1902}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: chaoGruta
+    spriteName: chaoGruta
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10b3a393fe2239d469ea8301c1782b5b
+    layerID: 29
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: entradaGruta1
+    spriteName: entradaGruta1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b36eea9e05d2bb841890ed2be8ce8d33
+    layerID: 21
+    mosaicPosition: {x: 675, y: 146}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: entradaGruta
+    spriteName: entradaGruta
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aa7b3b1a92622674f8c0189f9a3b2598
+    layerID: 3
+    mosaicPosition: {x: 761, y: 146}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 1
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
