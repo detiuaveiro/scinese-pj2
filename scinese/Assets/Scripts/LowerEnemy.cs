@@ -114,7 +114,6 @@ public class LowerEnemy : Collidable
 
     public void FollowPlayer(Vector3 direction2)//mover o inimgo
     {
-
         mustPatrol = false;
         //direction2 = direction2.normalized;
         rb.MovePosition(myTransform.position + (direction2 * speed * Time.deltaTime));
@@ -215,6 +214,7 @@ public class LowerEnemy : Collidable
         // Debug.Log(coll);
         if (coll.tag == "Player")
         {
+            rb.bodyType = RigidbodyType2D.Static;
             //animator.SetTrigger("Attack");//ativar animação de ataque
             anim.SetTrigger("Attack");
 
@@ -223,6 +223,10 @@ public class LowerEnemy : Collidable
 
             ////// send message to the enemy
             //coll.SendMessage("TakeDamage", dmg);
+        }
+        else
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 }

@@ -1507,7 +1507,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 421869788}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 01c9149a5889dd743ae6afd89913c791, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2677,8 +2677,8 @@ MonoBehaviour:
   sentences_diag:
   - Hi my name is Green!
   - How are you professors?
-  text_name: {fileID: 1346821955}
-  text_dialogue: {fileID: 1694306017}
+  text_name: {fileID: 0}
+  text_dialogue: {fileID: 0}
 --- !u!1 &884808575
 GameObject:
   m_ObjectHideFlags: 0
@@ -3682,17 +3682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1346821955 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1472294540313964282, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
-  m_PrefabInstance: {fileID: 1472294538976424377}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1399084667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3280914492305199526, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
@@ -3970,9 +3959,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.05
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 01c9149a5889dd743ae6afd89913c791, type: 2}
   m_Interpolate: 0
@@ -24915,17 +24904,6 @@ MonoBehaviour:
   isSaved: 0
   animator: {fileID: 1674866389}
   infballon: {fileID: 1115360963}
---- !u!114 &1694306017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1472294539582701400, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
-  m_PrefabInstance: {fileID: 1472294538976424377}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1709290217
 GameObject:
   m_ObjectHideFlags: 0
@@ -27316,9 +27294,25 @@ PrefabInstance:
       value: 1.4545455
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529111, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529111, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529111, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 01c9149a5889dd743ae6afd89913c791, type: 2}
+    - target: {fileID: 6747376743275529111, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529111, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529111, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_CollisionDetection
       value: 1

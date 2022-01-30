@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     protected float immuneTimeCooldown = 1.0f; // time in which the enemy can't be attacked
     protected float lastImmune;
     protected Vector2 pushDirection;
-
+    private Rigidbody2D rb;
 
     public GameOver_Menu gameOver;
 
@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
         pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), this.gameObject.GetComponent<Animator>());
         inventory = new Inventory(slots, isSlotFull);
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Start()
@@ -91,6 +92,11 @@ public class Player : MonoBehaviour
         {
             GameManager.instance.SaveState();
         }
+
+        //if (other.gameObject.CompareTag("LowerEnemy"))
+        //{
+            
+        //}
     }
 
 }
