@@ -9,12 +9,11 @@ public class PlayerMovement
 
     public Animator animator;
 
-    Vector2 movement; //como é vetor 2 vai usar o x e o y 
+    Vector2 movement; //como ï¿½ vetor 2 vai usar o x e o y 
 
-    public PlayerMovement(Rigidbody2D rig, float speed, Animator animator)
+    public PlayerMovement(Rigidbody2D rig, Animator animator)
     {
         this.rig = rig;
-        this.speed = speed;
         this.animator = animator;
     }
 
@@ -28,7 +27,7 @@ public class PlayerMovement
         //Debug.Log(movement);
 
         
-        animator.SetFloat("Horizontal", movement.x); //Realizar animações quando as tivermos
+        animator.SetFloat("Horizontal", movement.x); //Realizar animaï¿½ï¿½es quando as tivermos
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
         
@@ -40,6 +39,17 @@ public class PlayerMovement
         // physics on fixed-update funct
         if (movement.x != 0 || movement.y != 0)
         {
+            speed = 3.8f;
+
+            if(movement.y == 0 ) 
+            {
+                speed = 4.3f;
+            }
+            if(movement.x == 0) 
+            {
+                speed = 3f;
+            }
+            
             rig.MovePosition(rig.position + movement * speed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
         }
     }

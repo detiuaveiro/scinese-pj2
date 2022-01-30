@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
 
     public GameOver_Menu gameOver;
 
-    private float speed = 3f;
    //[SerializeField] private Item_Data[] items = new Item_Data[4];
    // [SerializeField] private int invSpace = 4;
     public GameObject[] slots = new GameObject[4];
@@ -28,7 +27,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
-        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), speed, this.gameObject.GetComponent<Animator>());
+        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), this.gameObject.GetComponent<Animator>());
         inventory = new Inventory(slots, isSlotFull);
     }
 
@@ -41,6 +40,8 @@ public class Player : MonoBehaviour
     public void Update()
     {
         pMove.GetMovementInput();
+
+        
         //Debug.Log(this.inventory.items.Count);
 
 
