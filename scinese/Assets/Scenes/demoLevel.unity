@@ -2677,8 +2677,8 @@ MonoBehaviour:
   sentences_diag:
   - Hi my name is Green!
   - How are you professors?
-  text_name: {fileID: 1346821955}
-  text_dialogue: {fileID: 1694306017}
+  text_name: {fileID: 0}
+  text_dialogue: {fileID: 0}
 --- !u!1 &884808575
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,17 +3680,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1346821955 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1472294540313964282, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
-  m_PrefabInstance: {fileID: 1472294538976424377}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1399084667 stripped
@@ -24915,17 +24904,6 @@ MonoBehaviour:
   isSaved: 0
   animator: {fileID: 1674866389}
   infballon: {fileID: 1115360963}
---- !u!114 &1694306017 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1472294539582701400, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
-  m_PrefabInstance: {fileID: 1472294538976424377}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1709290217
 GameObject:
   m_ObjectHideFlags: 0

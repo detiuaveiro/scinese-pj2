@@ -27,10 +27,7 @@ public class PlayerMovement
         //Debug.Log(movement);
 
         
-        animator.SetFloat("Horizontal", movement.x); //Realizar anima��es quando as tivermos
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-        
+      
     }
 
     public void Move()
@@ -39,6 +36,10 @@ public class PlayerMovement
         // physics on fixed-update funct
         if (movement.x != 0 || movement.y != 0)
         {
+            animator.SetBool("isMoving", true);
+            animator.SetFloat("Horizontal", movement.x); //Realizar anima��es quando as tivermos
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
             speed = 3.8f;
 
             if(movement.y == 0 ) 
@@ -50,7 +51,14 @@ public class PlayerMovement
                 speed = 3f;
             }
             
+            
             rig.MovePosition(rig.position + movement * speed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
         }
+        else 
+        {
+            animator.SetBool("isMoving", false);
+            rig.MovePosition(rig.position); 
+        }
+        
     }
 }
