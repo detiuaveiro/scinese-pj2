@@ -106,7 +106,7 @@ public class LowerEnemy : Collidable
         }
         else
         {
-            Move();
+           Move();
         }
 
         UpdateAnimation();
@@ -214,6 +214,7 @@ public class LowerEnemy : Collidable
         // Debug.Log(coll);
         if (coll.tag == "Player")
         {
+            rb.MovePosition(rb.position);
             rb.bodyType = RigidbodyType2D.Static;
             //animator.SetTrigger("Attack");//ativar animação de ataque
             anim.SetTrigger("Attack");
