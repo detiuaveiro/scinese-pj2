@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     public bool isInRange; //Variável para verificar se está no range
     public KeyCode InteractKey; //Variável para passar a tecla de interação
     public UnityEvent interactAction; //variável para disparar a açãoi dentro do unity
+    public GameObject infballon;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))//se o player estiver no range
         {
+            infballon.gameObject.SetActive(true);
             isInRange = true;
             //Debug.Log("Player is in Range");
         }
@@ -40,6 +42,7 @@ public class Interactable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))//se o player não estiver no range
         {
+            infballon.gameObject.SetActive(false);
             isInRange = false;
             //Debug.Log("Player is not Range");
         }

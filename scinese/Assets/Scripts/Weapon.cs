@@ -41,7 +41,7 @@ public class Weapon : Collidable
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) // right click to attack/swing
+        if (Input.GetKeyDown(KeyCode.Space)) // right click to attack/swing
         {
             if (Time.time - lastSwing > cooldown) // check if swing is available
             {

@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação de uma conversa
 {
     public GameObject diag_box;
     public string name_npc; //nome do npc 
+    public GameObject inventory;
 
     [TextArea(3, 10)]
     public string[] sentences_diag; //frases para dar load no queue
 
-    [SerializeField] public Text text_name;
-    [SerializeField] public Text text_dialogue;
+    [SerializeField] public TextMeshProUGUI text_name;
+    [SerializeField] public TextMeshProUGUI text_dialogue;
    // [SerializeField] public Animator anim;
     
    
@@ -24,8 +26,17 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         sentences = new Queue<string>();
     }
 
+    //public void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        DisplayNextSentence();
+    //    }
+    //}
+
     public void StartDialogue() //
     {
+        inventory.gameObject.SetActive(false);
         //anim.SetBool("IsShow", true);
         diag_box.SetActive(true);
         Time.timeScale = 0f; //Parar o tempo no jogo.
@@ -41,7 +52,12 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
             text_dialogue.text = sentence;
             Debug.Log(sentence);
         }
-       
+
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    DisplayNextSentence();
+        //}
+
         DisplayNextSentence();
     }
 

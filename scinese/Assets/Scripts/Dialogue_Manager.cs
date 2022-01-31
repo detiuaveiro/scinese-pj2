@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Dialogue_Manager
 {
-    public Text nameText; //variavel da UI para aceder e alterar o texto
-    public Text DialogueText;
+    public TextMeshProUGUI nameText; //variavel da UI para aceder e alterar o texto
+    public TextMeshProUGUI DialogueText;
     public Animator animator;
 
     private Queue<string> sentences; //Queue, funciona como uma lista, utiliza o sistema first in first out

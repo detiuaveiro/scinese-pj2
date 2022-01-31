@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -48.997986
       objectReference: {fileID: 0}
+    - target: {fileID: 5864261632161198238, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8153920172056644775, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -587,11 +591,11 @@ PrefabInstance:
     - target: {fileID: 6747376743275529109, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: text_name
       value: 
-      objectReference: {fileID: 1164648198}
+      objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529109, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: text_dialogue
       value: 
-      objectReference: {fileID: 477625084}
+      objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529109, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: sentences_diag.Array.data[1]
       value: I'm looking for a treasure.
@@ -729,17 +733,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8364106169211385698, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
   m_PrefabInstance: {fileID: 110795492}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &477625084 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1472294539582701400, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
-  m_PrefabInstance: {fileID: 110795492}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &498807040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
@@ -1042,17 +1035,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   pd: {fileID: 0}
---- !u!114 &1164648198 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1472294540313964282, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
-  m_PrefabInstance: {fileID: 110795492}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1190660746
 GameObject:
   m_ObjectHideFlags: 3
@@ -1720,7 +1702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ol\xE1 Arianna. Este \xE9 o prologo inicial. "
+  m_text: O trilho termina aqui... Devo estar perto!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
