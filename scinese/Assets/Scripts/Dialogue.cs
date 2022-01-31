@@ -10,15 +10,16 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
     public GameObject diag_box;
     public string name_npc; //nome do npc 
     public GameObject inventory;
-    private bool nextSentence;
 
     [TextArea(3, 10)]
     public string[] sentences_diag; //frases para dar load no queue
 
+    public string[] container;
     [SerializeField] public TextMeshProUGUI text_name;
     [SerializeField] public TextMeshProUGUI text_dialogue;
-   // [SerializeField] public Animator anim;
-    
+    // [SerializeField] public Animator anim;
+
+    public int i;
    
     private Queue<string> sentences; //Queue, funciona como uma lista, utiliza o sistema first in first out
     // Start is called before the first frame update
@@ -27,19 +28,19 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         sentences = new Queue<string>();
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        nextSentence = true;
-    //    }
-    //}
-
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //for (int i = 0; i < container.Length; i++)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.C))
+        //    {
+        //        text_dialogue.text = container[i];
+        //    }
+        //}
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             DisplayNextSentence();
+            i++;
         }
     }
 
@@ -59,7 +60,9 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         {
             sentences.Enqueue(sentence); //pôr as frases em queue
             text_dialogue.text = sentence;
-           // Debug.Log(sentence);
+            // Debug.Log(sentence);
+            container = sentences.ToArray();
+            Debug.Log(container);
         }
 
         //if (Input.GetKeyDown(KeyCode.Space))
@@ -67,7 +70,7 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         //    DisplayNextSentence();
         //}
 
-         DisplayNextSentence();
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence() //Buscar a próxima frase em queue
@@ -79,11 +82,17 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
             return;
         }
 
+        if (i.Equals(container.Length))
+        {
+            EndDialogue();
+        }
+
         string sentence = sentences.Dequeue(); //Se houver ainda frases, buscar a próxima
         text_dialogue.text = sentence;
         Debug.Log(sentence);
         StopAllCoroutines();//garantir que animamos o que o user quer
         StartCoroutine(TypeSentence(sentence));
+
     }
 
     IEnumerator TypeSentence (string sentence)//Co-rotina para escrever cada um dos carateres

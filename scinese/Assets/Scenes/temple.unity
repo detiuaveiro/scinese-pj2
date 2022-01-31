@@ -1049,7 +1049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158180386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 24.14, z: -10}
+  m_LocalPosition: {x: 0.13, y: 30.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1265,6 +1265,7 @@ MonoBehaviour:
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - Pombo.
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &244546305
@@ -6875,6 +6876,7 @@ MonoBehaviour:
   sentences_diag:
   - "\xC9 uma picareta!"
   - Esta arma pertence ao aventureiro que a encontrar.
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &406870435
@@ -13201,6 +13203,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -445000563
       objectReference: {fileID: 0}
+    - target: {fileID: 3459394317062668461, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
 --- !u!114 &574800270 stripped
@@ -18844,6 +18850,7 @@ MonoBehaviour:
   name_npc: Arianna
   inventory: {fileID: 108881094}
   sentences_diag: []
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &811052048
@@ -18955,6 +18962,7 @@ MonoBehaviour:
   - "\"Cumpre este legado .. e as \xE1rvores prol\xEDferas despertar\xE3o\""
   - ...
   - "Tenho que encontrar a \xE1rvore neste templo!"
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &847180433
@@ -19154,7 +19162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884459283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 24.14, z: -10}
+  m_LocalPosition: {x: 0.13, y: 30.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19223,6 +19231,7 @@ MonoBehaviour:
   name_npc: Arianna
   inventory: {fileID: 108881094}
   sentences_diag: []
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!114 &890357663 stripped
@@ -19745,11 +19754,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.14
+      value: 30.9
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529107, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_Size.x
@@ -20031,6 +20040,7 @@ MonoBehaviour:
   - Tenho que colher os frutos..
   - ...(colhe dois frutos)...
   - Como o fruto agora?
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &1142518340
@@ -20084,6 +20094,7 @@ MonoBehaviour:
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - Panda.
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &1165411168 stripped
@@ -20282,6 +20293,7 @@ MonoBehaviour:
   name_npc: Arianna
   inventory: {fileID: 108881094}
   sentences_diag: []
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!4 &1266703393 stripped
@@ -27215,6 +27227,7 @@ MonoBehaviour:
   name_npc: Arianna
   inventory: {fileID: 108881094}
   sentences_diag: []
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &1801744668
@@ -27632,6 +27645,7 @@ MonoBehaviour:
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - "Lobo da Tasm\xE2nia."
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
 --- !u!1 &1851811195
@@ -34144,5 +34158,6 @@ MonoBehaviour:
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - Caranguejo.
+  container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
