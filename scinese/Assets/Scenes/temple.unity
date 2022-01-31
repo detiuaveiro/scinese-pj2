@@ -13027,11 +13027,11 @@ PrefabInstance:
       objectReference: {fileID: 890357663}
     - target: {fileID: 1007792175518336881, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1007792175518336881, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1472294538593730084, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_IsActive
@@ -19843,17 +19843,41 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 1.4545455
       objectReference: {fileID: 0}
+    - target: {fileID: 6747376743656990512, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6452123327696516742, guid: 75f535b10b002df4a9b4b83f113a5953, type: 3}
+    - target: {fileID: 6747376743656990512, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743656990512, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743656990514, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6747376743656990515, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743656990515, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743656990515, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743656990515, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743656990515, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.64
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d870ca888193349acf5f598e194ced, type: 3}
