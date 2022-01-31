@@ -10,6 +10,7 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
     public GameObject diag_box;
     public string name_npc; //nome do npc 
     public GameObject inventory;
+    private bool nextSentence;
 
     [TextArea(3, 10)]
     public string[] sentences_diag; //frases para dar load no queue
@@ -26,13 +27,21 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         sentences = new Queue<string>();
     }
 
-    //public void Update()
+    //private void Update()
     //{
     //    if (Input.GetKeyDown(KeyCode.Space))
     //    {
-    //        DisplayNextSentence();
+    //        nextSentence = true;
     //    }
     //}
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
+    }
 
     public void StartDialogue() //
     {
@@ -50,7 +59,7 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         {
             sentences.Enqueue(sentence); //pôr as frases em queue
             text_dialogue.text = sentence;
-            Debug.Log(sentence);
+           // Debug.Log(sentence);
         }
 
         //if (Input.GetKeyDown(KeyCode.Space))
@@ -58,14 +67,15 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         //    DisplayNextSentence();
         //}
 
-        DisplayNextSentence();
+         DisplayNextSentence();
     }
 
     public void DisplayNextSentence() //Buscar a próxima frase em queue
     {
         if (sentences.Count == 0) //Se não houver mais frases, terminar
         {
-            EndDialogue();
+            //EndDialogue();
+            Debug.Log("Finish Sentences");
             return;
         }
 
@@ -86,10 +96,11 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         }
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         diag_box.SetActive(false);
         Time.timeScale = 1f; //Continuar tempo no jogo
+        inventory.gameObject.SetActive(true);
         //anim.SetBool("IsShow", false);
     }
 }

@@ -389,7 +389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1472294538593730087
 RectTransform:
   m_ObjectHideFlags: 0
@@ -483,12 +483,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2f7761779d1d7448e5b4f2ebf88cf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diag_box: {fileID: 0}
+  diag_box: {fileID: 1472294538593730084}
   name_npc: 
-  inventory: {fileID: 0}
+  inventory: {fileID: 3459394317062668461}
   sentences_diag: []
-  text_name: {fileID: 0}
-  text_dialogue: {fileID: 0}
+  text_name: {fileID: 1405511584}
+  text_dialogue: {fileID: 1992834942}
 --- !u!1 &1472294538694146872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,9 +1149,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Dialogue_Manager, Assembly-CSharp
-        m_MethodName: DisplayNextSentence
+      - m_Target: {fileID: 1894341713}
+        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
+        m_MethodName: EndDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
