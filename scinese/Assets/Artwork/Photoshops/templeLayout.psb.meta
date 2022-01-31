@@ -91,6 +91,27 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
+  - name: "bra\xE7o"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2909
+      y: 1010
+      width: 24
+      height: 63
+    spriteID: c197bae4bb3840a43bd31e832b8f85da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1490, y: -784}
   - name: personagem
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -100,8 +121,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 2666
       y: 1010
-      width: 28
-      height: 65
+      width: 70
+      height: 1017
     spriteID: 946e75e088a5892409aad95377c9a8f4
     spriteBone: []
     spriteOutline: []
@@ -4594,6 +4615,16 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
+  - name: "bra\xE7o"
+    spriteName: "bra\xE7o"
+    isGroup: 0
+    parentIndex: 2
+    spriteID: c197bae4bb3840a43bd31e832b8f85da
+    layerID: 11405
+    mosaicPosition: {x: 2909, y: 1010}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: personagem
     spriteName: personagem
     isGroup: 0
@@ -4667,7 +4698,7 @@ ScriptedImporter:
   - name: books_room
     spriteName: 
     isGroup: 1
-    parentIndex: 9
+    parentIndex: 10
     spriteID: 71d3cd6ee864ff8479f2131ca3a5bed6
     layerID: 4122
     mosaicPosition: {x: 0, y: 0}
@@ -4677,7 +4708,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: dc10d387f7c03aa45811496f8cc8b721
     layerID: 4133
     mosaicPosition: {x: 3824, y: 1864}
@@ -4687,7 +4718,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: b99c749cc6bb6fe48892cd8b4490498b
     layerID: 4132
     mosaicPosition: {x: 3824, y: 1952}
@@ -4697,7 +4728,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 6d0b60ebba817304d9858161b475aedd
     layerID: 4130
     mosaicPosition: {x: 1116, y: 2175}
@@ -4707,7 +4738,7 @@ ScriptedImporter:
   - name: cortado_vertical_wall_temple
     spriteName: cortado_vertical_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: e4fbcaa89c9cc664cb23226eab6153ea
     layerID: 4141
     mosaicPosition: {x: 3963, y: 97}
@@ -4717,7 +4748,7 @@ ScriptedImporter:
   - name: cortado_vertical_wall_temple
     spriteName: cortado_vertical_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: a11fbf773b3e0024992f69bb808fd8c0
     layerID: 4140
     mosaicPosition: {x: 3963, y: 190}
@@ -4727,7 +4758,7 @@ ScriptedImporter:
   - name: cortado_ender_lado_direito
     spriteName: cortado_ender_lado_direito
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 61fb284ae3f615042aac31b436656617
     layerID: 4135
     mosaicPosition: {x: 2995, y: 509}
@@ -4737,7 +4768,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_baixo_sem_pilar_wall_temple
     spriteName: canto_cortado_baixo_baixo_sem_pilar_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: bc7b510d3f9e2e6478bb710c8e5eb82f
     layerID: 4131
     mosaicPosition: {x: 3418, y: 4}
@@ -4747,7 +4778,7 @@ ScriptedImporter:
   - name: canto_wall_temple_no_pilar
     spriteName: canto_wall_temple_no_pilar
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 0ce7edb616072684b813ae2c410300be
     layerID: 4129
     mosaicPosition: {x: 2744, y: 1185}
@@ -4757,7 +4788,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 45eef9e9c09bbe644b06deb89f9cd578
     layerID: 3503
     mosaicPosition: {x: 4046, y: 469}
@@ -4767,7 +4798,7 @@ ScriptedImporter:
   - name: books_room_booksshelves_walls
     spriteName: books_room_booksshelves_walls
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 1de22986089304c4eb427c6630e7e653
     layerID: 4654
     mosaicPosition: {x: 3120, y: 4}
@@ -4777,7 +4808,7 @@ ScriptedImporter:
   - name: book_stand_back_view
     spriteName: book_stand_back_view
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 69e9ce12e15be6a44a0ee742c4f9d790
     layerID: 5304
     mosaicPosition: {x: 2666, y: 2121}
@@ -4787,7 +4818,7 @@ ScriptedImporter:
   - name: book_stand_back_view
     spriteName: book_stand_back_view
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: adcb7d0397457e543a40fd82c5080043
     layerID: 5303
     mosaicPosition: {x: 2698, y: 2121}
@@ -4797,7 +4828,7 @@ ScriptedImporter:
   - name: book_stand
     spriteName: book_stand
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 77f696b91be401143bcb0159ba60beec
     layerID: 5302
     mosaicPosition: {x: 3290, y: 674}
@@ -4807,7 +4838,7 @@ ScriptedImporter:
   - name: book_stand
     spriteName: book_stand
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 45445e8ff686fcf4391d31ced2051b74
     layerID: 5301
     mosaicPosition: {x: 3322, y: 674}
@@ -4817,7 +4848,7 @@ ScriptedImporter:
   - name: books_room_floor_overlay_total
     spriteName: books_room_floor_overlay_total
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: a2c1aeb2a01cbb548b1e77a1acbf2a4b
     layerID: 4653
     mosaicPosition: {x: 2957, y: 1973}
@@ -4827,7 +4858,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 3118446646bdf4c42b0487ec0e43d90a
     layerID: 4124
     mosaicPosition: {x: 3120, y: 1126}
@@ -4837,7 +4868,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 9efff7b5bb6d54344a4a1d78870faeb5
     layerID: 4138
     mosaicPosition: {x: 3120, y: 1302}
@@ -4847,7 +4878,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 22eb8150e7c11ef41b76eca3d9918558
     layerID: 3342
     mosaicPosition: {x: 3537, y: 101}
@@ -4857,7 +4888,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 5d3b6f1063aeecb4e9cb6fbdcb5f4622
     layerID: 4144
     mosaicPosition: {x: 3537, y: 194}
@@ -4867,7 +4898,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 2acd6f2c775938948957e9cc87750868
     layerID: 4143
     mosaicPosition: {x: 3537, y: 287}
@@ -4877,7 +4908,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: 2ef2c213103050c4a8ad3006eb664c75
     layerID: 4142
     mosaicPosition: {x: 3537, y: 380}
@@ -4887,7 +4918,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: adec8a97f87abc6469f6dd59efb4caae
     layerID: 4145
     mosaicPosition: {x: 3537, y: 473}
@@ -4897,7 +4928,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 11
     spriteID: c7d79e509c8fad44986e4bef29688035
     layerID: 2506
     mosaicPosition: {x: 3537, y: 566}
@@ -4907,7 +4938,7 @@ ScriptedImporter:
   - name: profecia_room
     spriteName: 
     isGroup: 1
-    parentIndex: 9
+    parentIndex: 10
     spriteID: ce5e54593016830418c6384285292ee3
     layerID: 321
     mosaicPosition: {x: 0, y: 0}
@@ -4917,7 +4948,7 @@ ScriptedImporter:
   - name: pickup
     spriteName: pickup
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: a1a502bb1d346ff40aeb501e018ecc1f
     layerID: 2516
     mosaicPosition: {x: 4055, y: 2133}
@@ -4927,7 +4958,7 @@ ScriptedImporter:
   - name: pickup_box
     spriteName: pickup_box
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: e1f4a85153ee4dc4b86c5342644c8a4d
     layerID: 1351
     mosaicPosition: {x: 2666, y: 2035}
@@ -4937,7 +4968,7 @@ ScriptedImporter:
   - name: ritual_painting
     spriteName: ritual_painting
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: ae1567e3e7b954449aece836f1f7c40a
     layerID: 1276
     mosaicPosition: {x: 2666, y: 509}
@@ -4947,7 +4978,7 @@ ScriptedImporter:
   - name: pillar_statue
     spriteName: pillar_statue
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 4918983594c1a094e9bf8f09499cea6a
     layerID: 600
     mosaicPosition: {x: 2883, y: 1185}
@@ -4957,7 +4988,7 @@ ScriptedImporter:
   - name: pillar_statue
     spriteName: pillar_statue
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 0c2f81be0a48d2b4491286c16a93d604
     layerID: 598
     mosaicPosition: {x: 2883, y: 1258}
@@ -4967,7 +4998,7 @@ ScriptedImporter:
   - name: pillar_statue
     spriteName: pillar_statue
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: e7632855f8f912149b7b17276c2bc196
     layerID: 599
     mosaicPosition: {x: 2883, y: 1374}
@@ -4977,7 +5008,7 @@ ScriptedImporter:
   - name: pillar_statue
     spriteName: pillar_statue
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: ffd072c5781e03c4ea8732b41e492540
     layerID: 597
     mosaicPosition: {x: 2883, y: 1447}
@@ -4987,7 +5018,7 @@ ScriptedImporter:
   - name: ritual_overlay
     spriteName: ritual_overlay
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 35dd91ab92bad0740823bcb768399b53
     layerID: 1038
     mosaicPosition: {x: 3418, y: 2075}
@@ -4997,7 +5028,7 @@ ScriptedImporter:
   - name: ritual_overlay
     spriteName: ritual_overlay
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: d4723b111b7cb9e429a16f07cd422cb2
     layerID: 1037
     mosaicPosition: {x: 3963, y: 1864}
@@ -5007,7 +5038,7 @@ ScriptedImporter:
   - name: ritual_overlay
     spriteName: ritual_overlay
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 1f101a02dd4c10847b5d942f26e82bc6
     layerID: 1036
     mosaicPosition: {x: 3963, y: 1952}
@@ -5017,7 +5048,7 @@ ScriptedImporter:
   - name: ritual_overlay
     spriteName: ritual_overlay
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: e9152d58066a9aa4a84dc9ad33cb436d
     layerID: 1035
     mosaicPosition: {x: 3963, y: 4}
@@ -5027,7 +5058,7 @@ ScriptedImporter:
   - name: ritual_circle
     spriteName: ritual_circle
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 50f6a2c41e0815d4e8f7435360b05209
     layerID: 533
     mosaicPosition: {x: 3537, y: 4}
@@ -5037,7 +5068,7 @@ ScriptedImporter:
   - name: ritual_overlay_painting
     spriteName: ritual_overlay_painting
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 190c135bc5b696b469bfb490a9ce22a8
     layerID: 1427
     mosaicPosition: {x: 2666, y: 748}
@@ -5047,7 +5078,7 @@ ScriptedImporter:
   - name: canto_wall_temple
     spriteName: canto_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 333a2452c6fd0b64b8e3b0236a070154
     layerID: 2080
     mosaicPosition: {x: 2744, y: 1374}
@@ -5057,7 +5088,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 9151dc6cb7b4d2046b01ab66e5fcaba6
     layerID: 2078
     mosaicPosition: {x: 1255, y: 2175}
@@ -5067,7 +5098,7 @@ ScriptedImporter:
   - name: cortado_ender_lado_direito
     spriteName: cortado_ender_lado_direito
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 904ca85c4aa341e42807a4e1bcf08775
     layerID: 2274
     mosaicPosition: {x: 3120, y: 171}
@@ -5077,7 +5108,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 28289c80c7d8ae5409a5199d50b3e42d
     layerID: 2275
     mosaicPosition: {x: 3963, y: 2040}
@@ -5087,7 +5118,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 5f54e24389f4fa349a374b8266c5dab6
     layerID: 2270
     mosaicPosition: {x: 3120, y: 2006}
@@ -5097,7 +5128,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 14995d019778cac41995d0e555d177b3
     layerID: 2514
     mosaicPosition: {x: 3243, y: 553}
@@ -5107,7 +5138,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 9d5d2919e146c9d4b8c18274d4fe3871
     layerID: 2515
     mosaicPosition: {x: 3120, y: 1478}
@@ -5117,7 +5148,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: c86d7c8813a1c7c43ad58cf9c6e13ebc
     layerID: 2513
     mosaicPosition: {x: 3120, y: 1654}
@@ -5127,7 +5158,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_baixo_sem_pilar_wall_temple
     spriteName: canto_cortado_baixo_baixo_sem_pilar_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: db0c12f5b1338c04191f153de48120d5
     layerID: 2261
     mosaicPosition: {x: 3418, y: 132}
@@ -5137,7 +5168,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 72a759b16e4bcfb49876d31f26eb2999
     layerID: 2265
     mosaicPosition: {x: 3824, y: 2040}
@@ -5147,7 +5178,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 83bbb7d1674dc5447ac7b53a494eff61
     layerID: 2263
     mosaicPosition: {x: 4, y: 2175}
@@ -5157,7 +5188,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: d18c5841bf3a33f46ac882717bfe61c3
     layerID: 2262
     mosaicPosition: {x: 143, y: 2175}
@@ -5167,7 +5198,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 43d1955eaf479ef4b9a99d87864e186c
     layerID: 326
     mosaicPosition: {x: 3537, y: 659}
@@ -5177,7 +5208,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 3ca8adc77412a964d8701fd311f649d8
     layerID: 1117
     mosaicPosition: {x: 3537, y: 752}
@@ -5187,7 +5218,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: fe237fbd5e87d0443887c9c038b15cc0
     layerID: 1116
     mosaicPosition: {x: 3537, y: 845}
@@ -5197,7 +5228,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 04cadae518419f44a87c06bdf1351285
     layerID: 1115
     mosaicPosition: {x: 3537, y: 938}
@@ -5207,7 +5238,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 3b663108e508efb4dbfbf4335a0eb8ed
     layerID: 331
     mosaicPosition: {x: 3537, y: 1031}
@@ -5217,7 +5248,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 12628c2a146569048bf0367a57ffc630
     layerID: 330
     mosaicPosition: {x: 3537, y: 1124}
@@ -5227,7 +5258,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 686a6cf8c2c0f4347ab9de4c373892e5
     layerID: 329
     mosaicPosition: {x: 3537, y: 1217}
@@ -5237,7 +5268,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: eb83e61223e598e41931ebde93130bd7
     layerID: 325
     mosaicPosition: {x: 3537, y: 1310}
@@ -5247,7 +5278,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 9939d7c6ff85c394bacb2fd3a3561d06
     layerID: 328
     mosaicPosition: {x: 3537, y: 1403}
@@ -5257,7 +5288,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: c013b1dbe135aa342a8eb81e5d2b702d
     layerID: 327
     mosaicPosition: {x: 3537, y: 1496}
@@ -5267,7 +5298,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 3971246c32dd4ec42b626b74f066a880
     layerID: 324
     mosaicPosition: {x: 3537, y: 1589}
@@ -5277,7 +5308,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: da33c38f042f05b439a70d8d53984384
     layerID: 323
     mosaicPosition: {x: 3537, y: 1682}
@@ -5287,7 +5318,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 500e972fa59f5d44e838bc3a84a60417
     layerID: 1110
     mosaicPosition: {x: 3537, y: 1775}
@@ -5297,7 +5328,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 1b6233f063f9a0340b81c26dc978f116
     layerID: 1108
     mosaicPosition: {x: 3537, y: 1868}
@@ -5307,7 +5338,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: ea8756711b333084787919d3417c0c73
     layerID: 1107
     mosaicPosition: {x: 3537, y: 1961}
@@ -5317,7 +5348,7 @@ ScriptedImporter:
   - name: chao entrada
     spriteName: 
     isGroup: 1
-    parentIndex: 9
+    parentIndex: 10
     spriteID: 4004933e52b72a0458248e3dafffaa24
     layerID: 146
     mosaicPosition: {x: 0, y: 0}
@@ -5327,7 +5358,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0249d6dd7f49efb4b826ce098b768919
     layerID: 2773
     mosaicPosition: {x: 4046, y: 562}
@@ -5337,7 +5368,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 50afa24b4725e594c9fd94d40063f043
     layerID: 181
     mosaicPosition: {x: 4046, y: 655}
@@ -5347,7 +5378,7 @@ ScriptedImporter:
   - name: canto_wall_temple
     spriteName: canto_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 49bcef0e3ebb9ca46b1eaa44f3fbaba4
     layerID: 2503
     mosaicPosition: {x: 2744, y: 1563}
@@ -5357,7 +5388,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 743d565a40695d94e9afa3efca8ee8cb
     layerID: 2502
     mosaicPosition: {x: 2744, y: 1941}
@@ -5367,7 +5398,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0eeb5a49bc187c440a3dee6711c3af4a
     layerID: 2498
     mosaicPosition: {x: 282, y: 2175}
@@ -5377,7 +5408,7 @@ ScriptedImporter:
   - name: canto_wall_temple
     spriteName: canto_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 7ce598ef864a3ef4bbdc23fdbf32bbe7
     layerID: 1810
     mosaicPosition: {x: 2744, y: 1752}
@@ -5387,7 +5418,7 @@ ScriptedImporter:
   - name: vertical_ender_cima_wall_temple
     spriteName: vertical_ender_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 86de14b2bc64f3748b9be30e8eda3237
     layerID: 3189
     mosaicPosition: {x: 3120, y: 2127}
@@ -5397,7 +5428,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: c9337d0f11515d54f8bedbf544eb2f06
     layerID: 3187
     mosaicPosition: {x: 3243, y: 744}
@@ -5407,7 +5438,7 @@ ScriptedImporter:
   - name: vertical_ender_cima_wall_temple
     spriteName: vertical_ender_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f61aa690243354c44a07934fdb938781
     layerID: 3037
     mosaicPosition: {x: 3120, y: 2147}
@@ -5417,7 +5448,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: a763ab5604cff814b9913d0b1bbe982b
     layerID: 3039
     mosaicPosition: {x: 3243, y: 935}
@@ -5427,7 +5458,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: c4e4010782a9851409c8dd323256bd89
     layerID: 2505
     mosaicPosition: {x: 2957, y: 748}
@@ -5437,7 +5468,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 25c75dfb7190f05419293ab5e389781d
     layerID: 88
     mosaicPosition: {x: 2957, y: 923}
@@ -5447,7 +5478,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 181cb9072ad77324a92697eaf7067d9c
     layerID: 86
     mosaicPosition: {x: 2957, y: 1098}
@@ -5457,7 +5488,7 @@ ScriptedImporter:
   - name: vertical_ender_cima_wall_temple
     spriteName: vertical_ender_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f72c7955e48857240b40ca4b4859febc
     layerID: 2070
     mosaicPosition: {x: 2995, y: 700}
@@ -5467,7 +5498,7 @@ ScriptedImporter:
   - name: cortado_vertical_wall_temple
     spriteName: cortado_vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0a270f378e7021d4383e7e0ebdfaee58
     layerID: 2492
     mosaicPosition: {x: 3963, y: 283}
@@ -5477,7 +5508,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 57cb1e58caaf13d41ab14afc60a85d9e
     layerID: 2491
     mosaicPosition: {x: 1394, y: 2175}
@@ -5487,7 +5518,7 @@ ScriptedImporter:
   - name: vertical_ender_cima_wall_temple
     spriteName: vertical_ender_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 29a87fef1d506e446ba28fe6dc13e3eb
     layerID: 2494
     mosaicPosition: {x: 2995, y: 720}
@@ -5497,7 +5528,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 530d670c367bd7f40911e1bf841449a3
     layerID: 2499
     mosaicPosition: {x: 421, y: 2175}
@@ -5507,7 +5538,7 @@ ScriptedImporter:
   - name: cortado_ender_lado_direito
     spriteName: cortado_ender_lado_direito
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: bd66e1187640c35429e7297beda7da00
     layerID: 2490
     mosaicPosition: {x: 3120, y: 362}
@@ -5517,7 +5548,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 4faa4fb92aa50114bb2ee276d9cf0158
     layerID: 2489
     mosaicPosition: {x: 1533, y: 2175}
@@ -5527,7 +5558,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 803ffb4dc0fe21d48b3855d8be64acec
     layerID: 2488
     mosaicPosition: {x: 3418, y: 260}
@@ -5537,7 +5568,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 3fd13c03093ef3e43bc290a135753326
     layerID: 2487
     mosaicPosition: {x: 3418, y: 381}
@@ -5547,7 +5578,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0982bd0d1244eaf459808f6ce57bad44
     layerID: 2486
     mosaicPosition: {x: 3418, y: 502}
@@ -5557,7 +5588,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 043b45f444c85964f924129715a9194f
     layerID: 2485
     mosaicPosition: {x: 3418, y: 623}
@@ -5567,7 +5598,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 7ff720f49478f544e9ac255d6210c2f7
     layerID: 2484
     mosaicPosition: {x: 3418, y: 744}
@@ -5577,7 +5608,7 @@ ScriptedImporter:
   - name: canto_pequeno_baixo_wall_temple
     spriteName: canto_pequeno_baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 98cac4d7753650444b279483c35c6fdc
     layerID: 2493
     mosaicPosition: {x: 3243, y: 171}
@@ -5587,7 +5618,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: e0c28bb4c3a50864d97d4c47f10e346b
     layerID: 2483
     mosaicPosition: {x: 3120, y: 1830}
@@ -5597,7 +5628,7 @@ ScriptedImporter:
   - name: cortado_vertical_wall_temple
     spriteName: cortado_vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 3e6f3c0a2ab2b1b4187c3a66ef2b2c41
     layerID: 2481
     mosaicPosition: {x: 3963, y: 376}
@@ -5607,7 +5638,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 094a1bdc8e83b18468543e329e397381
     layerID: 2072
     mosaicPosition: {x: 1672, y: 2175}
@@ -5617,7 +5648,7 @@ ScriptedImporter:
   - name: cortado_ender_lado_direito
     spriteName: cortado_ender_lado_direito
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f25eeb6c3e23ee443a8a0b9254398b43
     layerID: 2478
     mosaicPosition: {x: 3120, y: 553}
@@ -5627,7 +5658,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 920e44fec0616b24ea24148d9700683f
     layerID: 2480
     mosaicPosition: {x: 1811, y: 2175}
@@ -5637,7 +5668,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 8d215abe418f58d4f93b1d83a6586bfa
     layerID: 1897
     mosaicPosition: {x: 3418, y: 865}
@@ -5647,7 +5678,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0228c867fefdbc34889c8d68c275ec5b
     layerID: 1896
     mosaicPosition: {x: 3418, y: 986}
@@ -5657,7 +5688,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: b42051fa39b10e14ebb99b0d7bd44aaa
     layerID: 1895
     mosaicPosition: {x: 3418, y: 1107}
@@ -5667,7 +5698,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: b7241e7e6655efb4abc22dbaf1a363d7
     layerID: 1894
     mosaicPosition: {x: 3418, y: 1228}
@@ -5677,7 +5708,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 60d70cf584a15c14388ee9c0439f902f
     layerID: 1893
     mosaicPosition: {x: 3418, y: 1349}
@@ -5687,7 +5718,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: fdef0ca3a17f7cd438a001f62f945ce6
     layerID: 1892
     mosaicPosition: {x: 3233, y: 1126}
@@ -5697,7 +5728,7 @@ ScriptedImporter:
   - name: canto_pequeno_baixo_wall_temple
     spriteName: canto_pequeno_baixo_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 57bc3503abd4c4547b962e8dfbc210a0
     layerID: 1891
     mosaicPosition: {x: 3243, y: 362}
@@ -5707,7 +5738,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: b0afc5c94805d1742b86a1bcd2d314b2
     layerID: 95
     mosaicPosition: {x: 560, y: 2175}
@@ -5717,7 +5748,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 319420db6296e304189d6880e5e3c6f7
     layerID: 93
     mosaicPosition: {x: 699, y: 2175}
@@ -5727,7 +5758,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: b8daeba638c52c945a479324e9f23a7f
     layerID: 130
     mosaicPosition: {x: 4046, y: 748}
@@ -5737,7 +5768,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 4da838cd49de2d445a5cb1490006a2fa
     layerID: 129
     mosaicPosition: {x: 4046, y: 841}
@@ -5747,7 +5778,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 02d8fb822a8d1454ab2952e755510f94
     layerID: 128
     mosaicPosition: {x: 4046, y: 934}
@@ -5757,7 +5788,7 @@ ScriptedImporter:
   - name: tocha_planta
     spriteName: tocha_planta
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: a3d4313c16763d84899a959a9616f4c2
     layerID: 127
     mosaicPosition: {x: 4046, y: 1027}
@@ -5767,7 +5798,7 @@ ScriptedImporter:
   - name: corredor_overlay
     spriteName: corredor_overlay
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f788636c88d9a1546ae417a3221c5400
     layerID: 3181
     mosaicPosition: {x: 3233, y: 1654}
@@ -5777,7 +5808,7 @@ ScriptedImporter:
   - name: corredor_overlay
     spriteName: corredor_overlay
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 91bb7fc91ca8799498eae2f87adfddc9
     layerID: 3180
     mosaicPosition: {x: 3233, y: 1907}
@@ -5787,7 +5818,7 @@ ScriptedImporter:
   - name: corredor_overlay
     spriteName: corredor_overlay
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 41eaed1f50b0b1a4d98551f17f10b615
     layerID: 267
     mosaicPosition: {x: 3354, y: 4}
@@ -5797,7 +5828,7 @@ ScriptedImporter:
   - name: corredor_overlay
     spriteName: corredor_overlay
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: cdd13706b64a153469916c62bf5dfd0c
     layerID: 266
     mosaicPosition: {x: 3354, y: 257}
@@ -5807,7 +5838,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 29e441c27f9b99c4d8e3f57edf56bf90
     layerID: 3179
     mosaicPosition: {x: 3963, y: 469}
@@ -5817,7 +5848,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f92ae2778a92d5b46bd44c2cc9bcbeac
     layerID: 3178
     mosaicPosition: {x: 3963, y: 562}
@@ -5827,7 +5858,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 3c40a0d77b6c57047822c422bc708c54
     layerID: 3177
     mosaicPosition: {x: 3963, y: 655}
@@ -5837,7 +5868,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 5e3d60a40ffbfe7469cd0b9cfd5d8b8e
     layerID: 265
     mosaicPosition: {x: 3963, y: 748}
@@ -5847,7 +5878,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 734949ed1958f304cbb275c57cd1b9b9
     layerID: 264
     mosaicPosition: {x: 3963, y: 841}
@@ -5857,7 +5888,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 20060b23990d041408f93603a4d8d46c
     layerID: 263
     mosaicPosition: {x: 3963, y: 934}
@@ -5867,7 +5898,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: ec918d6601877d74799192ff1ab8295b
     layerID: 262
     mosaicPosition: {x: 3963, y: 1027}
@@ -5877,7 +5908,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 6b5b82b05122e58488c62e7be3b45383
     layerID: 261
     mosaicPosition: {x: 3963, y: 1120}
@@ -5887,7 +5918,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 3e32ce22978e2394fa3a8832f925b182
     layerID: 260
     mosaicPosition: {x: 3963, y: 1213}
@@ -5897,7 +5928,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 1a0d47b9e3cdcb74abd7993ec6304df3
     layerID: 259
     mosaicPosition: {x: 3963, y: 1306}
@@ -5907,7 +5938,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 8db9d7bac3de0a643a19c05b806f3806
     layerID: 258
     mosaicPosition: {x: 3963, y: 1399}
@@ -5917,7 +5948,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 4e60058c32a24494596d3d3540b1bc37
     layerID: 257
     mosaicPosition: {x: 3963, y: 1492}
@@ -5927,7 +5958,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: a04493780d3a6a14f923e3a1a16db3e9
     layerID: 256
     mosaicPosition: {x: 3963, y: 1585}
@@ -5937,7 +5968,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 4f298841f61d9b5429a9acc68e29c17d
     layerID: 255
     mosaicPosition: {x: 3963, y: 1678}
@@ -5947,7 +5978,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: d76c6319ce5c48f4ca8cbcec9990737e
     layerID: 2496
     mosaicPosition: {x: 3537, y: 2054}
@@ -5957,7 +5988,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 48a53846a4171434b97838108413a956
     layerID: 2495
     mosaicPosition: {x: 3685, y: 4}
@@ -5967,7 +5998,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f265001a7b2794340aec4adfd2e5dc1e
     layerID: 2497
     mosaicPosition: {x: 3685, y: 97}
@@ -5977,7 +6008,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 17c8762d63119db46996d2c56b8a98ff
     layerID: 135
     mosaicPosition: {x: 3685, y: 190}
@@ -5987,7 +6018,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f7ad85d1089dd454fb3571440cd0dcb2
     layerID: 134
     mosaicPosition: {x: 3685, y: 283}
@@ -5997,7 +6028,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 91a08290b0a8795428bdf58fdab0991f
     layerID: 131
     mosaicPosition: {x: 3685, y: 376}
@@ -6007,7 +6038,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 32065515277370640817e626e6c1a7b7
     layerID: 2771
     mosaicPosition: {x: 3685, y: 469}
@@ -6017,7 +6048,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: f9b8c69a305f961409d6cfde3c91a55f
     layerID: 2508
     mosaicPosition: {x: 3685, y: 562}
@@ -6027,7 +6058,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: ec48a97c4073ec94babf3122ffe69901
     layerID: 2507
     mosaicPosition: {x: 3685, y: 655}
@@ -6037,7 +6068,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0f2635c2d19ca9546855d83f251f88af
     layerID: 178
     mosaicPosition: {x: 3685, y: 748}
@@ -6047,7 +6078,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 96cd936d7c3d9504da7e6bfd3c16f8ff
     layerID: 177
     mosaicPosition: {x: 3685, y: 841}
@@ -6057,7 +6088,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: d2255a0b4ac89b74fbfa0661442c360a
     layerID: 176
     mosaicPosition: {x: 3685, y: 934}
@@ -6067,7 +6098,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 29a33239fa3a22f4e85b1761b154754c
     layerID: 175
     mosaicPosition: {x: 3685, y: 1027}
@@ -6077,7 +6108,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 8a3d480f128124e42b72887bd0fe3834
     layerID: 2075
     mosaicPosition: {x: 4046, y: 1120}
@@ -6087,7 +6118,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 302822295b9e6f4418f35ff12482750c
     layerID: 2074
     mosaicPosition: {x: 4046, y: 1213}
@@ -6097,7 +6128,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 9870913341695b741ad3eb2774f39a92
     layerID: 171
     mosaicPosition: {x: 4046, y: 1306}
@@ -6107,7 +6138,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: cf21f0e691bed3c4298cbecc2859088a
     layerID: 170
     mosaicPosition: {x: 4046, y: 1399}
@@ -6117,7 +6148,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 8a5cec50d9b3c904bb03e42476200f7e
     layerID: 169
     mosaicPosition: {x: 4046, y: 1492}
@@ -6127,7 +6158,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 071cb3f8d111dfa46ad2bce109be20c6
     layerID: 168
     mosaicPosition: {x: 4046, y: 1585}
@@ -6137,7 +6168,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 2e683b8bf2fdebf4f8eb1831336a9bc9
     layerID: 167
     mosaicPosition: {x: 4046, y: 1678}
@@ -6147,7 +6178,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: d9808308221f00f499e07280b7f46894
     layerID: 141
     mosaicPosition: {x: 3685, y: 1120}
@@ -6157,7 +6188,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: eac8aef4522ffa84eb1295e127941397
     layerID: 140
     mosaicPosition: {x: 3685, y: 1213}
@@ -6167,7 +6198,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 21966837654e32347a04aa79185fa63e
     layerID: 137
     mosaicPosition: {x: 3685, y: 1306}
@@ -6177,7 +6208,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 0fb6c116eb34d604893e2a66eba47959
     layerID: 136
     mosaicPosition: {x: 3685, y: 1399}
@@ -6187,7 +6218,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 6ddd1e8d154d419409f370b49c1076cd
     layerID: 157
     mosaicPosition: {x: 3685, y: 1492}
@@ -6197,7 +6228,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: e5044ee7279fea14ebd7e2b4bbb8391e
     layerID: 156
     mosaicPosition: {x: 3685, y: 1585}
@@ -6207,7 +6238,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 89c6634a5861e0f4e97bcc95d4c4d1e7
     layerID: 145
     mosaicPosition: {x: 3685, y: 1678}
@@ -6217,7 +6248,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: e73219e0f6039d346a14c8c8ea45e27a
     layerID: 144
     mosaicPosition: {x: 3685, y: 1771}
@@ -6227,7 +6258,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: 7b72d0e989742894f9b0dd56b48d2d71
     layerID: 143
     mosaicPosition: {x: 3685, y: 1864}
@@ -6237,7 +6268,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: d3cbab7abcae60d4a994ee24842a152f
     layerID: 142
     mosaicPosition: {x: 3685, y: 1957}
@@ -6247,7 +6278,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: e4d5aa5714788d64fb40c14c0ab14dcd
     layerID: 2482
     mosaicPosition: {x: 3685, y: 2050}
@@ -6257,7 +6288,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 75
+    parentIndex: 76
     spriteID: a8926a1b13598ba4888114f68101001a
     layerID: 166
     mosaicPosition: {x: 3824, y: 4}
@@ -6267,7 +6298,7 @@ ScriptedImporter:
   - name: garden_room
     spriteName: 
     isGroup: 1
-    parentIndex: 9
+    parentIndex: 10
     spriteID: 9d2c030071641794d9254715392e194f
     layerID: 5306
     mosaicPosition: {x: 0, y: 0}
@@ -6277,7 +6308,7 @@ ScriptedImporter:
   - name: garnden_and_tree
     spriteName: garnden_and_tree
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 4268d2d248c7cde41bea4ff993d2ac85
     layerID: 7039
     mosaicPosition: {x: 2666, y: 4}
@@ -6287,7 +6318,7 @@ ScriptedImporter:
   - name: garden_room_baixo_wall_temple_long
     spriteName: garden_room_baixo_wall_temple_long
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: f909c1f138ae57a47827421cf51ea45a
     layerID: 5355
     mosaicPosition: {x: 2744, y: 1010}
@@ -6297,7 +6328,7 @@ ScriptedImporter:
   - name: cortado_ender_lado_direito
     spriteName: cortado_ender_lado_direito
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: a688faf6bee3c3a408723ed972f28952
     layerID: 5354
     mosaicPosition: {x: 3120, y: 744}
@@ -6307,7 +6338,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 283b944ed53ed1c4e81e28e8d1686913
     layerID: 5353
     mosaicPosition: {x: 3418, y: 1470}
@@ -6317,7 +6348,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 6702450a5cbb87a4b93be704a6f7163c
     layerID: 5352
     mosaicPosition: {x: 3418, y: 1591}
@@ -6327,7 +6358,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: e41101092d3dc9f4ab70e9478b305d2c
     layerID: 5351
     mosaicPosition: {x: 3418, y: 1712}
@@ -6337,7 +6368,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 9525c67bfcfd0474f8ec655b0b1554d1
     layerID: 5350
     mosaicPosition: {x: 3418, y: 1833}
@@ -6347,7 +6378,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 2e9951b8f2b1aeb4ea85ccac8dcf5d63
     layerID: 5349
     mosaicPosition: {x: 3418, y: 1954}
@@ -6357,7 +6388,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: b752f75ab24c5e345b9f89f2ade92b67
     layerID: 5348
     mosaicPosition: {x: 4, y: 2263}
@@ -6367,7 +6398,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 3d1eaf59f6c624046b2c4a8bf1842917
     layerID: 5347
     mosaicPosition: {x: 3233, y: 1302}
@@ -6377,7 +6408,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: cdb4781945c0a2a40832d11f47bd83ff
     layerID: 5346
     mosaicPosition: {x: 96, y: 2263}
@@ -6387,7 +6418,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 6ebf6312eb720c741bf907087dea52db
     layerID: 5345
     mosaicPosition: {x: 2957, y: 1273}
@@ -6397,7 +6428,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: e642fd72119628f44bffb58c6e676072
     layerID: 5344
     mosaicPosition: {x: 838, y: 2175}
@@ -6407,7 +6438,7 @@ ScriptedImporter:
   - name: cortado_ender_lado_direito
     spriteName: cortado_ender_lado_direito
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 76a6ea646545d6f4595b97a1e2baf4a4
     layerID: 5331
     mosaicPosition: {x: 3120, y: 935}
@@ -6417,7 +6448,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: c604223a7896c7e43aa00f4f143ab656
     layerID: 5332
     mosaicPosition: {x: 188, y: 2263}
@@ -6427,7 +6458,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 4325bf81e8abacd42a04f2c18c532677
     layerID: 5333
     mosaicPosition: {x: 280, y: 2263}
@@ -6437,7 +6468,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 221df6f2219f24c44bd116dc0b3d1e20
     layerID: 5334
     mosaicPosition: {x: 372, y: 2263}
@@ -6447,7 +6478,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: a9c5a2b313697c14d9ee00f8827bbb61
     layerID: 5337
     mosaicPosition: {x: 464, y: 2263}
@@ -6457,7 +6488,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: e5681d361807b1d42b026eff5fbb58b4
     layerID: 5336
     mosaicPosition: {x: 556, y: 2263}
@@ -6467,7 +6498,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: c97290f6fb4be07499eaef0f6544721b
     layerID: 5335
     mosaicPosition: {x: 648, y: 2263}
@@ -6477,7 +6508,7 @@ ScriptedImporter:
   - name: canto_pequeno_cima_wall_temple
     spriteName: canto_pequeno_cima_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 57ec2b5dce9c3ed44a6e26a1ec2d300e
     layerID: 5338
     mosaicPosition: {x: 3233, y: 1478}
@@ -6487,7 +6518,7 @@ ScriptedImporter:
   - name: vertical_wall_temple
     spriteName: vertical_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: b749c158c3462eb4ebfdf67ed234b409
     layerID: 5340
     mosaicPosition: {x: 740, y: 2263}
@@ -6497,7 +6528,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: d8f520e08fb534b49917b25449eef91a
     layerID: 5343
     mosaicPosition: {x: 2957, y: 1448}
@@ -6507,7 +6538,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: d5eaee9640eec444a9b25087a4532345
     layerID: 5341
     mosaicPosition: {x: 2957, y: 1623}
@@ -6517,7 +6548,7 @@ ScriptedImporter:
   - name: baixo_wall_temple
     spriteName: baixo_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 831d7452829359145aa47ef9e2ebe52d
     layerID: 5339
     mosaicPosition: {x: 2957, y: 1798}
@@ -6527,7 +6558,7 @@ ScriptedImporter:
   - name: cortado_cima_wall_temple
     spriteName: cortado_cima_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 95d1cd273ec080d49a08bc1c571e93a1
     layerID: 5330
     mosaicPosition: {x: 977, y: 2175}
@@ -6537,7 +6568,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 9deca75a99766654990815a894a33a0f
     layerID: 3186
     mosaicPosition: {x: 1950, y: 2175}
@@ -6547,7 +6578,7 @@ ScriptedImporter:
   - name: canto_cortado_baixo_wall_temple
     spriteName: canto_cortado_baixo_wall_temple
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: f54c6d8fb86b86541b9b5ebcf5a2d651
     layerID: 3036
     mosaicPosition: {x: 2089, y: 2175}
@@ -6557,7 +6588,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 0a10e8216d07d714b9d1381d695bee0e
     layerID: 3185
     mosaicPosition: {x: 4046, y: 1771}
@@ -6567,7 +6598,7 @@ ScriptedImporter:
   - name: chao_pequeno
     spriteName: chao_pequeno
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 623dc2e4a561fb5469fa517f1ffb2b06
     layerID: 3184
     mosaicPosition: {x: 4055, y: 2040}
@@ -6577,7 +6608,7 @@ ScriptedImporter:
   - name: corredor_base
     spriteName: corredor_base
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: dbb4cfa9eade2c14aba9a755a6b26ce5
     layerID: 3182
     mosaicPosition: {x: 3963, y: 1771}
@@ -6587,7 +6618,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 493912b9c0217a94c80beb948f5ef8bf
     layerID: 2772
     mosaicPosition: {x: 3824, y: 97}
@@ -6597,7 +6628,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 38a002e1d7855034c882788f76288e66
     layerID: 5323
     mosaicPosition: {x: 3824, y: 190}
@@ -6607,7 +6638,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 0d3d41730ea0fd544806a8fb2fdee2d8
     layerID: 5322
     mosaicPosition: {x: 3824, y: 283}
@@ -6617,7 +6648,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 0e8d029d9b7e1d143b7ddfc2976afd9f
     layerID: 5321
     mosaicPosition: {x: 3824, y: 376}
@@ -6627,7 +6658,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 3ba85956d5224054591cea589936c2f5
     layerID: 5320
     mosaicPosition: {x: 3824, y: 469}
@@ -6637,7 +6668,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 9f2ef728efa238549a1ca1fd5f149668
     layerID: 5319
     mosaicPosition: {x: 3824, y: 562}
@@ -6647,7 +6678,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: d264cf58032c96b42934aef5c7df5dff
     layerID: 5318
     mosaicPosition: {x: 3824, y: 655}
@@ -6657,7 +6688,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: cb622954e9f50eb408010639f2b79b65
     layerID: 5317
     mosaicPosition: {x: 3824, y: 748}
@@ -6667,7 +6698,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: b0be4422388389845968ba2dd8cb8a28
     layerID: 5316
     mosaicPosition: {x: 3824, y: 841}
@@ -6677,7 +6708,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: d25937e07b66f62498432bed1ac9120c
     layerID: 5315
     mosaicPosition: {x: 3824, y: 934}
@@ -6687,7 +6718,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 48db83f1928e5624b95f9388fa3ad41a
     layerID: 5314
     mosaicPosition: {x: 3824, y: 1027}
@@ -6697,7 +6728,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: e830a80550473b5429fd757903e1ea6c
     layerID: 5312
     mosaicPosition: {x: 3824, y: 1120}
@@ -6707,7 +6738,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: d915d9738a3b0c741a6375a322c5c147
     layerID: 5326
     mosaicPosition: {x: 3824, y: 1213}
@@ -6717,7 +6748,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 0e8a258196a43c14ca7c44331115f038
     layerID: 5325
     mosaicPosition: {x: 3824, y: 1306}
@@ -6727,7 +6758,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 0cdbd424cd64cbc489a43e02fd64d337
     layerID: 5324
     mosaicPosition: {x: 3824, y: 1399}
@@ -6737,7 +6768,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 8f2c32ebcdd8f174d8d23206c877d504
     layerID: 5311
     mosaicPosition: {x: 3824, y: 1492}
@@ -6747,7 +6778,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 19a3077db4130fe43b55d5bacd076a92
     layerID: 5310
     mosaicPosition: {x: 3824, y: 1585}
@@ -6757,7 +6788,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 4d4cafd4dbd2af441a375213232431fa
     layerID: 5309
     mosaicPosition: {x: 3824, y: 1678}
@@ -6767,7 +6798,7 @@ ScriptedImporter:
   - name: chao
     spriteName: chao
     isGroup: 0
-    parentIndex: 170
+    parentIndex: 171
     spriteID: 645076322346be743b79d9e5024cc56d
     layerID: 5308
     mosaicPosition: {x: 3824, y: 1771}
