@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - Pombo.
@@ -13272,7 +13272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1472294540395589088, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1472294540395589090, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -19278,7 +19278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag: []
   container: []
   text_name: {fileID: 1816943147}
@@ -19376,7 +19376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag:
   - "\xC9 um livro antigo."
   - "\"Ao aventureiro que ler estas palavras\u2026\""
@@ -19678,7 +19678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag: []
   container: []
   text_name: {fileID: 1816943147}
@@ -20135,17 +20135,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3765130221342350996, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 1854290416}
+    - target: {fileID: 3765130221342350996, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 574800270}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.13
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.9
+      value: 31.26
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20182,38 +20202,6 @@ PrefabInstance:
     - target: {fileID: 6747376743275529106, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3765130221342350996, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: gameOver
-      value: 
-      objectReference: {fileID: 1854290416}
-    - target: {fileID: 3765130221342350996, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 574800270}
-    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 6747376743275529104, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 31.26
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529107, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: m_Size.x
@@ -20538,7 +20526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag:
   - "Esta deve ser a \xE1rvore que o livro indica."
   - Tenho que colher os frutos..
@@ -20596,7 +20584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - Panda.
@@ -20868,7 +20856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag: []
   container: []
   text_name: {fileID: 1816943147}
@@ -21884,11 +21872,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16d862f69a9bca4a9980a2f5ceb9646, type: 3}
---- !u!1 &1457449377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6747376743275529106, guid: f6d870ca888193349acf5f598e194ced, type: 3}
-  m_PrefabInstance: {fileID: 1013827235}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1458818765 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1819753110609927076, guid: e16d862f69a9bca4a9980a2f5ceb9646, type: 3}
@@ -28051,7 +28034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag: []
   container: []
   text_name: {fileID: 1816943147}
@@ -28469,7 +28452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - "Lobo da Tasm\xE2nia."
@@ -35050,7 +35033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diag_box: {fileID: 619091923}
   name_npc: Arianna
-  inventory: {fileID: 108881094}
+  inventory: {fileID: 626227597}
   sentences_diag:
   - "\xC9 uma est\xE1tua de um..."
   - Caranguejo.
