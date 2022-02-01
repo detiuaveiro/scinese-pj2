@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     protected float lastImmune;
     protected Vector2 pushDirection;
     private Rigidbody2D rb;
+    public AudioSource sfx;
 
     public GameOver_Menu gameOver;
 
@@ -40,6 +41,16 @@ public class Player : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
+        {
+            sfx.loop = true;
+            sfx.Play();
+        }
+        else
+        {
+            sfx.Pause();
+            sfx.loop = false;
+        }
         pMove.GetMovementInput();
 
         
@@ -82,7 +93,8 @@ public class Player : MonoBehaviour
 
     public void FixedUpdate()
     {
-        pMove.Move();
+
+        pMove.Move(sfx);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

@@ -10,6 +10,7 @@ public class doorController : MonoBehaviour
     public BoxCollider2D boxcollider;
     private Player player;
     public Item_Data key;
+    public AudioSource sfx;
 
 
     private void Start()
@@ -22,6 +23,7 @@ public class doorController : MonoBehaviour
     {
         if (!isOpen && player.inventory.items.Contains(key))
         {
+            sfx.Play();
             isOpen = true;
             Debug.Log("Door is Unlocked");//Destrancar porta
             animator.SetBool("isOpen", true); //ativar animação abrir porta

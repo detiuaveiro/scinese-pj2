@@ -82,10 +82,10 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
             return;
         }
 
-        if (i.Equals(container.Length))
-        {
-            EndDialogue();
-        }
+        //if (i.Equals(container.Length))
+        //{
+        //    EndDialogue();
+        //}
 
         string sentence = sentences.Dequeue(); //Se houver ainda frases, buscar a próxima
         text_dialogue.text = sentence;

@@ -13031,11 +13031,11 @@ PrefabInstance:
       objectReference: {fileID: 890357663}
     - target: {fileID: 1007792175518336881, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1007792175518336881, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1472294538593730084, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_IsActive
@@ -19777,6 +19777,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 2076714470}
     - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: gameOver
       value: 
@@ -33307,6 +33311,11 @@ Transform:
 --- !u!95 &2076714469 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6747376743275529114, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+  m_PrefabInstance: {fileID: 1013827235}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2076714470 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9122796864056833895, guid: f6d870ca888193349acf5f598e194ced, type: 3}
   m_PrefabInstance: {fileID: 1013827235}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2098343845

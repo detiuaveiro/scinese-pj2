@@ -219,6 +219,7 @@ public class LowerEnemy : Collidable
             //animator.SetTrigger("Attack");//ativar animação de ataque
             anim.SetTrigger("Attack");
 
+
             //// create a new damage object, then we'll send it to the lower enemy
             //Damage dmg = new Damage(transform.position, 1, 0.2f);
 

@@ -12,11 +12,13 @@ public class Weapon : Collidable
     public Animator animator; // animator controller is the name in the inspector, just "animator" is the name in the code
     private float cooldown = 0f; // time you need to spend before swinging again 
     private float lastSwing; // time where the last swing took place
+    public AudioSource sfx;
 
     protected override void Awake()
     {
         base.Awake();
         animator = GetComponentInParent<Animator>();
+       // sfx = GetComponentInParent<AudioSource>();
     }
 
     //protected override void FixedUpdate()
@@ -64,6 +66,8 @@ public class Weapon : Collidable
         {
             // create a new damage object, then we'll send it to the lower enemy
             Damage dmg = new Damage(transform.position, damage, pushForce);
+
+            sfx.Play();
 
             // send message to the enemy
             coll.SendMessage("ReceiveDamage", dmg);

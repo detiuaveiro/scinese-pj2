@@ -11,6 +11,7 @@ public class CatckKey : MonoBehaviour
     public float amount;
     public GameObject infballon;
     public GameObject itemButton;
+    public AudioClip sfx;
 
     public bool isInRange; //Variável para verificar se está no range
     public KeyCode InteractKey; //Variável para passar a tecla de interação
@@ -31,6 +32,7 @@ public class CatckKey : MonoBehaviour
                 {
                     if (player.inventory.isSlotFull[i] == false)
                     {
+                        AudioSource.PlayClipAtPoint(sfx, transform.position);
                         player.inventory.AddItem(item);
                         player.inventory.isSlotFull[i] = true;
                         player.inventory.itemIn[i] = true;
