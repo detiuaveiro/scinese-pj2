@@ -8,6 +8,7 @@ public class PlayerMovement
     public Rigidbody2D rig;
 
     public Animator animator;
+   // public AudioClip sfx;
 
     Vector2 movement; //como � vetor 2 vai usar o x e o y 
 
@@ -30,7 +31,7 @@ public class PlayerMovement
       
     }
 
-    public void Move()
+    public void Move(AudioSource sfx)
     {
         //movement
         // physics on fixed-update funct
@@ -40,6 +41,7 @@ public class PlayerMovement
             animator.SetFloat("Horizontal", movement.x); //Realizar anima��es quando as tivermos
             animator.SetFloat("Vertical", movement.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
+
             speed = 3.8f;
 
             if(movement.y == 0 ) 

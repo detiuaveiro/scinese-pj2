@@ -9,11 +9,13 @@ public class ChestController : MonoBehaviour
     public GameObject keyObject;
     public GameObject ballon;
     int key;
+    public AudioSource sfx;
 
     public void OpenChest()
     {
         if (!isOpen)
         {
+            sfx.Play();
             isOpen = true;
             Debug.Log("Chest is Unlocked");//Destrancar porta
             animator.SetBool("isOpen", true); //ativar animação abrir bau
