@@ -1268,6 +1268,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &244546305
 GameObject:
   m_ObjectHideFlags: 0
@@ -6879,6 +6880,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &406870435
 GameObject:
   m_ObjectHideFlags: 0
@@ -13029,11 +13031,11 @@ PrefabInstance:
       objectReference: {fileID: 890357663}
     - target: {fileID: 1007792175518336881, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1007792175518336881, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1472294538593730084, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
       propertyPath: m_IsActive
@@ -18853,6 +18855,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &811052048
 GameObject:
   m_ObjectHideFlags: 0
@@ -18965,6 +18968,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &847180433
 GameObject:
   m_ObjectHideFlags: 0
@@ -19234,6 +19238,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!114 &890357663 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1992834942, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
@@ -19773,6 +19778,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 2076714470}
+    - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1854290416}
@@ -20067,6 +20076,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &1142518340
 GameObject:
   m_ObjectHideFlags: 0
@@ -20121,6 +20131,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &1165411168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5587715499320183029, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
@@ -20320,6 +20331,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!4 &1266703393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8821795398990873853, guid: c9eead4ddef68044c94c12cc17f064b9, type: 3}
@@ -27254,6 +27266,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &1801744668
 GameObject:
   m_ObjectHideFlags: 0
@@ -27672,6 +27685,7 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
 --- !u!1 &1851811195
 GameObject:
   m_ObjectHideFlags: 0
@@ -33299,6 +33313,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 6747376743275529114, guid: f6d870ca888193349acf5f598e194ced, type: 3}
   m_PrefabInstance: {fileID: 1013827235}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &2076714470 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9122796864056833895, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+  m_PrefabInstance: {fileID: 1013827235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2098343845
 GameObject:
   m_ObjectHideFlags: 0
@@ -34185,3 +34204,4 @@ MonoBehaviour:
   container: []
   text_name: {fileID: 1816943147}
   text_dialogue: {fileID: 890357663}
+  i: 0
