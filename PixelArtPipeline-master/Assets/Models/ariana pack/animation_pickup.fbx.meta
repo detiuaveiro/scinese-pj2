@@ -1,12 +1,27 @@
 fileFormatVersion: 2
-guid: 6b85b57c009eab84d8af3ba9cd53d502
+guid: 5c0d3ef9aadac9f48abf1defc020c0c6
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: -203655887218126122
-    second: mixamo.com
-  externalObjects: {}
+      74: -4791504522942941401
+    second: Sword And Shield Run
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beta_Joints_MAT
+    second: {fileID: 2100000, guid: c9bf1c3e82fa95447badc4fe33f0f29c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 6ab0ba0652d9df4499da91dd8d826ac7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asdf1_Beta_HighLimbsGeoSG2
+    second: {fileID: 2100000, guid: 02878c93435724f47863f28cf714fac2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -34,7 +49,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sword And Shield Run
+      takeName: Armature|Armature|mixamo.com|Layer0
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
