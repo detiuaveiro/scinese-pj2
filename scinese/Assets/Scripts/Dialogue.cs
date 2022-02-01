@@ -30,13 +30,13 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
 
     public void Update()
     {
-        //for (int i = 0; i < container.Length; i++)
+
+        //if (Input.GetKeyDown(KeyCode.Return) && i<container.Length)
         //{
-        //    if (Input.GetKeyDown(KeyCode.C))
-        //    {
-        //        text_dialogue.text = container[i];
-        //    }
+        //    text_dialogue.text = container[i];
+        //    i++;
         //}
+
         if (Input.GetKeyDown(KeyCode.Return))
         {
             DisplayNextSentence();
@@ -59,10 +59,10 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         foreach (string sentence in sentences_diag) //Aceder as strings da classe dialogue
         {
             sentences.Enqueue(sentence); //pôr as frases em queue
-            text_dialogue.text = sentence;
+            //text_dialogue.text = sentence;
             // Debug.Log(sentence);
             container = sentences.ToArray();
-            Debug.Log(container);
+           // Debug.Log(container);
         }
 
         //if (Input.GetKeyDown(KeyCode.Space))
