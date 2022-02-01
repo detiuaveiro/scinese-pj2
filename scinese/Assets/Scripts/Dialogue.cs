@@ -26,6 +26,7 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
     void Start()
     {
         sentences = new Queue<string>();
+        sentences.Clear();
     }
 
     public void Update()
