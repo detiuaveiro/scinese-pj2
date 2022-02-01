@@ -13,6 +13,7 @@ public class SlotController : MonoBehaviour
     //public GameObject slot3;
     //public GameObject slot4;
     public GameObject[] slots = new GameObject[4];
+    public AudioClip potionSfx;
 
 
 
@@ -93,10 +94,14 @@ public class SlotController : MonoBehaviour
 
         if (isSelected[0] == true) //posição 0 pertence ao slot1 e assim sequencialmente
         {
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.G))//dropar item
             {
                 //  DropItem1();
                 DropItem(slots[0], 0);
+            }
+            if (Input.GetKeyDown(KeyCode.U))//Usar item
+            {
+                UseItem(slots[0], 0);
             }
         }
         if (isSelected[1] == true)
@@ -106,6 +111,10 @@ public class SlotController : MonoBehaviour
                 //  DropItem2();
                 DropItem(slots[1], 1);
             }
+            if (Input.GetKeyDown(KeyCode.U))//Usar item
+            {
+                UseItem(slots[1], 1);
+            }
         }
         if (isSelected[2] == true)
         {
@@ -114,6 +123,10 @@ public class SlotController : MonoBehaviour
                 // DropItem3();
                 DropItem(slots[2], 2);
             }
+            if (Input.GetKeyDown(KeyCode.U))//Usar item
+            {
+                UseItem(slots[2], 2);
+            }
         }
         if (isSelected[3] == true)
         {
@@ -121,6 +134,10 @@ public class SlotController : MonoBehaviour
             {
                 //  DropItem4();
                 DropItem(slots[3], 3);
+            }
+            if (Input.GetKeyDown(KeyCode.U))//Usar item
+            {
+                UseItem(slots[3], 3);
             }
         }
 
@@ -172,88 +189,101 @@ public class SlotController : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
     }
-    //public void DropItem2()
-    //{
-    //    foreach (Transform child in slots[1].transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem();
-    //        player.inventory.items[1] = null;
-    //        player.inventory.itemIn[1] = false;
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
-    //public void DropItem3()
-    //{
-    //    foreach (Transform child in slots[2].transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem();
-    //        //   player.inventory.items.RemoveAt(2);
-    //        player.inventory.items[2] = null;
-    //        player.inventory.itemIn[2] = false;
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
-    //public void DropItem4()
-    //{
-    //    foreach (Transform child in slots[3].transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem();
-    //        player.inventory.items[3] = null;
-    //        player.inventory.itemIn[3] = false;
-    //        //    player.inventory.items.RemoveAt(3);
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
 
-    //public void DropItem1()
-    //{
-    //    foreach(Transform child in slot1.transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem(); //dropar item, que está como filho do slot1
-    //      //  player.inventory.items.RemoveAt(0); //Remover item da posição 0 da lista, que coincide com o primeiro slot
-    //        player.inventory.items[0] = null;
-    //        player.inventory.itemIn[0] = false;
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
-    //public void DropItem2()
-    //{
-    //    foreach (Transform child in slot2.transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem();
-    //        player.inventory.items[1] = null;
-    //        player.inventory.itemIn[1] = false;
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
-    //public void DropItem3()
-    //{
-    //    foreach (Transform child in slot3.transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem();
-    //        //   player.inventory.items.RemoveAt(2);
-    //        player.inventory.items[2] = null;
-    //        player.inventory.itemIn[2] = false;
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
-    //public void DropItem4()
-    //{
-    //    foreach (Transform child in slot4.transform)
-    //    {
-    //        child.GetComponent<InteractInv>().SpawnDroppedItem();
-    //        player.inventory.items[3] = null;
-    //        player.inventory.itemIn[3] = false;
-    //        //    player.inventory.items.RemoveAt(3);
-    //        GameObject.Destroy(child.gameObject);
-    //    }
-    //}
 
-    public void UseItem(GameObject slot)
+    public void UseItem(GameObject slot, int i)
     {
         foreach (Transform child in slot.transform)
         {
-            GameObject.Destroy(child.gameObject);
+            if (child.CompareTag("Potion"))
+            {
+                if(player.currentHealth < player.maxHealth)
+                {
+                    AudioSource.PlayClipAtPoint(potionSfx, transform.position);
+                    player.currentHealth += 2;
+                    player.healthBar.SetHealth(player.currentHealth);
+                    player.inventory.items[i] = null;
+                    player.inventory.itemIn[i] = false;
+                    GameObject.Destroy(child.gameObject);
+                }
+            }
         }
     }
 }
+
+//public void DropItem2()
+//{
+//    foreach (Transform child in slots[1].transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem();
+//        player.inventory.items[1] = null;
+//        player.inventory.itemIn[1] = false;
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}
+//public void DropItem3()
+//{
+//    foreach (Transform child in slots[2].transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem();
+//        //   player.inventory.items.RemoveAt(2);
+//        player.inventory.items[2] = null;
+//        player.inventory.itemIn[2] = false;
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}
+//public void DropItem4()
+//{
+//    foreach (Transform child in slots[3].transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem();
+//        player.inventory.items[3] = null;
+//        player.inventory.itemIn[3] = false;
+//        //    player.inventory.items.RemoveAt(3);
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}
+
+//public void DropItem1()
+//{
+//    foreach(Transform child in slot1.transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem(); //dropar item, que está como filho do slot1
+//      //  player.inventory.items.RemoveAt(0); //Remover item da posição 0 da lista, que coincide com o primeiro slot
+//        player.inventory.items[0] = null;
+//        player.inventory.itemIn[0] = false;
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}
+//public void DropItem2()
+//{
+//    foreach (Transform child in slot2.transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem();
+//        player.inventory.items[1] = null;
+//        player.inventory.itemIn[1] = false;
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}
+//public void DropItem3()
+//{
+//    foreach (Transform child in slot3.transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem();
+//        //   player.inventory.items.RemoveAt(2);
+//        player.inventory.items[2] = null;
+//        player.inventory.itemIn[2] = false;
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}
+//public void DropItem4()
+//{
+//    foreach (Transform child in slot4.transform)
+//    {
+//        child.GetComponent<InteractInv>().SpawnDroppedItem();
+//        player.inventory.items[3] = null;
+//        player.inventory.itemIn[3] = false;
+//        //    player.inventory.items.RemoveAt(3);
+//        GameObject.Destroy(child.gameObject);
+//    }
+//}

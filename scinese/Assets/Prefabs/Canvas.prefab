@@ -487,8 +487,10 @@ MonoBehaviour:
   name_npc: 
   inventory: {fileID: 3459394317062668461}
   sentences_diag: []
+  container: []
   text_name: {fileID: 1405511584}
   text_dialogue: {fileID: 1992834942}
+  i: 0
 --- !u!1 &1472294538694146872
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,6 +2239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3455498988536197917}
   - component: {fileID: 5313599980416405239}
+  - component: {fileID: 3039203288669506278}
   m_Layer: 0
   m_Name: backpack
   m_TagString: Untagged
@@ -2311,6 +2314,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3039203288669506278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3280914492305199526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58c3dd1081d1a74a9444028bc486c40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 8364106169211385698}
+  - {fileID: 5443769665737173096}
+  - {fileID: 158873396217157962}
+  - {fileID: 5983196993026966789}
 --- !u!1 &3459394317062668461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2979,16 +2999,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 209fb0ed972e93f4d955166103cd57ed, type: 2}
+  m_sharedMaterial: {fileID: 1853791636308758081, guid: 209fb0ed972e93f4d955166103cd57ed, type: 2}
   m_fontSharedMaterials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280498759
+  m_fontColor: {r: 0.2784314, g: 0.227451, b: 0.13725491, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3005,13 +3025,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 140.8
+  m_fontSizeBase: 140.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
