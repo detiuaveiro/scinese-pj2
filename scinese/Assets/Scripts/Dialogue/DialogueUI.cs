@@ -10,11 +10,13 @@ public class DialogueUI : MonoBehaviour
 
     public bool isOpen { get; private set; }
 
+    private Player player;
     private ResponseHandler responseHandler;
     private TypeWritterEffect typeWritterEffect;
 
     private void Start()
     {
+        player = GameManager.instance.player;
         typeWritterEffect = GetComponent<TypeWritterEffect>();
         responseHandler = GetComponent<ResponseHandler>();
         CloseDialogueBox();
@@ -22,6 +24,7 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
+        player.rb.bodyType = RigidbodyType2D.Static;
         isOpen = true;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
@@ -65,5 +68,6 @@ public class DialogueUI : MonoBehaviour
         isOpen = false;
         dialogueBox.SetActive(false);
         textlabel.text = string.Empty;
+        player.rb.bodyType = RigidbodyType2D.Dynamic;
     }
 }

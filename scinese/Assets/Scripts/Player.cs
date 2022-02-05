@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     protected float immuneTimeCooldown = 1.0f; // time in which the enemy can't be attacked
     protected float lastImmune;
     protected Vector2 pushDirection;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public AudioSource sfx;
 
     public GameOver_Menu gameOver;
