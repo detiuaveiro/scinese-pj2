@@ -3,33 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 [System.Serializable]
 public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação de uma conversa
 {
-    public GameObject diag_box;
-    public string name_npc; //nome do npc 
-    public GameObject inventory;
+    [SerializeField] private GameObject diag_box;
+    [SerializeField] private string name_npc; //nome do npc 
+    [SerializeField] private GameObject inventory;
 
     [TextArea(3, 10)]
-    public string[] sentences_diag; //frases para dar load no queue
+    [SerializeField] private string[] sentences_diag; //frases para dar load no queue
 
+    private  bool isStarted;
     public string[] container;
-    [SerializeField] public TextMeshProUGUI text_name;
-    [SerializeField] public TextMeshProUGUI text_dialogue;
+    [SerializeField] private TextMeshProUGUI text_name;
+    [SerializeField] private TextMeshProUGUI text_dialogue;
     // [SerializeField] public Animator anim;
+
+    Dialogue dialogue;
 
     public int i;
    
     private Queue<string> sentences; //Queue, funciona como uma lista, utiliza o sistema first in first out
+    
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
+        dialogue = GetComponent<Dialogue>();
         sentences = new Queue<string>();
         sentences.Clear();
     }
 
-    public void Update()
+    private void Update()
     {
 
         //if (Input.GetKeyDown(KeyCode.Return) && i<container.Length)
@@ -37,15 +43,17 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         //    text_dialogue.text = container[i];
         //    i++;
         //}
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            DisplayNextSentence();
-            i++;
-        }
+        //if(isStarted == true)
+        //{
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                DisplayNextSentence();
+                i++;
+            }
+        //}
     }
 
-    public void StartDialogue() //
+    private void StartDialogue() //
     {
         inventory.gameObject.SetActive(false);
         //anim.SetBool("IsShow", true);
@@ -72,13 +80,14 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         //}
 
         DisplayNextSentence();
+        isStarted = true;
     }
 
-    public void DisplayNextSentence() //Buscar a próxima frase em queue
+    private void DisplayNextSentence() //Buscar a próxima frase em queue
     {
         if (sentences.Count == 0) //Se não houver mais frases, terminar
         {
-            //EndDialogue();
+           // EndDialogue();
             Debug.Log("Finish Sentences");
             return;
         }
@@ -106,11 +115,16 @@ public class Dialogue : MonoBehaviour //Esta classe vai levar toda a informação 
         }
     }
 
-    public void EndDialogue()
+    private void EndDialogue()
     {
+        sentences.Clear();
         diag_box.SetActive(false);
         Time.timeScale = 1f; //Continuar tempo no jogo
         inventory.gameObject.SetActive(true);
+        List<string> phrases = container.ToList();
+        phrases.Clear();
+        container = phrases.ToArray();
+
         //anim.SetBool("IsShow", false);
     }
 }

@@ -19,6 +19,11 @@ public class Player : MonoBehaviour
 
     public GameOver_Menu gameOver;
 
+    [SerializeField] DialogueUI dialogueUI;
+    public DialogueUI DialogueUI => dialogueUI;
+
+    public IInteractable Interactable { get; set; }
+
    //[SerializeField] private Item_Data[] items = new Item_Data[4];
    // [SerializeField] private int invSpace = 4;
     public GameObject[] slots = new GameObject[4];
@@ -53,7 +58,13 @@ public class Player : MonoBehaviour
         }
         pMove.GetMovementInput();
 
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(Interactable != null)
+            {
+                Interactable.Interact(this);
+            }
+        }
         //Debug.Log(this.inventory.items.Count);
 
 
