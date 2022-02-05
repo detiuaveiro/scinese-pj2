@@ -59,6 +59,7 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
+            player.rb.bodyType = RigidbodyType2D.Dynamic;
             CloseDialogueBox();
         }
     }
@@ -68,6 +69,5 @@ public class DialogueUI : MonoBehaviour
         isOpen = false;
         dialogueBox.SetActive(false);
         textlabel.text = string.Empty;
-        player.rb.bodyType = RigidbodyType2D.Dynamic;
     }
 }

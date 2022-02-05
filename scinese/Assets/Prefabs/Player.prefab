@@ -165,8 +165,10 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   healthBar: {fileID: 0}
+  rb: {fileID: 6747376743275529111}
   sfx: {fileID: 9122796864056833895}
   gameOver: {fileID: 0}
+  dialogueUI: {fileID: 0}
   slots:
   - {fileID: 0}
   - {fileID: 0}

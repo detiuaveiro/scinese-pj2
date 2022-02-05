@@ -25529,7 +25529,8 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 70899729}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1894341713, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
 --- !u!114 &2046621850 stripped
 MonoBehaviour:
