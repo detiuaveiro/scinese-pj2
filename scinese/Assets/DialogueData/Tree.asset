@@ -18,3 +18,8 @@ MonoBehaviour:
   - Tenho que colher os frutos..
   - ...(colhe dois frutos)...
   - Como o fruto agora?
+  responses:
+  - responseText: Sim!
+    dialogueObject: {fileID: 11400000, guid: c16c95a2d0122464fa36b19838b8bb71, type: 2}
+  - responseText: "N\xE3o!"
+    dialogueObject: {fileID: 11400000, guid: cde10f8bdb2bdae4d923676be0cae9a8, type: 2}
