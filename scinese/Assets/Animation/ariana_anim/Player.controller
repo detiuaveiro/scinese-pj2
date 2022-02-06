@@ -464,7 +464,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: isMoving
     m_Type: 4
@@ -502,7 +502,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: f23fa87c82bf81a41826ac2fdb9e8a30, type: 2}
+    m_Motion: {fileID: 7400000, guid: b7dfcea6c01565a4da28da4e9e044d53, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1

@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.Mathematics.math;
 
 public class LowerEnemy : Collidable
 {
-    public Transform playerpos;//para saber a posição do player
+    public Transform playerpos;//para saber a posiï¿½ï¿½o do player
     private Vector2 movement;//dar movimento em x e em y
     public int numberOfLives = 2;
     public float pushRecoverySpeed = 0.2f;
@@ -27,10 +28,14 @@ public class LowerEnemy : Collidable
     private Animator anim;
     public GameObject dad;
 
+    private float time = 0;
+    bool isMoving = false;
+    float newSpeed=0;
+
 
     private void Start()
     {
-        mustPatrol = true;//Inicia em idle
+        //mustPatrol = true;//Inicia em idle
         myTransform = GetComponent<Transform>();
         anim = GetComponent<Animator>();
        // parentTransform = GetComponentInParent<Transform>();
@@ -53,24 +58,13 @@ public class LowerEnemy : Collidable
     //    animator.SetFloat("Speed", movement.sqrMagnitude);
     //}
 
-    public void Move()
-    {
-        Vector3 temp = myTransform.position + directionVector * speed * Time.deltaTime;
-        if (bounds.bounds.Contains(temp))
-        {
-            rb.MovePosition(temp);
-        }
-        else
-        {
-            ChangeDirection();
-        }
-    }
+   
 
     //protected override void FixedUpdate()
     //{
     //    base.FixedUpdate();
 
-    //    Vector3 direction = playerpos.position - transform.position;//posição do inimgo em relação à do player
+    //    Vector3 direction = playerpos.position - transform.position;//posiï¿½ï¿½o do inimgo em relaï¿½ï¿½o ï¿½ do player
     //    float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
     //    //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;//Calcular angulo onde se econtra o player
 
@@ -94,15 +88,13 @@ public class LowerEnemy : Collidable
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-        Vector3 direction = playerpos.position - transform.position;//posição do inimgo em relação à do player
+        Vector3 direction = playerpos.position - transform.position;//posiï¿½ï¿½o do inimgo em relaï¿½ï¿½o ï¿½ do player
+        
         float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
 
-        if (range <= 4)
+        if (range <= 5)
         {
-            direction.Normalize(); //manter entre -1 e 1
-            directionVector = direction;
-            //rb.rotation = angle; //rodar o inimigo para o player
-            FollowPlayer(directionVector);
+            FollowPlayer(direction);
         }
         else
         {
@@ -110,36 +102,85 @@ public class LowerEnemy : Collidable
         }
 
         UpdateAnimation();
+        //Debug.Log("speed = " + speed);
     }
 
+    public void Move()
+    {
+        time += Time.deltaTime; 
+        
+        if(time >= Random.Range(2, 5)) 
+        {
+            isMoving = !isMoving;
+            ChangeDirection();
+            time = 0;
+            
+        }
+
+        if(isMoving)
+        {
+            setNewSpeed(directionVector);
+            Vector2 temp = myTransform.position + directionVector * newSpeed * Time.deltaTime;
+            
+            if (bounds.bounds.Contains(temp))
+            {
+                rb.MovePosition(temp);
+            }
+            else
+            {
+                ChangeDirection();
+            }
+            
+        }
+
+
+        
+    }
     public void FollowPlayer(Vector3 direction2)//mover o inimgo
     {
         mustPatrol = false;
-        //direction2 = direction2.normalized;
-        rb.MovePosition(myTransform.position + (direction2 * speed * Time.deltaTime));
+        setFixedDirection(direction2);
+        setNewSpeed(directionVector);
+        rb.MovePosition(myTransform.position + directionVector * newSpeed * Time.deltaTime);
         dad.transform.position = this.gameObject.transform.position;
     }
 
     void ChangeDirection()
     {
-        int direction = Random.Range(0, 4);
-        switch (direction)
+        int direction = Random.Range(0, 8);
+        switch (direction) 
         {
             case 0:
                 //walking right
-                directionVector = Vector3.right;
+                directionVector = Vector2.right;
                 break;
             case 1:
                 //walking up
-                directionVector = Vector3.up;
+                directionVector = Vector2.up;
                 break;
             case 2:
                 //walking left
-                directionVector = Vector3.left;
+                directionVector = Vector2.left;
                 break;
             case 3:
                 //walking down
-                directionVector = Vector3.down;
+                directionVector = Vector2.down;
+                break;
+            case 4:
+                //walking down
+                directionVector.Set(1,1,0);
+                break;
+            case 5:
+                //walking down
+                directionVector.Set(1,-1,0);
+                break;
+            case 6:
+                //walking down
+                directionVector.Set(-1,1,0);
+                break;
+            case 7:
+                //walking down
+                directionVector.Set(-1,-1,0);
                 break;
             default:
                 break;
@@ -153,6 +194,7 @@ public class LowerEnemy : Collidable
         anim.SetFloat("Speed", directionVector.sqrMagnitude);
     }
 
+/*
     void Patrol(Vector2 direction)//Enemy em idle
     {
         direction = direction.normalized;
@@ -174,7 +216,7 @@ public class LowerEnemy : Collidable
             directionIdle = new Vector2(0.1f, 0);
         }
 
-    }
+    }*/
 
     public void ReceiveDamage(Damage damage)
     {
@@ -209,6 +251,7 @@ public class LowerEnemy : Collidable
         {
             loops++;
             ChangeDirection();
+            
         }
 
         // Debug.Log(coll);
@@ -216,7 +259,7 @@ public class LowerEnemy : Collidable
         {
             rb.MovePosition(rb.position);
             rb.bodyType = RigidbodyType2D.Static;
-            //animator.SetTrigger("Attack");//ativar animação de ataque
+            //animator.SetTrigger("Attack");//ativar animaï¿½ï¿½o de ataque
             anim.SetTrigger("Attack");
 
 
@@ -230,5 +273,61 @@ public class LowerEnemy : Collidable
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
+    }
+
+    public void setNewSpeed(Vector3 direction) 
+    {
+        newSpeed = speed;
+
+        if(direction.y == 0 ) 
+        {
+            newSpeed = speed+speed/10;
+        }
+
+        if(direction.x == 0) 
+        {
+            newSpeed = speed-speed/10;
+        }
+        Debug.Log(newSpeed);
+        
+    }
+
+    public void setFixedDirection (Vector3 direction)
+    {
+        direction.Normalize();
+
+        if(direction.x > 0.5f)
+        {
+            directionVector.x = 1f;
+        }
+
+         if(direction.x < -0.5f)
+        {
+            directionVector.x = -1f;
+        }
+
+        if(direction.x <= 0.5f && direction.x >= -0.5f)
+        {
+            directionVector.x =0;
+        }
+
+        //-------------
+
+        if(direction.y > 0.5f)
+        {
+            directionVector.y = 1f;
+        }
+
+         if(direction.y < -0.5f)
+        {
+            directionVector.y = -1f;
+        }
+
+        if(direction.y <= 0.5f && direction.y >= -0.5f)
+        {
+            directionVector.y =0;
+        }
+
+
     }
 }

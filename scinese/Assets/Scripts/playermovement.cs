@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement
 {
     public float speed;
+    float newSpeed;
     public Rigidbody2D rig;
 
     public Animator animator;
@@ -42,25 +43,36 @@ public class PlayerMovement
             animator.SetFloat("Vertical", movement.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
 
-            speed = 3.8f;
-
-            if(movement.y == 0 ) 
-            {
-                speed = 4.3f;
-            }
-            if(movement.x == 0) 
-            {
-                speed = 3f;
-            }
+            speed = 4f;
             
+            setNewSpeed(movement);
             
-            rig.MovePosition(rig.position + movement * speed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
+            rig.MovePosition(rig.position + movement * newSpeed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
         }
         else 
         {
             animator.SetBool("isMoving", false);
             rig.MovePosition(rig.position); 
         }
+        
+    }
+
+
+     public void setNewSpeed(Vector3 direction) 
+    {
+        newSpeed = speed;
+
+        if(direction.y == 0 ) 
+        {
+            newSpeed = speed+speed/10;
+        }
+
+        if(direction.x == 0) 
+        {
+            newSpeed = speed-speed/10;
+        }
+
+        
         
     }
 }
