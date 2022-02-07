@@ -102,7 +102,7 @@ public class LowerEnemy : Collidable
         }
 
         UpdateAnimation();
-        //Debug.Log("speed = " + speed);
+        
     }
 
     public void Move()
@@ -112,7 +112,16 @@ public class LowerEnemy : Collidable
         if(time >= Random.Range(2, 5)) 
         {
             isMoving = !isMoving;
-            ChangeDirection();
+            if(isMoving == true)
+            {
+                anim.SetBool("isMoving", true);
+                ChangeDirection();
+            }
+            if(isMoving == false)
+            {
+                anim.SetBool("isMoving", false);
+            }
+            
             time = 0;
             
         }
@@ -128,11 +137,15 @@ public class LowerEnemy : Collidable
             }
             else
             {
+                Debug.Log("hi");
                 ChangeDirection();
             }
             
         }
-
+        if(!isMoving)
+        {
+            rb.MovePosition(myTransform.position);
+        }
 
         
     }
@@ -191,7 +204,7 @@ public class LowerEnemy : Collidable
     {
         anim.SetFloat("Horizontal", directionVector.x);
         anim.SetFloat("Vertical", directionVector.y);
-        anim.SetFloat("Speed", directionVector.sqrMagnitude);
+        
     }
 
 /*
@@ -288,7 +301,7 @@ public class LowerEnemy : Collidable
         {
             newSpeed = speed-speed/10;
         }
-        Debug.Log(newSpeed);
+        
         
     }
 
