@@ -91,90 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Jaula1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 708
-      y: 513
-      width: 113
-      height: 154
-    spriteID: e47ef7182ae49b345aa2cb4df63afd20
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -212, y: -587}
-  - name: Jaula
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 829
-      y: 513
-      width: 113
-      height: 154
-    spriteID: 9c391b22a5ac08b4cb39e4958890fa7d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 260, y: -586}
-  - name: tochas1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 999
-      y: 4
-      width: 14
-      height: 33
-    spriteID: d0350d03fb471d54ba619c70ffd21408
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 203, y: -1176}
-  - name: tochas
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 999
-      y: 75
-      width: 14
-      height: 33
-    spriteID: 3c199dabdd3f2fc4c8288fbb9be1e41a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 67, y: -481}
   - name: cimamurodeitado1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -455,8 +371,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 675
-      y: 146
+      x: 708
+      y: 513
       width: 78
       height: 174
     spriteID: b36eea9e05d2bb841890ed2be8ce8d33
@@ -468,7 +384,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -100, y: -126}
+    uvTransform: {x: -67, y: 241}
   - name: entradaGruta
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -476,8 +392,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 761
-      y: 146
+      x: 794
+      y: 513
       width: 78
       height: 174
     spriteID: aa7b3b1a92622674f8c0189f9a3b2598
@@ -489,7 +405,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -15, y: -296}
+    uvTransform: {x: 18, y: 71}
   characterData:
     bones: []
     parts: []
@@ -597,46 +513,6 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Jaula1
-    spriteName: Jaula1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: e47ef7182ae49b345aa2cb4df63afd20
-    layerID: 84
-    mosaicPosition: {x: 708, y: 513}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Jaula
-    spriteName: Jaula
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 9c391b22a5ac08b4cb39e4958890fa7d
-    layerID: 83
-    mosaicPosition: {x: 829, y: 513}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: tochas1
-    spriteName: tochas1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: d0350d03fb471d54ba619c70ffd21408
-    layerID: 85
-    mosaicPosition: {x: 999, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: tochas
-    spriteName: tochas
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 3c199dabdd3f2fc4c8288fbb9be1e41a
-    layerID: 74
-    mosaicPosition: {x: 999, y: 75}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: cimamurodeitado1
     spriteName: cimamurodeitado1
     isGroup: 0
@@ -773,7 +649,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b36eea9e05d2bb841890ed2be8ce8d33
     layerID: 21
-    mosaicPosition: {x: 675, y: 146}
+    mosaicPosition: {x: 708, y: 513}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -783,7 +659,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: aa7b3b1a92622674f8c0189f9a3b2598
     layerID: 3
-    mosaicPosition: {x: 761, y: 146}
+    mosaicPosition: {x: 794, y: 513}
     flatten: 0
     isImported: 1
     isVisible: 1
