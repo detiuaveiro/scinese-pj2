@@ -43,7 +43,7 @@ public class PlayerMovement
             animator.SetFloat("Vertical", movement.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
             
-            speed = 4f;
+            speed = 3f;
             setNewSpeed(movement);
             
             rig.MovePosition(rig.position + movement * newSpeed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
