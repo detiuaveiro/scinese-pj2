@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
             this.LoadState();
         }
 
-        DontDestroyOnLoad(this.gameObject);
+      //  DontDestroyOnLoad(this.gameObject);
     }
 
     // references

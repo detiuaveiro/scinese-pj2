@@ -32,6 +32,8 @@ public class ItemInWorld : MonoBehaviour
                 {
                 AudioSource.PlayClipAtPoint(sfx, transform.position);
                     player.inventory.isSlotFull[i] = true;
+                Debug.Log(itemButton);
+                Debug.Log(player);
                     Instantiate(itemButton, player.inventory.slots[i].transform, false); //instanciado como filho do slot 
 
                     Debug.Log("Collided with an object!! KEKW");
