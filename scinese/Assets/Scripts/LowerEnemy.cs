@@ -31,6 +31,7 @@ public class LowerEnemy : Collidable
     private float time = 0;
     bool isMoving = false;
     float newSpeed=0;
+    bool isFollowing = true;
 
 
     private void Start()
@@ -151,12 +152,23 @@ public class LowerEnemy : Collidable
     }
     public void FollowPlayer(Vector3 direction2)//mover o inimgo
     {
-        mustPatrol = false;
-        setFixedDirection(direction2);
-        setNewSpeed(directionVector);
-        rb.MovePosition(myTransform.position + directionVector * newSpeed * Time.deltaTime);
-        dad.transform.position = this.gameObject.transform.position;
+
+        if(isFollowing) //se for verdade o inimigo segue o jogador, se for falso o inimigo para de andar. Bool deixa de ser verdade quando o enimigo colide com o jogador
+        {
+            mustPatrol = false;
+            setFixedDirection(direction2);
+            setNewSpeed(directionVector);
+            rb.MovePosition(myTransform.position + directionVector * newSpeed * Time.deltaTime);
+            dad.transform.position = this.gameObject.transform.position;
+        }
+        else
+        {
+            rb.MovePosition(myTransform.position);
+        }
+        
     }
+
+    
 
     void ChangeDirection()
     {
@@ -240,6 +252,17 @@ public class LowerEnemy : Collidable
 
             // push direction, the enemy should be pushed backwards, so, you first need the position of the enemy, then the origin position (in this case, the player's)
             pushDirection = (this.transform.position - damage.originOfAttack).normalized * damage.pushForce;
+
+
+            // se receber dano:
+            anim.SetBool("isAttacking", false); // cancelar a sua animação de ataque
+
+
+            // tirar isto e por isto no final da animação de hit
+            isFollowing = true;  // voltar a andar 
+
+
+
         
         if (numberOfLives <= 0)
             {
@@ -255,6 +278,32 @@ public class LowerEnemy : Collidable
         Destroy(this.gameObject);
     }
 
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.CompareTag("Player"))
+        {
+            anim.SetBool("isAttacking", true); // iniciar a animação de ataque
+            isFollowing = false;  // para o movimento do jogador
+
+
+            //// create a new damage object, then we'll send it to the lower enemy
+            //Damage dmg = new Damage(transform.position, 1, 0.2f);
+
+            ////// send message to the enemy
+            //coll.SendMessage("TakeDamage", dmg);
+        }
+    }
+
+    public void AttackAnimEndded () 
+    {
+        anim.SetBool("isAttacking", false);
+        isFollowing = true;
+        
+    }
+
+
+
+/*
     protected override void OnCollide(Collider2D coll)
     {
         Vector3 temp = directionVector;
@@ -287,19 +336,19 @@ public class LowerEnemy : Collidable
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
     }
-
+*/
     public void setNewSpeed(Vector3 direction) 
     {
         newSpeed = speed;
 
         if(direction.y == 0 ) 
         {
-            newSpeed = speed+speed/10;
+            newSpeed = speed + speed /7;
         }
 
         if(direction.x == 0) 
         {
-            newSpeed = speed-speed/10;
+            newSpeed = speed - speed /3.5f;
         }
         
         
