@@ -32,6 +32,7 @@ public class LowerEnemy : Collidable
     bool isMoving = false;
     float newSpeed=0;
     bool isFollowing = true;
+    bool stayColision = false;
 
 
     private void Start()
@@ -109,19 +110,21 @@ public class LowerEnemy : Collidable
     public void Move()
     {
         time += Time.deltaTime; 
-        anim.SetBool("isFollowing", false);
         
         if(time >= Random.Range(2, 5)) 
         {
             isMoving = !isMoving;
             if(isMoving == true)
             {
+                anim.SetBool("GoesToIdle", false);
                 anim.SetBool("isMoving", true);
                 ChangeDirection();
             }
             if(isMoving == false)
             {
+                anim.SetBool("GoesToIdle", true);
                 anim.SetBool("isMoving", false);
+                
             }
 
             time = 0;
@@ -144,19 +147,17 @@ public class LowerEnemy : Collidable
             }
             
         }
-        if(!isMoving)
-        {
-            rb.MovePosition(myTransform.position);
-        }
+        
 
         
     }
     public void FollowPlayer(Vector3 direction2)//mover o inimgo
     {
-
+        
         if(isFollowing) //se for verdade o inimigo segue o jogador, se for falso o inimigo para de andar. Bool deixa de ser verdade quando o enimigo colide com o jogador
         {
-            anim.SetBool("isFollowing", true);
+            anim.SetBool("isMoving", true);
+            anim.SetBool("GoesToIdle", false);
             mustPatrol = false;
             setFixedDirection(direction2);
             setNewSpeed(directionVector);
@@ -288,11 +289,11 @@ public class LowerEnemy : Collidable
     {
         if (coll.gameObject.CompareTag("Player"))
         {
-            anim.SetBool("isFollowing", false);
+            Debug.Log("colide");
             anim.SetBool("isAttacking", true); // iniciar a animação de ataque
-            
+            anim.SetBool("isMoving", false);
             isFollowing = false;  // para o movimento do jogador
-
+            stayColision = true;
 
             //// create a new damage object, then we'll send it to the lower enemy
             //Damage dmg = new Damage(transform.position, 1, 0.2f);
@@ -302,11 +303,26 @@ public class LowerEnemy : Collidable
         }
     }
 
+     void OnCollisionExit2D(Collision2D coll)
+    {
+        if (coll.gameObject.CompareTag("Player"))
+        {
+            stayColision = false;
+
+        }
+
+    }
+
+
     public void AttackAnimEndded () 
     {
-        anim.SetBool("isAttacking", false);
-        anim.SetBool("isFollowing", true);
-        isFollowing = true;
+        if(stayColision == false)
+        {
+            anim.SetBool("isMoving", true);
+            anim.SetBool("isAttacking", false);
+            isFollowing = true;
+        }
+       
         
     }
 

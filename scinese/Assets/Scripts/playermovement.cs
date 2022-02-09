@@ -70,8 +70,6 @@ public class PlayerMovement
         {
             newSpeed = speed - speed /3.5f;
         }
-
-        Debug.Log(newSpeed);
         
     }
 }
