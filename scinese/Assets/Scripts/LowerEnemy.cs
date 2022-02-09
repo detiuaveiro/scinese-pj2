@@ -29,6 +29,7 @@ public class LowerEnemy : Collidable
     public GameObject dad;
 
     private float time = 0;
+    float timeStopper = 0;
     bool isMoving = false;
     float newSpeed=0;
     bool isFollowing = true;
@@ -400,6 +401,11 @@ public class LowerEnemy : Collidable
     {
         direction.Normalize();
 
+        timeStopper += Time.deltaTime; 
+        
+        if(timeStopper >= 0.5f) 
+        {  
+
         if(direction.x > 0.5f)
         {
             directionVector.x = 1f;
@@ -432,6 +438,8 @@ public class LowerEnemy : Collidable
             directionVector.y =0;
         }
 
+        timeStopper = 0;
+        }
 
     }
 }
