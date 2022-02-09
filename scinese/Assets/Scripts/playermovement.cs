@@ -41,7 +41,6 @@ public class PlayerMovement
             animator.SetBool("isMoving", true);
             animator.SetFloat("Horizontal", movement.x); //Realizar anima��es quando as tivermos
             animator.SetFloat("Vertical", movement.y);
-            animator.SetFloat("Speed", movement.sqrMagnitude);
             
             speed = 3f;
             setNewSpeed(movement);
@@ -72,4 +71,6 @@ public class PlayerMovement
         }
         
     }
+
+    
 }

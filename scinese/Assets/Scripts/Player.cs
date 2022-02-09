@@ -30,10 +30,12 @@ public class Player : MonoBehaviour
     [SerializeField] private readonly bool[] isSlotFull = new bool[4];
     [SerializeField] private readonly bool[] itemIn = new bool[4];
 
+    Animator anim = this.gameObject.GetComponent<Animator>();
+
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
-        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), this.gameObject.GetComponent<Animator>());
+        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), anim);
         inventory = new Inventory(slots, isSlotFull);
         rb = GetComponent<Rigidbody2D>();
     }
@@ -120,6 +122,12 @@ public class Player : MonoBehaviour
         //{
             
         //}
+    }
+
+    void animAttackEnded () 
+    {
+        anim.SetBoot("isAttacking", false);
+        
     }
 
 }

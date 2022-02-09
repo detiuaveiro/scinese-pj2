@@ -9,8 +9,7 @@ public class Weapon : Collidable
 
     // swing weapon
     public Animator animator; // animator controller is the name in the inspector, just "animator" is the name in the code
-    private float cooldown = 0f; // time you need to spend before swinging again 
-    private float lastSwing; // time where the last swing took place
+
     public AudioSource sfx;
 
     protected override void Awake()
@@ -44,11 +43,9 @@ public class Weapon : Collidable
     {
         if (Input.GetKeyDown(KeyCode.Space)) // right click to attack/swing
         {
-            if (Time.time - lastSwing > cooldown) // check if swing is available
-            {
-                lastSwing = Time.time;
-                Swing();
-            }
+            
+            animator.SetBool("isAttacking" ,true);
+            
         }
     }
 
@@ -58,26 +55,21 @@ public class Weapon : Collidable
     //    GetComponent<Collider2D>().enabled = true; //ATIVAR COllider para dar damage
     //}
 
-    protected override void OnCollide(Collider2D coll)
+
+    void OnTriggerEnter2D(Collider2D coll)
     {
-       // Debug.Log(coll);
-        if (coll.tag == "LowerEnemy")
+        // Debug.Log(coll);
+        if (coll.gameObject.CompareTag("LowerEnemy"))
         {
-            // create a new damage object, then we'll send it to the lower enemy
             Damage dmg = new Damage(transform.position, damage);
 
             sfx.Play();
 
             // send message to the enemy
             coll.SendMessage("ReceiveDamage", dmg);
+            
         }
     }
 
-    private void Swing()
-    {
-  
-        Debug.Log("Swing!");
-        animator.SetTrigger("Attack");
-        
-    }
+    
 }
