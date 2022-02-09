@@ -20,7 +20,7 @@ public class EnemyDamage : Collidable
         {
            // animator.SetTrigger("Attack");
             // create a new damage object, then we'll send it to the lower enemy
-            Damage dmg = new Damage(transform.position, 1, 0.2f);
+            Damage dmg = new Damage(transform.position, 1);
             sfx.Play();
 
             // send message to the enemy

@@ -808,9 +808,9 @@ PrefabInstance:
       propertyPath: playerpos
       value: 
       objectReference: {fileID: 725969130}
-    - target: {fileID: 1797110331464141870, guid: e8acb95ad414d9444a2c5b25b2d47426, type: 3}
-      propertyPath: m_Mass
-      value: 200
+    - target: {fileID: 1797110331491384024, guid: e8acb95ad414d9444a2c5b25b2d47426, type: 3}
+      propertyPath: m_Radius
+      value: 0.41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8acb95ad414d9444a2c5b25b2d47426, type: 3}

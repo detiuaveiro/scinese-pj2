@@ -6,7 +6,6 @@ public class Weapon : Collidable
 {
     // damage structure --> damage dealt to the enemy and distance of pushing back
     public int damage = 1;
-    public float pushForce = 2.0f;
 
     // swing weapon
     public Animator animator; // animator controller is the name in the inspector, just "animator" is the name in the code
@@ -36,7 +35,7 @@ public class Weapon : Collidable
     //    }
     //    else
     //    {
-    //        GetComponent<BoxCollider2D>().enabled = false; //Desativar Collider enquanto não está a bater
+    //        GetComponent<BoxCollider2D>().enabled = false; //Desativar Collider enquanto nï¿½o estï¿½ a bater
     //    }
 
     //}
@@ -53,7 +52,7 @@ public class Weapon : Collidable
         }
     }
 
-    //IEnumerator BoxActivation()//ativar collider no final da animação
+    //IEnumerator BoxActivation()//ativar collider no final da animaï¿½ï¿½o
     //{
     //    yield return new WaitForSeconds(0.5f);
     //    GetComponent<Collider2D>().enabled = true; //ATIVAR COllider para dar damage
@@ -65,7 +64,7 @@ public class Weapon : Collidable
         if (coll.tag == "LowerEnemy")
         {
             // create a new damage object, then we'll send it to the lower enemy
-            Damage dmg = new Damage(transform.position, damage, pushForce);
+            Damage dmg = new Damage(transform.position, damage);
 
             sfx.Play();
 
