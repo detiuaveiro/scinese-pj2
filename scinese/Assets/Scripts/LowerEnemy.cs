@@ -17,7 +17,7 @@ public class LowerEnemy : Collidable
     protected float immuneTimeCooldown = 1.0f; // time in which the enemy can't be attacked
     protected float lastImmune;
 
-    protected Vector2 pushDirection;
+    
     private Vector3 directionVector;
 
     Vector2 directionIdle = new Vector2(0.1f, 0);
@@ -29,8 +29,12 @@ public class LowerEnemy : Collidable
     public GameObject dad;
 
     private float time = 0;
+    float timeStopper = 0;
     bool isMoving = false;
     float newSpeed=0;
+    bool isFollowing = true;
+    bool stayColision = false;
+    bool animFinish = true;
 
 
     private void Start()
@@ -92,13 +96,17 @@ public class LowerEnemy : Collidable
         
         float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
 
-        if (range <= 5)
+        if (range <= 3)
         {
             FollowPlayer(direction);
         }
         else
         {
-           Move();
+        if(animFinish) 
+        {
+            Move();
+        }
+           
         }
 
         UpdateAnimation();
@@ -110,16 +118,24 @@ public class LowerEnemy : Collidable
         time += Time.deltaTime; 
         
         if(time >= Random.Range(2, 5)) 
-        {
+        {  
             isMoving = !isMoving;
+            Debug.Log("wiiii");
+            
             if(isMoving == true)
             {
+                anim.SetBool("GoesToIdle", false);
                 anim.SetBool("isMoving", true);
                 ChangeDirection();
+                
             }
             if(isMoving == false)
             {
+                anim.SetBool("GoesToIdle", true);
                 anim.SetBool("isMoving", false);
+                rb.MovePosition(myTransform.position);
+                
+                
             }
             
             time = 0;
@@ -129,34 +145,46 @@ public class LowerEnemy : Collidable
         if(isMoving)
         {
             setNewSpeed(directionVector);
+            
             Vector2 temp = myTransform.position + directionVector * newSpeed * Time.deltaTime;
             
             if (bounds.bounds.Contains(temp))
             {
                 rb.MovePosition(temp);
+                
             }
             else
             {
-                Debug.Log("hi");
                 ChangeDirection();
             }
             
         }
-        if(!isMoving)
-        {
-            rb.MovePosition(myTransform.position);
-        }
+        
 
         
     }
     public void FollowPlayer(Vector3 direction2)//mover o inimgo
     {
-        mustPatrol = false;
-        setFixedDirection(direction2);
-        setNewSpeed(directionVector);
-        rb.MovePosition(myTransform.position + directionVector * newSpeed * Time.deltaTime);
-        dad.transform.position = this.gameObject.transform.position;
+        
+        if(isFollowing) //se for verdade o inimigo segue o jogador, se for falso o inimigo para de andar. Bool deixa de ser verdade quando o enimigo colide com o jogador
+        {
+            anim.SetBool("isMoving", true);
+            anim.SetBool("GoesToIdle", false);
+            setFixedDirection(direction2);
+            setNewSpeed(directionVector);
+            rb.MovePosition(myTransform.position + directionVector * newSpeed * Time.deltaTime);
+            dad.transform.position = this.gameObject.transform.position;
+        }
+        else
+        {
+            setFixedDirection(direction2);
+            rb.MovePosition(rb.position);
+            
+        }
+        
     }
+
+    
 
     void ChangeDirection()
     {
@@ -202,6 +230,8 @@ public class LowerEnemy : Collidable
 
     void UpdateAnimation()
     {
+        
+        
         anim.SetFloat("Horizontal", directionVector.x);
         anim.SetFloat("Vertical", directionVector.y);
         
@@ -239,7 +269,20 @@ public class LowerEnemy : Collidable
             numberOfLives -= damage.damage;
 
             // push direction, the enemy should be pushed backwards, so, you first need the position of the enemy, then the origin position (in this case, the player's)
-            pushDirection = (this.transform.position - damage.originOfAttack).normalized * damage.pushForce;
+            
+
+
+            // se receber dano:
+            anim.SetBool("isAttacking", false); // cancelar a sua animação de ataque
+
+
+            // tirar isto e POR isto no final da animação de hit
+            isFollowing = true;  // voltar a andar 
+            anim.SetBool("isFollowing", true);
+            Debug.Log("sdf");
+
+
+
         
         if (numberOfLives <= 0)
             {
@@ -255,6 +298,54 @@ public class LowerEnemy : Collidable
         Destroy(this.gameObject);
     }
 
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("colide");
+            anim.SetBool("isAttacking", true); // iniciar a animação de ataque
+            anim.SetBool("isMoving", false);
+            isMoving = true;
+            isFollowing = false;  // para o movimento do jogador
+            stayColision = true;
+
+            //// create a new damage object, then we'll send it to the lower enemy
+            //Damage dmg = new Damage(transform.position, 1, 0.2f);
+
+            ////// send message to the enemy
+            //coll.SendMessage("TakeDamage", dmg);
+        }
+    }
+
+     void OnCollisionExit2D(Collision2D coll)
+    {
+        if (coll.gameObject.CompareTag("Player"))
+        {
+            stayColision = false;
+            animFinish = false;
+
+        }
+
+    }
+
+
+    public void AttackAnimEndded () 
+    {
+        if(stayColision == false)
+        {
+            anim.SetBool("isMoving", true);
+            anim.SetBool("isAttacking", false);
+            isFollowing = true;
+            animFinish = true;
+            
+        }
+       
+        
+    }
+
+
+
+/*
     protected override void OnCollide(Collider2D coll)
     {
         Vector3 temp = directionVector;
@@ -287,19 +378,20 @@ public class LowerEnemy : Collidable
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
     }
-
+*/
     public void setNewSpeed(Vector3 direction) 
     {
+        speed = 1f;
         newSpeed = speed;
 
         if(direction.y == 0 ) 
         {
-            newSpeed = speed+speed/10;
+            newSpeed = speed + speed /7;
         }
 
         if(direction.x == 0) 
         {
-            newSpeed = speed-speed/10;
+            newSpeed = speed - speed /3.5f;
         }
         
         
@@ -308,6 +400,11 @@ public class LowerEnemy : Collidable
     public void setFixedDirection (Vector3 direction)
     {
         direction.Normalize();
+
+        timeStopper += Time.deltaTime; 
+        
+        if(timeStopper >= 0.5f) 
+        {  
 
         if(direction.x > 0.5f)
         {
@@ -341,6 +438,8 @@ public class LowerEnemy : Collidable
             directionVector.y =0;
         }
 
+        timeStopper = 0;
+        }
 
     }
 }

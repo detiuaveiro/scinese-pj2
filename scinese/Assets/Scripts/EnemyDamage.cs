@@ -13,14 +13,14 @@ public class EnemyDamage : Collidable
         sfx = GetComponentInParent<AudioSource>();
     }
 
-    protected override void OnCollide(Collider2D coll)
+    void OnTriggerEnter2D(Collider2D coll)
     {
         // Debug.Log(coll);
-        if (coll.tag == "Player")
+        if (coll.gameObject.CompareTag("Player"))
         {
            // animator.SetTrigger("Attack");
             // create a new damage object, then we'll send it to the lower enemy
-            Damage dmg = new Damage(transform.position, 1, 0.2f);
+            Damage dmg = new Damage(transform.position, 1);
             sfx.Play();
 
             // send message to the enemy

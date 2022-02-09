@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     protected float immuneTimeCooldown = 1.0f; // time in which the enemy can't be attacked
     protected float lastImmune;
-    protected Vector2 pushDirection;
+   
     public Rigidbody2D rb;
     public AudioSource sfx;
 
@@ -30,10 +30,12 @@ public class Player : MonoBehaviour
     [SerializeField] private readonly bool[] isSlotFull = new bool[4];
     [SerializeField] private readonly bool[] itemIn = new bool[4];
 
+    Animator anim = this.gameObject.GetComponent<Animator>();
+
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
-        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), this.gameObject.GetComponent<Animator>());
+        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), anim);
         inventory = new Inventory(slots, isSlotFull);
         rb = GetComponent<Rigidbody2D>();
     }
@@ -86,7 +88,7 @@ public class Player : MonoBehaviour
             healthBar.SetHealth(currentHealth);
 
             // push direction, the enemy should be pushed backwards, so, you first need the position of the enemy, then the origin position (in this case, the player's)
-            pushDirection = (this.transform.position - damage.originOfAttack).normalized * damage.pushForce;
+            
 
             if (currentHealth == 0)
             {
@@ -120,6 +122,12 @@ public class Player : MonoBehaviour
         //{
             
         //}
+    }
+
+    void animAttackEnded () 
+    {
+        anim.SetBoot("isAttacking", false);
+        
     }
 
 }
