@@ -93,7 +93,7 @@ public class LowerEnemy : Collidable
         
         float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
 
-        if (range <= 5)
+        if (range <= 3)
         {
             FollowPlayer(direction);
         }
@@ -109,6 +109,7 @@ public class LowerEnemy : Collidable
     public void Move()
     {
         time += Time.deltaTime; 
+        anim.SetBool("isFollowing", false);
         
         if(time >= Random.Range(2, 5)) 
         {
@@ -122,7 +123,7 @@ public class LowerEnemy : Collidable
             {
                 anim.SetBool("isMoving", false);
             }
-            
+
             time = 0;
             
         }
@@ -155,6 +156,7 @@ public class LowerEnemy : Collidable
 
         if(isFollowing) //se for verdade o inimigo segue o jogador, se for falso o inimigo para de andar. Bool deixa de ser verdade quando o enimigo colide com o jogador
         {
+            anim.SetBool("isFollowing", true);
             mustPatrol = false;
             setFixedDirection(direction2);
             setNewSpeed(directionVector);
@@ -214,6 +216,8 @@ public class LowerEnemy : Collidable
 
     void UpdateAnimation()
     {
+        
+        
         anim.SetFloat("Horizontal", directionVector.x);
         anim.SetFloat("Vertical", directionVector.y);
         
@@ -258,8 +262,10 @@ public class LowerEnemy : Collidable
             anim.SetBool("isAttacking", false); // cancelar a sua animação de ataque
 
 
-            // tirar isto e por isto no final da animação de hit
+            // tirar isto e POR isto no final da animação de hit
             isFollowing = true;  // voltar a andar 
+            anim.SetBool("isFollowing", true);
+       
 
 
 
@@ -282,7 +288,9 @@ public class LowerEnemy : Collidable
     {
         if (coll.gameObject.CompareTag("Player"))
         {
+            anim.SetBool("isFollowing", false);
             anim.SetBool("isAttacking", true); // iniciar a animação de ataque
+            
             isFollowing = false;  // para o movimento do jogador
 
 
@@ -297,6 +305,7 @@ public class LowerEnemy : Collidable
     public void AttackAnimEndded () 
     {
         anim.SetBool("isAttacking", false);
+        anim.SetBool("isFollowing", true);
         isFollowing = true;
         
     }

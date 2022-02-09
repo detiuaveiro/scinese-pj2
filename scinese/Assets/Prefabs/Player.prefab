@@ -88,7 +88,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.65909094, y: 1.4545455}
+  m_Size: {x: 1.8181819, y: 1.8181819}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -128,18 +128,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026655197, y: -0.16431332}
+  m_Offset: {x: 0.019952297, y: -0.34753036}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.65909094, y: 1.4545455}
-    newSize: {x: 0.65909094, y: 1.4545455}
+    newSize: {x: 1.8181819, y: 1.8181819}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.46242142, y: 0.9261112}
+  m_Size: {x: 0.6545763, y: 0.5596771}
   m_EdgeRadius: 0
 --- !u!114 &6747376743275529108
 MonoBehaviour:
@@ -166,7 +166,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 0}
   rb: {fileID: 6747376743275529111}
-  sfx: {fileID: 9122796864056833895}
+  sfx: {fileID: 646940244}
   gameOver: {fileID: 0}
   dialogueUI: {fileID: 0}
   slots:
@@ -227,7 +227,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ea5bbe1efb718f7469076dd68daa2e5e, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
