@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b252a8622f7a82048b143b33d73a2307
+guid: 67b67c4dd73580040afbc1f9990b845f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -68,7 +68,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   spriteImportData:
-  - name: MenuSeettings_1
+  - name: MenuSettings_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -79,7 +79,7 @@ ScriptedImporter:
       y: 0
       width: 500
       height: 500
-    spriteID: 1ef5e81c58f71194894730ceaee759f2
+    spriteID: 1f58f471b6dbd3049a8d0f3d0326eccc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -91,69 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: IconMusica
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 204
-      y: 36
-      width: 17
-      height: 13
-    spriteID: 8ca6688dee0db4843881f6f9b8a0aea7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 21, y: -199}
-  - name: IconSom
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 204
-      y: 4
-      width: 21
-      height: 24
-    spriteID: cbf35d06fb3953a4ea3f16fceee029d8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 22, y: -273}
-  - name: botaoOK
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 284
-      width: 85
-      height: 24
-    spriteID: 7f02a34286cfe184881c14390368d2b1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -199, y: 137}
   - name: IdentidadeMenuSettings
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -162,10 +99,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 206
-      width: 123
-      height: 70
-    spriteID: a3527538bbc86d14d9f526beb8fa8758
+      y: 209
+      width: 107
+      height: 74
+    spriteID: 5e22d94bafbd5a648b1e02b126be9624
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -174,8 +111,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -185, y: -113}
-  - name: BackgroundMenu
+    uvTransform: {x: -164, y: -115}
+  - name: BackgroundMenu Settings
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -184,9 +121,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 192
-      height: 194
-    spriteID: ea68e4900ff805a4491cbcd874cbe2fa
+      width: 176
+      height: 197
+    spriteID: 794eaa3c533f9dd4c9d742e1f2e34ef0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -195,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -149, y: -148}
+    uvTransform: {x: -129, y: -167}
   characterData:
     bones: []
     parts: []
@@ -303,59 +240,29 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: IconMusica
-    spriteName: IconMusica
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8ca6688dee0db4843881f6f9b8a0aea7
-    layerID: 14
-    mosaicPosition: {x: 204, y: 36}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: IconSom
-    spriteName: IconSom
-    isGroup: 0
-    parentIndex: -1
-    spriteID: cbf35d06fb3953a4ea3f16fceee029d8
-    layerID: 12
-    mosaicPosition: {x: 204, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: botaoOK
-    spriteName: botaoOK
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 7f02a34286cfe184881c14390368d2b1
-    layerID: 8
-    mosaicPosition: {x: 4, y: 284}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: IdentidadeMenuSettings
     spriteName: IdentidadeMenuSettings
     isGroup: 0
     parentIndex: -1
-    spriteID: a3527538bbc86d14d9f526beb8fa8758
-    layerID: 4
-    mosaicPosition: {x: 4, y: 206}
+    spriteID: 5e22d94bafbd5a648b1e02b126be9624
+    layerID: 50
+    mosaicPosition: {x: 4, y: 209}
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: BackgroundMenu
-    spriteName: BackgroundMenu
+  - name: BackgroundMenu Settings
+    spriteName: BackgroundMenu Settings
     isGroup: 0
     parentIndex: -1
-    spriteID: ea68e4900ff805a4491cbcd874cbe2fa
-    layerID: 3
+    spriteID: 794eaa3c533f9dd4c9d742e1f2e34ef0
+    layerID: 54
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
-  generateGOHierarchy: 1
+  generateGOHierarchy: 0
   textureAssetName: 
   prefabAssetName: 
   spriteLibAssetName: 
