@@ -173,6 +173,7 @@ public class LowerEnemy : Collidable
             setNewSpeed(directionVector);
             rb.MovePosition(myTransform.position + directionVector * newSpeed * Time.deltaTime);
             dad.transform.position = this.gameObject.transform.position;
+            isMoving = true; // para ele começar sempre em idle, quando estiver a fazer patrol
         }
         else
         {
@@ -269,8 +270,8 @@ public class LowerEnemy : Collidable
 
             // push direction, the enemy should be pushed backwards, so, you first need the position of the enemy, then the origin position (in this case, the player's)
             
-
-
+            anim.SetBool("isImpact", true);
+            isFollowing = false;
 
 
         
@@ -292,10 +293,8 @@ public class LowerEnemy : Collidable
     {
         if (coll.gameObject.CompareTag("Player"))
         {
-            Debug.Log("colide");
             anim.SetBool("isAttacking", true); // iniciar a animação de ataque
             anim.SetBool("isMoving", false);
-            isMoving = true;
             isFollowing = false;  // para o movimento do jogador
             stayColision = true;
 
@@ -331,6 +330,25 @@ public class LowerEnemy : Collidable
         }
        
         
+    }
+
+    public void ImpactAnimEndded () 
+    {
+        if(stayColision == false)
+        {
+        anim.SetBool("isMoving", true);
+        anim.SetBool("isAttacking", false);
+        anim.SetBool("isImpact", false);
+        isFollowing = true;
+        animFinish = true;
+        }
+        else
+        {
+            anim.SetBool("isImpact", false);
+            anim.SetBool("isAttacking", true); // iniciar a animação de ataque
+            anim.SetBool("isMoving", false);
+            isFollowing = false; 
+        }
     }
 
 
