@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
+    Animator anim;
+    bool isAttacking =false;
 
     protected float immuneTimeCooldown = 1.0f; // time in which the enemy can't be attacked
     protected float lastImmune;
@@ -30,12 +32,11 @@ public class Player : MonoBehaviour
     [SerializeField] private readonly bool[] isSlotFull = new bool[4];
     [SerializeField] private readonly bool[] itemIn = new bool[4];
 
-    
-
     private void Awake()
     {
         //Debug.Log(this.gameObject.GetComponent<Rigidbody2D>());
-        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), this.gameObject.GetComponent<Animator>());
+        anim = GetComponent<Animator>();
+        pMove = new PlayerMovement(this.gameObject.GetComponent<Rigidbody2D>(), anim);
         inventory = new Inventory(slots, isSlotFull);
         rb = GetComponent<Rigidbody2D>();
     }
@@ -66,6 +67,13 @@ public class Player : MonoBehaviour
             {
                 Interactable.Interact(this);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) // right click to attack/swing
+        {
+            
+            anim.SetBool("isAttacking" ,true);
+            isAttacking = true;
+            
         }
         //Debug.Log(this.inventory.items.Count);
 
@@ -105,9 +113,12 @@ public class Player : MonoBehaviour
     }
 
     public void FixedUpdate()
-    {
+    {   
+        if(isAttacking == false) 
+        {
+            pMove.Move(sfx);
+        }
 
-        pMove.Move(sfx);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -124,9 +135,10 @@ public class Player : MonoBehaviour
         //}
     }
 
-    void animAttackEnded () 
+    public void animAttackEnded () 
     {
-        
+        anim.SetBool("isAttacking" ,false);
+        isAttacking = false;
     }
 
 }
