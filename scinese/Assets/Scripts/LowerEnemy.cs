@@ -120,7 +120,6 @@ public class LowerEnemy : Collidable
         if(time >= Random.Range(2, 5)) 
         {  
             isMoving = !isMoving;
-            Debug.Log("wiiii");
             
             if(isMoving == true)
             {
@@ -271,15 +270,6 @@ public class LowerEnemy : Collidable
             // push direction, the enemy should be pushed backwards, so, you first need the position of the enemy, then the origin position (in this case, the player's)
             
 
-
-            // se receber dano:
-            anim.SetBool("isAttacking", false); // cancelar a sua animação de ataque
-
-
-            // tirar isto e POR isto no final da animação de hit
-            isFollowing = true;  // voltar a andar 
-            anim.SetBool("isFollowing", true);
-            Debug.Log("sdf");
 
 
 
