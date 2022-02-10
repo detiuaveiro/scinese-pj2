@@ -114,9 +114,13 @@ public class Player : MonoBehaviour
 
     public void FixedUpdate()
     {   
-        if(isAttacking == false) 
+        if(isAttacking == false) // para andar um pouco e depois parar de andar completamente
         {
             pMove.Move(sfx);
+        }
+        if(isAttacking == true)
+        {
+            rb.MovePosition(rb.position);
         }
 
     }

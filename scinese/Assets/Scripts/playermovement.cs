@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerMovement
 {
     public float speed;
-    float newSpeed;
+    public float newSpeed;
     public Rigidbody2D rig;
 
     public Animator animator;
    // public AudioClip sfx;
 
-    Vector2 movement; //como � vetor 2 vai usar o x e o y 
+    public Vector2 movement; //como � vetor 2 vai usar o x e o y 
 
     public PlayerMovement(Rigidbody2D rig, Animator animator)
     {
@@ -46,11 +46,15 @@ public class PlayerMovement
             setNewSpeed(movement);
             
             rig.MovePosition(rig.position + movement * newSpeed * Time.fixedDeltaTime); //Para garantir que a velocidade se mantem igual usamos Time.fixedDeltaTime
+
+            //____ timer para permitir um slide
+            
         }
         else 
         {
             animator.SetBool("isMoving", false);
             rig.MovePosition(rig.position); 
+            
         }
         
     }
