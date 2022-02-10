@@ -119,7 +119,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.43, y: -1.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6747376743656990515}
   - {fileID: 1747328581654766296}
@@ -213,7 +213,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.23}
+  m_Offset: {x: 0, y: -0.35}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -224,7 +224,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.72975063, y: 0.87}
+  m_Size: {x: 1.14, y: 0.65}
   m_EdgeRadius: 0
 --- !u!114 &6747376743275529108
 MonoBehaviour:
@@ -241,24 +241,24 @@ MonoBehaviour:
   inventory:
     items: []
     slots:
-    - {fileID: 6018243019737075064, guid: d3b911e41ef09a647b847552fac1a0f8, type: 3}
-    - {fileID: 1692748596044026541, guid: fbad7fee8e3ba3d4cab1d7099bdd3148, type: 3}
-    - {fileID: 4916353276354172629, guid: bd2f5a2a4426b8548a0ce33c9dffaeb6, type: 3}
-    - {fileID: 413971962878881253, guid: 97fffb10633c2f9429d5878cc05761f2, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     isSlotFull: 00000000
     itemIn: 
   maxHealth: 10
   currentHealth: 0
-  healthBar: {fileID: 1268381407378072789, guid: cb5bc35c97b84214394664d5f19b453c, type: 3}
+  healthBar: {fileID: 0}
   rb: {fileID: 6747376743275529111}
   sfx: {fileID: 646940244}
-  gameOver: {fileID: 5631136740765848157, guid: b8a375c32c3b6c449913aee92e613386, type: 3}
-  dialogueUI: {fileID: 8280223516309396590, guid: 9026b631ea563e34dae529dd92e9b805, type: 3}
+  gameOver: {fileID: 0}
+  dialogueUI: {fileID: 0}
   slots:
-  - {fileID: 6018243019737075064, guid: d3b911e41ef09a647b847552fac1a0f8, type: 3}
-  - {fileID: 1692748596044026541, guid: fbad7fee8e3ba3d4cab1d7099bdd3148, type: 3}
-  - {fileID: 4916353276354172629, guid: bd2f5a2a4426b8548a0ce33c9dffaeb6, type: 3}
-  - {fileID: 413971962878881253, guid: 97fffb10633c2f9429d5878cc05761f2, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &6747376743275529109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +760,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &3671155720452288650
 MonoBehaviour:
