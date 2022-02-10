@@ -549,6 +549,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 5631136740765848157, guid: b8a375c32c3b6c449913aee92e613386, type: 3}
+    - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1268381407378072789, guid: cb5bc35c97b84214394664d5f19b453c, type: 3}
+    - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: dialogueUI
+      value: 
+      objectReference: {fileID: 8280223516309396590, guid: 9026b631ea563e34dae529dd92e9b805, type: 3}
+    - target: {fileID: 6747376743275529109, guid: f6d870ca888193349acf5f598e194ced, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 6018243019737075064, guid: d3b911e41ef09a647b847552fac1a0f8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d870ca888193349acf5f598e194ced, type: 3}
 --- !u!1001 &1665004865
