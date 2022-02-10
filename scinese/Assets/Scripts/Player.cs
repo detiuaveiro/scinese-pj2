@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     Animator anim;
     bool isAttacking =false;
+    bool isImpact = false;
 
     protected float immuneTimeCooldown = 1.0f; // time in which the enemy can't be attacked
     protected float lastImmune;
@@ -88,9 +89,14 @@ public class Player : MonoBehaviour
     void TakeDamage(Damage damage)
     {
         
-
         if (Time.time - lastImmune >= immuneTimeCooldown)
         {
+            isImpact = true;
+            anim.SetTrigger("isImpactTrigger");
+            anim.SetBool("isImpact", true);
+            //anim.SetBool("isMoving", false);
+            
+            
             lastImmune = Time.time;
             currentHealth -= damage.damage;
             healthBar.SetHealth(currentHealth);
@@ -113,17 +119,25 @@ public class Player : MonoBehaviour
     }
 
     public void FixedUpdate()
-    {   
+    {   Debug.Log(isImpact);
         if(isAttacking == false) // para andar um pouco e depois parar de andar completamente
         {
-            pMove.Move(sfx);
+            if(isImpact == false)
+            {
+                pMove.Move(sfx);
+            }
+            
         }
-        if(isAttacking == true)
+        if(isAttacking == true || isImpact == true)
         {
             rb.MovePosition(rb.position);
         }
 
     }
+
+
+
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -144,5 +158,15 @@ public class Player : MonoBehaviour
         anim.SetBool("isAttacking" ,false);
         isAttacking = false;
     }
+
+    public void animImpactEnded () 
+    {
+        isImpact = false;
+        anim.SetBool("isImpact", false);
+        anim.SetBool("isAttacking" ,false);
+        isAttacking = false;
+    }
+
+
 
 }
