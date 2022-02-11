@@ -91,90 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: fruits
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 864
-      y: 722
-      width: 131
-      height: 93
-    spriteID: 70f4ce9b202758d469b8250d36816534
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 646, y: 386}
-  - name: Layer 31
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 863
-      y: 1188
-      width: 147
-      height: 85
-    spriteID: cdd5f9e229c36644685e6c0ca2c43677
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 645, y: 785}
-  - name: Layer 29
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 458
-      y: 1572
-      width: 290
-      height: 279
-    spriteID: 7dcc049e851eef646b542501f7f6a172
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 253, y: 1197}
-  - name: lianas e tronco antigo
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 863
-      y: 1075
-      width: 136
-      height: 105
-    spriteID: 45158494fccd4904e8e4dda330dee142
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 655, y: 768}
   - name: relva pedras
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -217,48 +133,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -133, y: 1533}
-  - name: garden_room_fonte
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 946
-      y: 1285
-      width: 60
-      height: 76
-    spriteID: da96eb2c1d3dbf2428d02f5ac52a8d11
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 831, y: 839}
-  - name: garden_room_fonte
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 327
-      y: 1764
-      width: 60
-      height: 76
-    spriteID: 13824af36597df140a85b04ab9867518
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -74, y: 1317}
   - name: sombra arvore
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -455,8 +329,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 863
-      y: 1285
+      x: 327
+      y: 1764
       width: 75
       height: 85
     spriteID: 90728c4767822ca43804c42dba9e336e
@@ -468,7 +342,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 611, y: 1201}
+    uvTransform: {x: 75, y: 1680}
   characterData:
     bones: []
     parts: []
@@ -607,8 +481,8 @@ ScriptedImporter:
     layerID: 12
     mosaicPosition: {x: 864, y: 722}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Layer 31
     spriteName: Layer 31
     isGroup: 0
@@ -617,8 +491,8 @@ ScriptedImporter:
     layerID: 64
     mosaicPosition: {x: 863, y: 1188}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Layer 29
     spriteName: Layer 29
     isGroup: 0
@@ -627,8 +501,8 @@ ScriptedImporter:
     layerID: 62
     mosaicPosition: {x: 458, y: 1572}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: lianas e tronco antigo
     spriteName: lianas e tronco antigo
     isGroup: 0
@@ -637,8 +511,8 @@ ScriptedImporter:
     layerID: 39
     mosaicPosition: {x: 863, y: 1075}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Hue/Saturation 1
     spriteName: Hue/Saturation 1
     isGroup: 0
@@ -707,8 +581,8 @@ ScriptedImporter:
     layerID: 141
     mosaicPosition: {x: 946, y: 1285}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: garden_room_fonte
     spriteName: garden_room_fonte
     isGroup: 0
@@ -717,8 +591,8 @@ ScriptedImporter:
     layerID: 140
     mosaicPosition: {x: 327, y: 1764}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: sombra arvore
     spriteName: sombra arvore
     isGroup: 0
@@ -825,7 +699,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 90728c4767822ca43804c42dba9e336e
     layerID: 14
-    mosaicPosition: {x: 863, y: 1285}
+    mosaicPosition: {x: 327, y: 1764}
     flatten: 0
     isImported: 1
     isVisible: 1

@@ -5,7 +5,7 @@ using static Unity.Mathematics.math;
 
 public class animals : Collidable
 {
-   public Transform playerpos;//para saber a posi��o do player
+   
     private Vector2 movement;//dar movimento em x e em y
     public int numberOfLives = 2;
     public float pushRecoverySpeed = 0.2f;
@@ -92,9 +92,6 @@ public class animals : Collidable
     public void FixedUpdate()
     {
         base.FixedUpdate();
-        Vector3 direction = playerpos.position - transform.position;//posi��o do inimgo em rela��o � do player
-        
-        float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
 
         
         Move();
