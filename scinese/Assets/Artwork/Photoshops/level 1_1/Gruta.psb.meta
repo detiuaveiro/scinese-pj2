@@ -98,11 +98,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 690
+      x: 692
       y: 741
-      width: 313
-      height: 14
-    spriteID: b0a74ea63d91ee342baf573ec160ae3d
+      width: 316
+      height: 16
+    spriteID: 84eed5e3fa02b1e469d3853633d8feef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -111,7 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -165, y: 148}
+    uvTransform: {x: -160, y: 149}
   - name: cimamurodeitado
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -119,8 +119,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 690
-      y: 763
+      x: 692
+      y: 765
       width: 313
       height: 14
     spriteID: 1bca925472302bd4e85a6949712c43e2
@@ -132,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 228, y: 170}
+    uvTransform: {x: 229, y: 173}
   - name: CimaMuropsb
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -141,7 +141,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1536
+      y: 1546
       width: 18
       height: 335
     spriteID: 99735d1382f12ea47ad26cd0a8032477
@@ -153,7 +153,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -764, y: 1264}
+    uvTransform: {x: -763, y: 1276}
   - name: CimaMuropsb1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +162,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 40
-      y: 1536
+      y: 1546
       width: 18
       height: 335
     spriteID: 06eae7356bf0a9741b2732c0d074add4
@@ -174,7 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -799, y: 1264}
+    uvTransform: {x: -798, y: 1276}
   - name: MuroCaverna1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -182,8 +182,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 700
-      y: 513
+      x: 675
+      y: 4
       width: 316
       height: 63
     spriteID: 3e56d294ab44d9b45812105cfec81750
@@ -195,7 +195,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -152, y: -19}
+    uvTransform: {x: -177, y: -528}
   - name: CimaMuropsb - maior1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -204,7 +204,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 789
+      y: 798
       width: 28
       height: 739
     spriteID: 7c31fa89b50b8a74da45e3908b2c6045
@@ -216,28 +216,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -458, y: 196}
-  - name: CimaMuropsb - maior
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 40
-      y: 789
-      width: 28
-      height: 739
-    spriteID: ef74b8d2161c75a42a88cd2c629a8a0d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1100, y: 196}
+    uvTransform: {x: -458, y: 206}
   - name: cimamurodeitadoJaulachao
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -246,7 +225,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 76
-      y: 789
+      y: 798
       width: 668
       height: 7
     spriteID: b43bf254a749c894d8f7b5514e71126a
@@ -258,7 +237,28 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -395, y: -302}
+    uvTransform: {x: -395, y: -291}
+  - name: CimaMuropsb - maior1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 798
+      width: 28
+      height: 740
+    spriteID: de9f6defacbc02440afb28ca433004b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1101, y: 204}
   - name: cimamurodeitadoJaula
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -279,7 +279,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -476, y: -552}
+    uvTransform: {x: -476, y: -544}
   - name: MuroCavernajaulas
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -300,7 +300,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -457, y: -581}
+    uvTransform: {x: -448, y: -581}
   - name: MuroCaverna
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -308,8 +308,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 700
-      y: 583
+      x: 675
+      y: 74
       width: 316
       height: 63
     spriteID: a6e484ce49b74f242bfd3fb7f7e3f19f
@@ -321,7 +321,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 239, y: 51}
+    uvTransform: {x: 214, y: -458}
   - name: chaoGruta
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -350,8 +350,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 675
-      y: 4
+      x: 709
+      y: 513
       width: 78
       height: 174
     spriteID: b36eea9e05d2bb841890ed2be8ce8d33
@@ -363,7 +363,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -100, y: -268}
+    uvTransform: {x: -66, y: 241}
   - name: entradaGruta
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -371,8 +371,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 675
-      y: 186
+      x: 795
+      y: 513
       width: 78
       height: 174
     spriteID: aa7b3b1a92622674f8c0189f9a3b2598
@@ -384,7 +384,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -101, y: -256}
+    uvTransform: {x: 19, y: 71}
   characterData:
     bones: []
     parts: []
@@ -496,9 +496,9 @@ ScriptedImporter:
     spriteName: cimamurodeitado1
     isGroup: 0
     parentIndex: -1
-    spriteID: b0a74ea63d91ee342baf573ec160ae3d
-    layerID: 34
-    mosaicPosition: {x: 690, y: 741}
+    spriteID: 84eed5e3fa02b1e469d3853633d8feef
+    layerID: 238
+    mosaicPosition: {x: 692, y: 741}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -508,7 +508,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 1bca925472302bd4e85a6949712c43e2
     layerID: 33
-    mosaicPosition: {x: 690, y: 763}
+    mosaicPosition: {x: 692, y: 765}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -518,7 +518,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 99735d1382f12ea47ad26cd0a8032477
     layerID: 32
-    mosaicPosition: {x: 4, y: 1536}
+    mosaicPosition: {x: 4, y: 1546}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -528,7 +528,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 06eae7356bf0a9741b2732c0d074add4
     layerID: 18
-    mosaicPosition: {x: 40, y: 1536}
+    mosaicPosition: {x: 40, y: 1546}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -538,7 +538,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 3e56d294ab44d9b45812105cfec81750
     layerID: 19
-    mosaicPosition: {x: 700, y: 513}
+    mosaicPosition: {x: 675, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -548,17 +548,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 7c31fa89b50b8a74da45e3908b2c6045
     layerID: 27
-    mosaicPosition: {x: 4, y: 789}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: CimaMuropsb - maior
-    spriteName: CimaMuropsb - maior
-    isGroup: 0
-    parentIndex: -1
-    spriteID: ef74b8d2161c75a42a88cd2c629a8a0d
-    layerID: 26
-    mosaicPosition: {x: 40, y: 789}
+    mosaicPosition: {x: 4, y: 798}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -568,7 +558,17 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b43bf254a749c894d8f7b5514e71126a
     layerID: 57
-    mosaicPosition: {x: 76, y: 789}
+    mosaicPosition: {x: 76, y: 798}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CimaMuropsb - maior1
+    spriteName: CimaMuropsb - maior1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: de9f6defacbc02440afb28ca433004b5
+    layerID: 239
+    mosaicPosition: {x: 40, y: 798}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -598,7 +598,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: a6e484ce49b74f242bfd3fb7f7e3f19f
     layerID: 10
-    mosaicPosition: {x: 700, y: 583}
+    mosaicPosition: {x: 675, y: 74}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -618,7 +618,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: b36eea9e05d2bb841890ed2be8ce8d33
     layerID: 21
-    mosaicPosition: {x: 675, y: 4}
+    mosaicPosition: {x: 709, y: 513}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -628,7 +628,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: aa7b3b1a92622674f8c0189f9a3b2598
     layerID: 3
-    mosaicPosition: {x: 675, y: 186}
+    mosaicPosition: {x: 795, y: 513}
     flatten: 0
     isImported: 1
     isVisible: 1
