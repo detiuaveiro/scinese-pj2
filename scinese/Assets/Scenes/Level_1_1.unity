@@ -919,6 +919,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cef7cbac9a6eeb4f86bd9e74a1530b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  playerpos: {fileID: 0}
+  numberOfLives: 2
+  pushRecoverySpeed: 0.2
+  mustPatrol: 0
+  rb: {fileID: 0}
+  speed: 0
+  bounds: {fileID: 0}
+  dad: {fileID: 0}
 --- !u!95 &706860045
 Animator:
   serializedVersion: 4
@@ -929,7 +951,7 @@ Animator:
   m_GameObject: {fileID: 706860040}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c39748d7035d08d4f92d5d5808bba3fa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
