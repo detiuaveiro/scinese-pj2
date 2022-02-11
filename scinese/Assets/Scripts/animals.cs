@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static Unity.Mathematics.math;
 
-public class animals : Collidable
+public class animals : MonoBehaviour
 {
    
     private Vector2 movement;//dar movimento em x e em y
@@ -89,9 +89,8 @@ public class animals : Collidable
     //    }
     //}
 
-    public void FixedUpdate()
+    void FixedUpdate()
     {
-        base.FixedUpdate();
 
         
         Move();
@@ -199,8 +198,8 @@ public class animals : Collidable
     {
         
         
-        anim.SetFloat("Horizontal", directionVector.x);
-        anim.SetFloat("Vertical", directionVector.y);
+        anim.SetFloat("horizontal", directionVector.x);
+        anim.SetFloat("vertical", directionVector.y);
         
     }
 
