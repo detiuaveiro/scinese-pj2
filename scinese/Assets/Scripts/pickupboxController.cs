@@ -14,7 +14,7 @@ public class pickupboxController : MonoBehaviour
         {
             isOpen = true;
             Debug.Log("Box is Unlocked");//Destrancar porta
-            animator.SetBool("isPick", true); //ativar animação abrir bau
+            animator.SetBool("isPick", true); //ativar animaï¿½ï¿½o abrir bau
             pickaxe.gameObject.SetActive(false);//desativar pickaxe
         }
     }
