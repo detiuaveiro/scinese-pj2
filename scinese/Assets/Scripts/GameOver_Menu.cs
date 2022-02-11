@@ -6,6 +6,7 @@ public class GameOver_Menu : MonoBehaviour
 {
     public static bool isGameOver = false; //public static para poder aceder através de outros scripts
     private CanvasGroup cvGameOver;
+    public GameObject inventory;
 
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class GameOver_Menu : MonoBehaviour
     public void EndGame()
     {
         cvGameOver.alpha = 1;
-        cvGameOver.blocksRaycasts = false;
+        cvGameOver.blocksRaycasts = true;
         // pauseMenu.SetActive(true);
         Time.timeScale = 0f; //Parar o tempo no jogo.
     }

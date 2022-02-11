@@ -91,18 +91,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: pessoa
+  - name: Pedra
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2716
-      y: 2752
-      width: 25
-      height: 65
-    spriteID: 9535920a2b09e194086d221c602eb796
+      x: 3164
+      y: 4
+      width: 201
+      height: 729
+    spriteID: 3b71a7b6826a4c446970227293b7f022
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -111,322 +111,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2323, y: 1541}
-  - name: pessoa
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2749
-      y: 2752
-      width: 25
-      height: 65
-    spriteID: 7dc5a1a921c9e48429573b7d8721d326
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2241, y: 1544}
-  - name: pessoa
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2782
-      y: 2752
-      width: 25
-      height: 65
-    spriteID: c5574a356c6c3a647ac87e0d819798d6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2341, y: 1503}
-  - name: pessoa
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2815
-      y: 2752
-      width: 25
-      height: 65
-    spriteID: 13c075a9db0140b458b17f1bb0ab6e87
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2485, y: 1781}
-  - name: pessoa
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2848
-      y: 2752
-      width: 25
-      height: 65
-    spriteID: 186f268283a5b8b41b896dd1d13a32e4
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2566, y: 1776}
-  - name: drinking person
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2630
-      y: 2752
-      width: 35
-      height: 65
-    spriteID: 1cc08522da2163f49ac1256429b55e84
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2383, y: 1649}
-  - name: pessoa
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2881
-      y: 2752
-      width: 25
-      height: 65
-    spriteID: fa4ef19b80dd889478e54d616283ef96
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2352, y: 1887}
-  - name: arvore
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2145
-      y: 2752
-      width: 166
-      height: 213
-    spriteID: 84b7ba34e734e6f4ab5ab755281a23ee
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1966, y: 1430}
-  - name: Layer 6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2673
-      y: 2752
-      width: 35
-      height: 60
-    spriteID: 7f181eb92d245de4bb72703150f62c12
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2053, y: 1546}
-  - name: Layer 9
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2259
-      y: 2973
-      width: 43
-      height: 97
-    spriteID: b2aaf6764517625488ff4889d41c8263
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2064, y: 1901}
-  - name: Layer 22
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2145
-      y: 1577
-      width: 992
-      height: 1167
-    spriteID: f180089690dd0eb4a90d3739717796bf
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2033, y: 1288}
-  - name: tendas
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3145
-      y: 1577
-      width: 369
-      height: 415
-    spriteID: e29ff03157f6b7f4ea4b02914e89142e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2909, y: 1355}
-  - name: vasos
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2553
-      y: 2803
-      width: 44
-      height: 36
-    spriteID: b631ee89a0cd0674689dad12144e55db
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2320, y: 2566}
-  - name: tenda 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2319
-      y: 2752
-      width: 149
-      height: 164
-    spriteID: 9b17a53e0d973264f8c467773045f13a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2107, y: 2543}
-  - name: Layer 4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2145
-      y: 2973
-      width: 106
-      height: 66
-    spriteID: 921a2d0c77481014ebd10575b262f945
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1850, y: 2764}
-  - name: Layer 3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2553
-      y: 2752
-      width: 69
-      height: 43
-    spriteID: 0c4015fa2faea04418b1dfb991d5e147
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2301, y: 2506}
+    uvTransform: {x: 2837, y: -90}
   - name: layout
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -468,7 +153,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2200, y: -12}
+    uvTransform: {x: 2187, y: -12}
   - name: 2Sombra
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -476,8 +161,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2476
-      y: 2752
+      x: 3164
+      y: 741
       width: 69
       height: 91
     spriteID: fa2b22e78084d734383df11d4b098b09
@@ -489,7 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2375, y: 2505}
+    uvTransform: {x: 920, y: -824}
   - name: SombraRelva
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -624,7 +309,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 0
+    isVisible: 1
   - name: parte de baixo
     spriteName: 
     isGroup: 1
@@ -634,7 +319,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Layer 28
     spriteName: Layer 28
     isGroup: 0
@@ -714,7 +399,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: drinking person
     spriteName: drinking person
     isGroup: 0
@@ -794,7 +479,7 @@ ScriptedImporter:
     mosaicPosition: {x: 3862, y: 2051}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: pratos
     spriteName: pratos
     isGroup: 0
@@ -804,7 +489,7 @@ ScriptedImporter:
     mosaicPosition: {x: 3145, y: 2748}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Layer 18
     spriteName: Layer 18
     isGroup: 0
@@ -814,7 +499,7 @@ ScriptedImporter:
     mosaicPosition: {x: 3145, y: 2102}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Layer 20
     spriteName: Layer 20
     isGroup: 0
@@ -824,7 +509,7 @@ ScriptedImporter:
     mosaicPosition: {x: 3145, y: 1577}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: chefe room
     spriteName: 
     isGroup: 1
@@ -834,7 +519,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: pessoas emtrada
     spriteName: 
     isGroup: 1
@@ -853,7 +538,7 @@ ScriptedImporter:
     layerID: 31
     mosaicPosition: {x: 2716, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: pessoa
     spriteName: pessoa
@@ -863,7 +548,7 @@ ScriptedImporter:
     layerID: 30
     mosaicPosition: {x: 2749, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: pessoa
     spriteName: pessoa
@@ -873,7 +558,7 @@ ScriptedImporter:
     layerID: 29
     mosaicPosition: {x: 2782, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: pessoa
     spriteName: pessoa
@@ -883,7 +568,7 @@ ScriptedImporter:
     layerID: 27
     mosaicPosition: {x: 2815, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: pessoa
     spriteName: pessoa
@@ -893,7 +578,7 @@ ScriptedImporter:
     layerID: 26
     mosaicPosition: {x: 2848, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: drinking person
     spriteName: drinking person
@@ -903,7 +588,7 @@ ScriptedImporter:
     layerID: 25
     mosaicPosition: {x: 2630, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: pessoa
     spriteName: pessoa
@@ -913,7 +598,7 @@ ScriptedImporter:
     layerID: 22
     mosaicPosition: {x: 2881, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: arvore
     spriteName: arvore
@@ -923,7 +608,7 @@ ScriptedImporter:
     layerID: 20
     mosaicPosition: {x: 2145, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Layer 6
     spriteName: Layer 6
@@ -933,7 +618,7 @@ ScriptedImporter:
     layerID: 18
     mosaicPosition: {x: 2673, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Layer 9
     spriteName: Layer 9
@@ -943,7 +628,7 @@ ScriptedImporter:
     layerID: 21
     mosaicPosition: {x: 2259, y: 2973}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Layer 22
     spriteName: Layer 22
@@ -953,7 +638,7 @@ ScriptedImporter:
     layerID: 50
     mosaicPosition: {x: 2145, y: 1577}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: acampamento
     spriteName: 
@@ -964,7 +649,7 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: tendas
     spriteName: tendas
     isGroup: 0
@@ -973,7 +658,7 @@ ScriptedImporter:
     layerID: 16
     mosaicPosition: {x: 3145, y: 1577}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: temda
     spriteName: 
@@ -993,7 +678,7 @@ ScriptedImporter:
     layerID: 6
     mosaicPosition: {x: 2553, y: 2803}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: tenda 1
     spriteName: tenda 1
@@ -1003,7 +688,7 @@ ScriptedImporter:
     layerID: 5
     mosaicPosition: {x: 2319, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Layer 4
     spriteName: Layer 4
@@ -1013,7 +698,7 @@ ScriptedImporter:
     layerID: 10
     mosaicPosition: {x: 2145, y: 2973}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: Layer 3
     spriteName: Layer 3
@@ -1023,7 +708,7 @@ ScriptedImporter:
     layerID: 9
     mosaicPosition: {x: 2553, y: 2752}
     flatten: 0
-    isImported: 1
+    isImported: 0
     isVisible: 1
   - name: tenda 1
     spriteName: 
@@ -1044,6 +729,16 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
+    isVisible: 1
+  - name: Pedra
+    spriteName: Pedra
+    isGroup: 0
+    parentIndex: 44
+    spriteID: 3b71a7b6826a4c446970227293b7f022
+    layerID: 88
+    mosaicPosition: {x: 3164, y: 4}
+    flatten: 0
+    isImported: 1
     isVisible: 1
   - name: layout
     spriteName: layout
@@ -1071,7 +766,7 @@ ScriptedImporter:
     parentIndex: 44
     spriteID: fa2b22e78084d734383df11d4b098b09
     layerID: 86
-    mosaicPosition: {x: 2476, y: 2752}
+    mosaicPosition: {x: 3164, y: 741}
     flatten: 0
     isImported: 1
     isVisible: 1
