@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.Mathematics.math;
 
-public class animals : MonoBehaviour
+public class animals : Collidable
 {
    public Transform playerpos;//para saber a posi��o do player
     private Vector2 movement;//dar movimento em x e em y
@@ -88,7 +89,7 @@ public class animals : MonoBehaviour
     //    }
     //}
 
-    protected override void FixedUpdate()
+    public void FixedUpdate()
     {
         base.FixedUpdate();
         Vector3 direction = playerpos.position - transform.position;//posi��o do inimgo em rela��o � do player
