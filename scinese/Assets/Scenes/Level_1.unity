@@ -560,7 +560,7 @@ PrefabInstance:
     - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 2024318924}
+      objectReference: {fileID: 743465572}
     - target: {fileID: 6747376743275529108, guid: f6d870ca888193349acf5f598e194ced, type: 3}
       propertyPath: dialogueUI
       value: 
@@ -1106,6 +1106,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2191423033138573843, guid: 34e59e521c6b5504c8ccaa03e9cd2cf2, type: 3}
   m_PrefabInstance: {fileID: 2191423033778426672}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &743465572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2538450449650904941, guid: 3b7c353c09f6fb24e84743896e9b47e1, type: 3}
+  m_PrefabInstance: {fileID: 1806131816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7e3a6718ec7cc4486f93dff668b80c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &767614602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,7 +2163,7 @@ PrefabInstance:
     - target: {fileID: 6439158481884671407, guid: eb78c4ec7f61d7641bb033e04e7d5164, type: 3}
       propertyPath: btqt
       value: 
-      objectReference: {fileID: 821684804}
+      objectReference: {fileID: 0}
     - target: {fileID: 6439158481884671407, guid: eb78c4ec7f61d7641bb033e04e7d5164, type: 3}
       propertyPath: btSet
       value: 
