@@ -7,6 +7,8 @@ public class pickupboxController : MonoBehaviour
     public bool isOpen;
     //public Animator animator;
     public GameObject pickaxe;
+    public GameObject minimapcIcon;
+    public GameObject interactable;
 
     private Player player;
 
@@ -23,6 +25,8 @@ public class pickupboxController : MonoBehaviour
             Debug.Log("Box is Unlocked");//Destrancar porta
             player.anim.SetBool("isPick", true); //ativar anima��o abrir bau
             pickaxe.gameObject.SetActive(false);//desativar pickaxe
+            minimapcIcon.gameObject.SetActive(false); //desativar icon no minimap
+            interactable.gameObject.SetActive(false); //desativar interação, juntamente com o balao
         }
     }
 }
