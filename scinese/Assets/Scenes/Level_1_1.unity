@@ -1831,6 +1831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1145378309053087554, guid: ae22f81b2483c034db0ae53a18e0574d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -27
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae22f81b2483c034db0ae53a18e0574d, type: 3}
 --- !u!1001 &3267144015702211313
@@ -1887,6 +1891,10 @@ PrefabInstance:
     - target: {fileID: 3267144015368070641, guid: 3096b037eb965584f8eb1879fdfe8e0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267144016841107426, guid: 3096b037eb965584f8eb1879fdfe8e0d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3096b037eb965584f8eb1879fdfe8e0d, type: 3}
@@ -1945,6 +1953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: deer
       objectReference: {fileID: 0}
+    - target: {fileID: 3777256652773327627, guid: e34fa5ba96e95ad418fe7002df7d96b4, type: 3}
+      propertyPath: m_SortingOrder
+      value: -30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e34fa5ba96e95ad418fe7002df7d96b4, type: 3}
 --- !u!1001 &8740057096435197795
@@ -2001,6 +2013,10 @@ PrefabInstance:
     - target: {fileID: 8740057096176895054, guid: e3b708aa95edc8a459bc1bf52dc767fe, type: 3}
       propertyPath: m_Name
       value: wolf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740057096398898757, guid: e3b708aa95edc8a459bc1bf52dc767fe, type: 3}
+      propertyPath: m_SortingOrder
+      value: -23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3b708aa95edc8a459bc1bf52dc767fe, type: 3}
