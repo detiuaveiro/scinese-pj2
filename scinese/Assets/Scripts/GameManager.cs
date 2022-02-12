@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
             hasloaded[1] = true;
             player.transform.position = new Vector2(-23, 0); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
-            canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
+            //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
         }
         else if (!hasloaded[2] && sceneIndex == 4) // se a cena ativa for a 3 
@@ -55,14 +55,18 @@ public class GameManager : MonoBehaviour
             hasloaded[2] = true;
             player.transform.position = new Vector2(-14.2f, 15.4f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
-            canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
+            //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
         }
         if (player.isDead && sceneIndex == 2) // se a cena ativa for a 3 
         {
+            player.isDead = false;
+            Time.timeScale = 1f;
             player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             player.currentHealth = 10;
+            player.healthBar.SetHealth(player.currentHealth);
+            canvasController.gameoverBox.SetActive(false);
             //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
         }

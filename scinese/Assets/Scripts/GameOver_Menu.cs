@@ -8,6 +8,7 @@ public class GameOver_Menu : MonoBehaviour
     public static bool isGameOver = false; //public static para poder aceder através de outros scripts
     private CanvasGroup cvGameOver;
     public GameObject inventory;
+    private Player player;
 
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class GameOver_Menu : MonoBehaviour
     private void Start()
     {
         cvGameOver.alpha = 0;
+        player = GameManager.instance.player; // remember we're using the Singleton pattern!!
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class GameOver_Menu : MonoBehaviour
 
     public void LoadLevel(int sceneIndex) //método public para funcionar noutros scripts
     {
+        player.isDead = true;
         SceneManager.LoadScene(sceneIndex);
     }
 

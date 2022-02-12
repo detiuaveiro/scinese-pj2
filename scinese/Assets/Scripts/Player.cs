@@ -121,7 +121,7 @@ public class Player : MonoBehaviour
         //Destroy(this.gameObject);
         // panel.SetActive(true);
         gameOver.EndGame();
-        isDead = true;
+        //isDead = true;
     }
 
     public void FixedUpdate()

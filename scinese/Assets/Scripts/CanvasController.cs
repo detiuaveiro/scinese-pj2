@@ -6,6 +6,7 @@ public class CanvasController : MonoBehaviour
 {
     public GameObject loadingScreen;
     public GameObject dialoguebox;
+    public GameObject gameoverBox;
 
     public void HideLoadingScreen()
     {
