@@ -7,6 +7,7 @@ public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textlabel;
+    [SerializeField] private TMP_Text textnamelabel;
 
     public bool isOpen { get; private set; }
 
@@ -27,6 +28,7 @@ public class DialogueUI : MonoBehaviour
         player.rb.bodyType = RigidbodyType2D.Static;
         isOpen = true;
         dialogueBox.SetActive(true);
+        textnamelabel.text = dialogueObject.Name;
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
