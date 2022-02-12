@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
-    Animator anim;
+    public Animator anim;
+    public bool isDead;
     bool isAttacking =false;
     bool isImpact = false;
 
@@ -69,12 +70,16 @@ public class Player : MonoBehaviour
                 Interactable.Interact(this);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space)) // right click to attack/swing
+
+        if (anim.GetBool("isPick") == true)
         {
-            
-            anim.SetBool("isAttacking" ,true);
-            isAttacking = true;
-            
+            if (Input.GetKeyDown(KeyCode.Space)) // right click to attack/swing
+            {
+
+                anim.SetBool("isAttacking", true);
+                isAttacking = true;
+
+            }
         }
         //Debug.Log(this.inventory.items.Count);
 
@@ -113,9 +118,10 @@ public class Player : MonoBehaviour
 
     void Death()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
         // panel.SetActive(true);
         gameOver.EndGame();
+        isDead = true;
     }
 
     public void FixedUpdate()

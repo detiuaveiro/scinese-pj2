@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver_Menu : MonoBehaviour
 {
@@ -25,6 +26,11 @@ public class GameOver_Menu : MonoBehaviour
        {
            EndGame();
        }
+    }
+
+    public void LoadLevel(int sceneIndex) //método public para funcionar noutros scripts
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 
     public void EndGame()

@@ -5,10 +5,11 @@ using static Unity.Mathematics.math;
 
 public class LowerEnemy : Collidable
 {
-    public Transform playerpos;//para saber a posi��o do player
+    public Vector3 playerpos;//para saber a posi��o do player
     private Vector2 movement;//dar movimento em x e em y
     public int numberOfLives = 2;
     public float pushRecoverySpeed = 0.2f;
+    //public GameObject playerpos;
 
     public bool mustPatrol;//controlar se o inimigo deve estar em idle
     public Rigidbody2D rb;//rigidbody do enemy para dar movimento
@@ -37,13 +38,13 @@ public class LowerEnemy : Collidable
     bool animFinish = true;
 
 
+
     private void Start()
     {
         //mustPatrol = true;//Inicia em idle
         myTransform = GetComponent<Transform>();
         anim = GetComponent<Animator>();
-       // parentTransform = GetComponentInParent<Transform>();
-
+        // parentTransform = GetComponentInParent<Transform>();
         ChangeDirection();
     }
 
@@ -92,7 +93,9 @@ public class LowerEnemy : Collidable
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-        Vector3 direction = playerpos.position - transform.position;//posi��o do inimgo em rela��o � do player
+        playerpos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        Vector3 direction = playerpos - transform.position;//posi��o do inimgo em rela��o � do player
+        Debug.Log(playerpos);
         
         float range = Mathf.Sqrt(Mathf.Pow(direction.x, 2) + Mathf.Pow(direction.y, 2));
 

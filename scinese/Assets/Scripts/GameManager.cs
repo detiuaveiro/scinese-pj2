@@ -5,7 +5,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     private bool[] hasloaded = new bool[4];
-    private bool hasloaded2;
 
     private void Awake()
     {
@@ -34,20 +33,37 @@ public class GameManager : MonoBehaviour
 
         //fazer o mesmo para as restantes cenas, com a posição inicial no sítio certo
 
-        if (!hasloaded[0] && sceneIndex == 3) // se a cena ativa for a 3 
+        if (!hasloaded[0] && sceneIndex == 2) // se a cena ativa for a 3 
         {
             hasloaded[0] = true;
+           // player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
+            player.transform.position = new Vector2(-10f, 13.34f);
+            player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
+            //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
+            canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
+        }
+        if (!hasloaded[1] && sceneIndex == 3) // se a cena ativa for a 3 
+        {
+            hasloaded[1] = true;
             player.transform.position = new Vector2(-23, 0); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
         }
-        else if (!hasloaded[1] && sceneIndex == 4) // se a cena ativa for a 3 
+        else if (!hasloaded[2] && sceneIndex == 4) // se a cena ativa for a 3 
         {
-            hasloaded[1] = true;
+            hasloaded[2] = true;
             player.transform.position = new Vector2(-14.2f, 15.4f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
+            canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
+        }
+        if (player.isDead && sceneIndex == 2) // se a cena ativa for a 3 
+        {
+            player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
+            player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
+            player.currentHealth = 10;
+            //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
         }
     }
