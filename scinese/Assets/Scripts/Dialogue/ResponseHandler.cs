@@ -60,8 +60,11 @@ public class ResponseHandler : MonoBehaviour
         if(responseEvents != null && responseIndex <= responseEvents.Length) 
         {
             responseEvents[responseIndex].OnPickedResponse?.Invoke();
+            dialogueUI.CloseDialogueBox();
         }
-
-        dialogueUI.ShowDialogue(response.DialogueObject);
+        else
+        {
+            dialogueUI.ShowDialogue(response.DialogueObject);
+        }  
     }
 }
