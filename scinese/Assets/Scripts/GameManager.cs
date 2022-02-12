@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    bool hasloaded;
+
     private void Awake()
     {
         Debug.Log(SceneManager.GetActiveScene().name);
@@ -19,13 +21,35 @@ public class GameManager : MonoBehaviour
             this.LoadState();
         }
 
-      //  DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(player);
+        DontDestroyOnLoad(canvas);
+        DontDestroyOnLoad(camera);
+    }
+
+    private void Update()
+    {
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex; 
+
+        //fazer o mesmo para as restantes cenas, com a posição inicial no sítio certo
+        
+        if(!hasloaded && sceneIndex == 3) // se a cena ativa for a 3 
+        {
+            hasloaded = true; 
+            player.transform.position = new Vector2(-23, 0); //posição inicial do player
+            player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
+            canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
+            canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
+        }
     }
 
     // references
     public Player player;
     public Inventory inventory;
     public SaveSystem saveSystem;
+    public Canvas canvas;
+    public Camera camera;
+    public CanvasController canvasController;
 
     // logic
     public string actualLevel;
