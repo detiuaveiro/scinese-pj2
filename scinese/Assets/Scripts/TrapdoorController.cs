@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TrapdoorController : MonoBehaviour
 {
     public bool isOpen;
-   // public Animator animator;
+    //public Animator animator;
     //public BoxCollider2D boxcollider;
     private Player player;
     public Item_Data key;

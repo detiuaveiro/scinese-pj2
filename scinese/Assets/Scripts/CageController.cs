@@ -1,39 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class CageController : MonoBehaviour
 {
     public bool isOpen;
-    public Animator animator;
-    public GameObject keyObject;
-    public GameObject ballon;
-    int key;
+    public Animator animalAnim;
+    public Animator cageAnim;
+    public Item_Data key;
     public AudioSource sfx;
+    private Player player;
+
+    private void Start()
+    {
+        player = GameManager.instance.player; // remember we're using the Singleton pattern!!
+    }
 
     public void OpenCage()
     {
-        if (!isOpen)
+        if (!isOpen && player.inventory.items.Contains(key))
         {
             sfx.Play();
             isOpen = true;
-            Debug.Log("Chest is Unlocked");//Destrancar porta
-            animator.SetBool("isOpen", true); //ativar animação abrir bau
-            keyObject.gameObject.SetActive(true);//mostrar chave
-            //ballon.gameObject.SetActive(true);//mostrar balao com interrogacao
-        }
-        else
-        {
-
-            while (key < 1)
-            {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    key++;
-                    //keyObject.gameObject.SetActive(false);
-                    ballon.gameObject.SetActive(false);
-                }
-            }
+            Debug.Log("Trapdoor is Unlocked");//Destrancar porta
+            animalAnim.SetBool("disapear", true); //ativar animação abrir porta
+            cageAnim.SetBool("isOpen", true);
+            player.inventory.RemoveItem(key);
         }
     }
 }
