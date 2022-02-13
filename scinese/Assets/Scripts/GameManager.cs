@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(player);
         DontDestroyOnLoad(canvas);
         DontDestroyOnLoad(camera);
+        //DontDestroyOnLoad(levelLoader);
     }
 
     private void Update()
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
 
         //fazer o mesmo para as restantes cenas, com a posição inicial no sítio certo
 
-        if (!hasloaded[0] && sceneIndex == 2) // se a cena ativa for a 3 
+        if (!hasloaded[0] && sceneIndex == 2) // se a cena ativa for a 2 
         {
             hasloaded[0] = true;
            // player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
@@ -58,10 +59,22 @@ public class GameManager : MonoBehaviour
             //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
         }
-        if (player.isDead && sceneIndex == 2) // se a cena ativa for a 3 
+        if (player.isDead && sceneIndex == 2) // se a cena ativa for a 2
         {
             player.isDead = false;
             Time.timeScale = 1f;
+            player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
+            player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
+            player.currentHealth = 10;
+            player.healthBar.SetHealth(player.currentHealth);
+            canvasController.gameoverBox.SetActive(false);
+            //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
+            canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
+        }
+
+        if (player.hasWon && sceneIndex == 2) // se a cena ativa for a 2
+        {
+            player.hasWon = false;
             player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             player.currentHealth = 10;
@@ -79,6 +92,7 @@ public class GameManager : MonoBehaviour
     public Canvas canvas;
     public Camera camera;
     public CanvasController canvasController;
+    //public GameObject levelLoader;
 
     // logic
     public string actualLevel;

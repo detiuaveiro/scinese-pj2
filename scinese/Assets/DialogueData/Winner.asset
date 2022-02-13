@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14dcba178d889904fb808a81e95ae281, type: 3}
+  m_Name: Winner
+  m_EditorClassIdentifier: 
+  name: 
+  dialogue:
+  - "Parab\xE9ns! Conseguiste resgatar todos os animais! "
+  - "Volta para o templo! Eles estar\xE3o \xE0 tua espera!"
+  responses:
+  - responseText: Voltar ao Templo!
+    dialogueObject: {fileID: 11400000, guid: 02ecc8a0b1c9e6e4eaaad1ffcbb24bf5, type: 2}
