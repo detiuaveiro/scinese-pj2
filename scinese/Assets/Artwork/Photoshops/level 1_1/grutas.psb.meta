@@ -175,48 +175,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 847, y: 1121}
-  - name: jaula_aberta
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 573
-      y: 2988
-      width: 171
-      height: 209
-    spriteID: 4a23d8d1e9b0f29448c43a5b6b468162
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 60, y: 1340}
-  - name: jaula
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 574
-      y: 3849
-      width: 177
-      height: 194
-    spriteID: f1fbf5efb1d5741458e11d772d850c17
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 60, y: 2183}
   - name: chao_jaula
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -224,8 +182,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 977
-      y: 2604
+      x: 573
+      y: 2990
       width: 174
       height: 134
     spriteID: 40d51ab447439e249afbf3dcdc79a02b
@@ -237,49 +195,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 470, y: 956}
-  - name: jaula_aberta
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 573
-      y: 3205
-      width: 171
-      height: 207
-    spriteID: 840677178b80f954a9a4b24c3b578107
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 241, y: 2022}
-  - name: jaula
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 798
-      y: 2604
-      width: 177
-      height: 195
-    spriteID: c8cf58e21f48c2446bd1c18fb0bf6a2a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 466, y: 1404}
+    uvTransform: {x: 66, y: 1342}
   - name: chao_jaula
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -287,8 +203,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 977
-      y: 2746
+      x: 573
+      y: 3132
       width: 174
       height: 134
     spriteID: 3c4721c88ff60ef43a876eee992aba4d
@@ -300,49 +216,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 642, y: 1565}
-  - name: jaula_aberta
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 573
-      y: 3420
-      width: 171
-      height: 207
-    spriteID: 289fa94ff1362ef4292235556563dabd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -116, y: 2242}
-  - name: jaula
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 798
-      y: 2802
-      width: 177
-      height: 194
-    spriteID: fc2d27e575aad2d4496302e0ed0cab95
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 109, y: 1607}
+    uvTransform: {x: 238, y: 1951}
   - name: chao_jaula
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -350,8 +224,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 977
-      y: 2888
+      x: 573
+      y: 3274
       width: 174
       height: 134
     spriteID: 15568cf6ebea4554cbfebc7e06421112
@@ -363,49 +237,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 294, y: 1712}
-  - name: jaula_aberta
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 573
-      y: 3635
-      width: 171
-      height: 207
-    spriteID: 72523d15f05574b49bbbbb9f3853f93c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -115, y: 2950}
-  - name: jaula
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 798
-      y: 3000
-      width: 171
-      height: 190
-    spriteID: 9b371dd22ea0284438f0e03ec4d3e21f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 110, y: 2298}
+    uvTransform: {x: -110, y: 2098}
   - name: chao_jaula
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -413,8 +245,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 977
-      y: 3030
+      x: 573
+      y: 3416
       width: 174
       height: 134
     spriteID: 38e15532ca955c14d9548a4b30ec8f0c
@@ -426,7 +258,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 295, y: 2347}
+    uvTransform: {x: -109, y: 2733}
   - name: wall_top_horizontal
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -621,8 +453,8 @@ ScriptedImporter:
     layerID: 398
     mosaicPosition: {x: 573, y: 2990}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: jaula
     spriteName: jaula
     isGroup: 0
@@ -631,15 +463,15 @@ ScriptedImporter:
     layerID: 298
     mosaicPosition: {x: 573, y: 3850}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: chao_jaula
     spriteName: chao_jaula
     isGroup: 0
     parentIndex: 1
     spriteID: 40d51ab447439e249afbf3dcdc79a02b
     layerID: 357
-    mosaicPosition: {x: 977, y: 2604}
+    mosaicPosition: {x: 573, y: 2990}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -651,8 +483,8 @@ ScriptedImporter:
     layerID: 399
     mosaicPosition: {x: 573, y: 3205}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: jaula
     spriteName: jaula
     isGroup: 0
@@ -661,15 +493,15 @@ ScriptedImporter:
     layerID: 295
     mosaicPosition: {x: 798, y: 2604}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: chao_jaula
     spriteName: chao_jaula
     isGroup: 0
     parentIndex: 1
     spriteID: 3c4721c88ff60ef43a876eee992aba4d
     layerID: 356
-    mosaicPosition: {x: 977, y: 2746}
+    mosaicPosition: {x: 573, y: 3132}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -681,8 +513,8 @@ ScriptedImporter:
     layerID: 397
     mosaicPosition: {x: 573, y: 3420}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: jaula
     spriteName: jaula
     isGroup: 0
@@ -691,15 +523,15 @@ ScriptedImporter:
     layerID: 297
     mosaicPosition: {x: 798, y: 2802}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: chao_jaula
     spriteName: chao_jaula
     isGroup: 0
     parentIndex: 1
     spriteID: 15568cf6ebea4554cbfebc7e06421112
     layerID: 355
-    mosaicPosition: {x: 977, y: 2888}
+    mosaicPosition: {x: 573, y: 3274}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -711,8 +543,8 @@ ScriptedImporter:
     layerID: 396
     mosaicPosition: {x: 573, y: 3635}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: jaula
     spriteName: jaula
     isGroup: 0
@@ -721,15 +553,15 @@ ScriptedImporter:
     layerID: 395
     mosaicPosition: {x: 798, y: 3000}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: chao_jaula
     spriteName: chao_jaula
     isGroup: 0
     parentIndex: 1
     spriteID: 38e15532ca955c14d9548a4b30ec8f0c
     layerID: 354
-    mosaicPosition: {x: 977, y: 3030}
+    mosaicPosition: {x: 573, y: 3416}
     flatten: 0
     isImported: 1
     isVisible: 1
