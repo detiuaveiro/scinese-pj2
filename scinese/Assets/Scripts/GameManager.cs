@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         else if (!hasloaded[2] && sceneIndex == 4) // se a cena ativa for a 3 
         {
             hasloaded[2] = true;
-            player.transform.position = new Vector2(-14.2f, 15.4f); //posição inicial do player
+            player.transform.position = new Vector2(-14.5f, 10f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
