@@ -858,9 +858,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1721547259
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.75294125, g: 0.75294125, b: 0.75294125, a: 1}
   m_FlipX: 0
@@ -1524,7 +1524,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1721547259
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &366503984
@@ -1604,9 +1604,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1721547259
+  m_SortingLayer: -3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.75294125, g: 0.75294125, b: 0.75294125, a: 1}
   m_FlipX: 0
@@ -3164,6 +3164,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 289144559}
+  objectsHide:
+  - {fileID: 1630336698}
+  - {fileID: 144881189}
+  - {fileID: 394569423}
+  - {fileID: 84131121}
 --- !u!1 &1119292606
 GameObject:
   m_ObjectHideFlags: 0

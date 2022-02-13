@@ -6,6 +6,9 @@ public class Pause_Menu : MonoBehaviour
 {
     public static bool isGamePaused = false; //public static para poder aceder através de outros scripts
     private CanvasGroup cvPauseMenu;
+    public RectTransform panel;
+    public GameObject minimap;
+    public GameObject inventory;
 
     private void Awake()
     {
@@ -24,6 +27,7 @@ public class Pause_Menu : MonoBehaviour
             else
             {
                 PauseGame();
+                CloseSettings();
             }
         }
     }
@@ -46,9 +50,19 @@ public class Pause_Menu : MonoBehaviour
         isGamePaused = true;
     }
 
-    public void SettingsGame()
+    public void OpenSettings()
     {
         //Fazer outro panel para as settings
+        panel.gameObject.SetActive(true);
+        minimap.SetActive(false);
+        inventory.SetActive(false);
+    }
+
+    public void CloseSettings()
+    {
+        panel.gameObject.SetActive(false);
+        minimap.SetActive(true);
+        inventory.SetActive(true);
     }
 
     public void QuitGame()
