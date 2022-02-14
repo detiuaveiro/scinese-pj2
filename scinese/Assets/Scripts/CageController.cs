@@ -11,6 +11,7 @@ public class CageController : MonoBehaviour
     public Item_Data key;
     public AudioSource sfx;
     private Player player;
+    public GameObject animal;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class CageController : MonoBehaviour
             animalAnim.SetBool("disapear", true); //ativar animação abrir porta
             cageAnim.SetBool("isOpen", true);
             player.inventory.RemoveItem(key);
+            Destroy(animal, 2);//Destruir gameobject 5 seconds depois
         }
     }
 }

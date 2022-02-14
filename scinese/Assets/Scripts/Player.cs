@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public Animator anim;
     public bool isDead;
+    public bool hasWon;
+    public bool animalsinTemple;
     bool isAttacking =false;
     bool isImpact = false;
 
