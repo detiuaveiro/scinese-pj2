@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14dcba178d889904fb808a81e95ae281, type: 3}
+  m_Name: Book
+  m_EditorClassIdentifier: 
+  name: Arianna
+  dialogue:
+  - "\xC9 um livro antigo."
+  - "\u201DAo aventureiro que ler estas palavras\u2026 Um dia, um aventureiro ir\xE1
+    desvendar este templo.\u201D"
+  - "\u201DFoi dito que este conseguir\xE1 revitalizar as divinas \xE1rvores e trazer
+    os seus frutos m\xE1gicos de volta ao mundo.\u201D"
+  - "\u201DPara ti, aventureiro, deixamos os seguintes encal\xE7os.\""
+  - "\u201DEncontra a \xE1rvore neste templo e colhe dois frutos. \u201C"
+  - "\u201DDegusta um fruto e sentir\xE1s uma energia radiante invadir o corpo.\u201D"
+  - "\u201DAcordar\xE1s num tempo long\xEDnquo.\u201D"
+  - "\u201DA\xED, encontra uma esp\xE9cime dos animais em vias de extin\xE7\xE3o
+    que v\xEAs nestas est\xE1tuas.\u201D"
+  - "\u201DOferece-lhe o fruto e ele regressar\xE1 da era long\xEDnqua.\u201D"
+  - "\u201DCumpre este legado .. e as \xE1rvores divinas despertar\xE3o.\u201D"
+  - ...
+  - "Tenho que encontrar a \xE1rvore neste templo \u2026"
+  responses: []
