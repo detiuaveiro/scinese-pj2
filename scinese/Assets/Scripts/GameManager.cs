@@ -16,10 +16,10 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        if (saveSystem.ExistsData())
+        /*if (saveSystem.ExistsData())
         {
             this.LoadState();
-        }
+        }*/
 
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(player);
@@ -31,12 +31,12 @@ public class GameManager : MonoBehaviour
     {
         int sceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        //fazer o mesmo para as restantes cenas, com a posição inicial no sítio certo
+        //fazer o mesmo para as restantes cenas, com a posiï¿½ï¿½o inicial no sï¿½tio certo
 
         if (!hasloaded[0] && sceneIndex == 2) // se a cena ativa for a 3 
         {
             hasloaded[0] = true;
-           // player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
+           // player.transform.position = new Vector2(4.7f, 31.3f); //posiï¿½ï¿½o inicial do player
             player.transform.position = new Vector2(-10f, 13.34f);
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         if (!hasloaded[1] && sceneIndex == 3) // se a cena ativa for a 3 
         {
             hasloaded[1] = true;
-            player.transform.position = new Vector2(-23, 0); //posição inicial do player
+            player.transform.position = new Vector2(-23, 0); //posiï¿½ï¿½o inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         else if (!hasloaded[2] && sceneIndex == 4) // se a cena ativa for a 3 
         {
             hasloaded[2] = true;
-            player.transform.position = new Vector2(-14.5f, 10f); //posição inicial do player
+            player.transform.position = new Vector2(-14.5f, 10f); //posiï¿½ï¿½o inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             //canvasController.dialoguebox.SetActive(false); //desativar dialoguebox do canvas
             canvasController.loadingScreen.SetActive(false); //desativar loadingscreen do canvas
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         {
             player.isDead = false;
             Time.timeScale = 1f;
-            player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
+            player.transform.position = new Vector2(4.7f, 31.3f); //posiï¿½ï¿½o inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             player.currentHealth = 10;
             player.healthBar.SetHealth(player.currentHealth);
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
         saveSystem.Save();
         Debug.Log("Game Saved! Thank you for your preference.");
     }
-
+/*
     public void LoadState()
     {
         PlayerData data = saveSystem.Load();
@@ -114,5 +114,5 @@ public class GameManager : MonoBehaviour
         player.gameObject.transform.position = new Vector2(data.position[0], data.position[1]);
         player.currentHealth = data.health;
        // player.inventory.items = data.inventory.items;
-    }
+    }*/
 }
