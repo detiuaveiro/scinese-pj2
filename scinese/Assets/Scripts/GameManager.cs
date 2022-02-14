@@ -62,6 +62,8 @@ public class GameManager : MonoBehaviour
         if (player.isDead && sceneIndex == 2) // se a cena ativa for a 2
         {
             player.isDead = false;
+            hasloaded[1] = false;
+            hasloaded[2] = false;
             Time.timeScale = 1f;
             player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
@@ -75,6 +77,8 @@ public class GameManager : MonoBehaviour
         if (player.hasWon && sceneIndex == 2) // se a cena ativa for a 2
         {
             player.hasWon = false;
+            hasloaded[1] = false;
+            hasloaded[2] = false;
             player.transform.position = new Vector2(4.7f, 31.3f); //posição inicial do player
             player.rb.bodyType = RigidbodyType2D.Dynamic; //rb dynamic para poder movimentar
             player.currentHealth = 10;
